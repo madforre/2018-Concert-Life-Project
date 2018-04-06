@@ -1,0 +1,16 @@
+@charset "utf-8";
+*{
+    margin : 0px;
+    padding : 0px;
+}
+html,body {
+    margin: 0px;
+    padding : 0px;
+}
+ul,ol,li{
+    list-style: none;
+}
+img{
+    border : 0px;
+    margin : 0px;
+}
