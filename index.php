@@ -55,13 +55,12 @@ $arrSec[3]=array(
        </div>
    </div>
 
-
    <div class="section">
        <ul>
         <?php
 
-        foreach($arrSec as $key){
           $i=1;
+        foreach($arrSec as $key){
             echo "
             <li class=sec".$i.">
               <div class='contents'>
@@ -79,10 +78,11 @@ $arrSec[3]=array(
                         <a href=".$key['btnLink']."><span>알아보기</span></a>
                     </div>
                 </div>
-            </li>
-            ";
+            </li>"
+            ;
             $i++;
           };
+
         ?>
        </ul>
        <div class="side_bar">
@@ -91,7 +91,12 @@ $arrSec[3]=array(
            <span></span>
            <span></span>
        </div>
+  </div>
 
-   <div class="footer"></div>
+
+   <div class="footer">
+
+
+   </div>
 </body>
 </html>
