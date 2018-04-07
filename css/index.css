@@ -29,67 +29,8 @@
     color : #fff;
 }
 
-.section{    
+.section{
     width : 100%;
-    height : 1080px;
+    height : 100%;
     background: #000;
-    z-index: -1;
-    position : relative;
-    text-align: center;
-}
-
-.sec1{
-    width : 100%;
-    height : 1080px;
-    background: #000;
-}
-
-.sec2{
-    width : 100%;
-    height : 1080px;
-    background: #77a;
-}
-
-.sec3{
-    width : 100%;
-    height : 1080px;
-    background: #555;
-}
-
-.sec4{
-    width : 100%;
-    height : 1080px;
-    background: #a55;
-}
-
-.contents{
-    margin : 0 auto;
-    width : 1180px;
-    height : 545px;
-    position : relative;
-    top : 17%;    
-    color : #fff;
-}
-
-.contents .h1_copy{
-    padding-top : 30px;
-    font-size : 50px;
-}
-
-.contents .h1_comment{
-    padding-top : 80px;
-    
-    margin: 0 auto;
-    
-}
-
-.contents .btn a{
-    margin : 0 auto;
-    display: block;
-    width : 200px;
-    height : 50px;
-    border : 1px solid #fff;
-    box-sizing: border-box;
-    margin-top : 40px;
-    
 }
