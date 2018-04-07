@@ -1,27 +1,38 @@
 @charset "utf-8";
-.nav {
+
+#wrap{
+  width : 100%;
+  height : 100%;
+  position : relative;
+}
+
+.header .nav {
     width : 100%;
     height : 130px;
-    background: #ccc;
-    position : relative;
+    background: #dbafff66;
+    position : fixed;
+    top:0px;
+    left:0px;
+    z-index: 1;
 }
-.nav .menu{
+.header .nav .menu{
     width : 70px;
     height : 70px;
     position : absolute;
     top : 30px;
     border : 1px solid #fff;
     box-sizing: border-box;
-    
+
+
 }
-.nav .menu.left{
+.header .nav .menu.left{
     left : 50px;
 }
-.nav .menu.right{
+.header .nav .menu.right{
     right : 50px;
 }
 
-.nav .logo{
+.header .nav .logo{
     padding-top : 30px;
     margin: 0 auto;
     text-align: center;
@@ -29,67 +40,126 @@
     color : #fff;
 }
 
-.section{    
+
+/* section 시작 */
+
+.section{
     width : 100%;
-    height : 1080px;
+    height : 400%;
+}
+
+.section .sec1{
     background: #000;
-    z-index: -1;
+    height : 25%;
+}
+
+.section .sec2{
+    background: #77a;
+    height : 25%;
+}
+
+.section .sec3{
+    background: #555;
+    height : 25%;
+}
+
+.section .sec4{
+    background: #a55;
+    height : 25%;
+}
+
+.section .contents{
+    margin : 0 auto;
     position : relative;
+    width : 100%;
+    height : 545px;
+    color : #fff;
+    top : 32%;
     text-align: center;
 }
 
-.sec1{
-    width : 100%;
-    height : 1080px;
-    background: #000;
-}
+.section .contents .h1_copy{
 
-.sec2{
-    width : 100%;
-    height : 1080px;
-    background: #77a;
-}
-
-.sec3{
-    width : 100%;
-    height : 1080px;
-    background: #555;
-}
-
-.sec4{
-    width : 100%;
-    height : 1080px;
-    background: #a55;
-}
-
-.contents{
-    margin : 0 auto;
-    width : 1180px;
-    height : 545px;
-    position : relative;
-    top : 17%;    
-    color : #fff;
-}
-
-.contents .h1_copy{
-    padding-top : 30px;
+    padding-top : 50px;
     font-size : 50px;
 }
 
-.contents .h1_comment{
-    padding-top : 80px;
-    
+.section .contents .h1_comment{
+    padding-top : 50px;
     margin: 0 auto;
-    
+    font-size: 16px;
+    line-height: 1.625em;
+    font-weight: 300;
 }
 
-.contents .btn a{
-    margin : 0 auto;
+.section .contents .btn{
+  width : 200px;
+  margin : 0 auto;
+  margin-top : 40px;
+  position: relative;
+
+}
+
+.section .contents .btn a{
     display: block;
-    width : 200px;
-    height : 50px;
+    width : 100%;
+    height : auto;
     border : 1px solid #fff;
     box-sizing: border-box;
-    margin-top : 40px;
-    
+    color : #fff;
+}
+
+.section .contents .btn a:hover{
+  background: #fff;
+  color : #000;
+  transition : 0.5s;
+}
+
+.section .contents .btn a span{
+    width : 100%;
+    display: block;
+    line-height : 50px;
+}
+
+/* 사이드바 */
+
+.side_bar{
+  position : fixed;
+  width : 30px;
+  height : 116px;
+  border : 0px solid #fff;
+  background: #00000058;
+  border-radius : 30px;
+  right : 50px;
+  top : 50%;
+  margin-top: -58px;;
+}
+
+.side_bar span{
+  display: block;
+  width : 6px;
+  height : 6px;
+  background: #fff;
+  margin : 50% auto;
+  border-radius : 50px;
+  cursor: pointer;
+}
+
+
+.side_bar span + span {
+  margin-top: 20px;
+}
+
+/* .side_bar .active {
+  width : 9px;
+  height : 9px;
+} */
+
+#wrap .footer{
+  position : relative;
+  width : 100%;
+  height : 100px;
+  background: #fff;
+  bottom : 0px;
+
 }
