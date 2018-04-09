@@ -15,10 +15,12 @@
     <?php include 'index_section.php'; ?>
 
       <div class="side_bar">
-          <span class="active"></span>
-          <span></span>
-          <span></span>
-          <span></span>
+         <ul>
+             <li><span class="active"></span></li>
+             <li><span></span></li>
+             <li><span></span></li>
+             <li><span></span></li>
+         </ul>
       </div>
       
     <?php include 'footer.php';?>

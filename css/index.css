@@ -144,7 +144,6 @@
     background: url(../images/arrow_wheel.gif) no-repeat 0;
     position : absolute;
     top : 16px;
-    opacity:0.5;
 }
 
 .section .icon_wheel .arrow.bt {
@@ -168,24 +167,33 @@
   margin-top: -58px;
 }
 
+.side_bar ul li{
+  margin : 50% auto;
+  width : 6px;
+  height : 6px;
+  position : relative;
+}
+
+.side_bar li + li{
+  margin-top : 20px;
+}
+
 .side_bar span{
   display: block;
   width : 6px;
   height : 6px;
   background: #fff;
-  margin : 50% auto;
   border-radius : 50px;
   cursor: pointer;
 }
 
-.side_bar span + span {
-  margin-top: 20px;
-}
 
-/* .side_bar .active {
+.side_bar span.active {
   width : 9px;
   height : 9px;
-} */
+  position : absolute;
+  left : -1.5px;
+}
 
 #wrap .footer{
   position : relative;
