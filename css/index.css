@@ -81,7 +81,7 @@
 .section .contents .h1_copy{
 
     padding-top : 50px;
-    font-size : 50px;
+    font-size : 40px;
 }
 
 .section .contents .h1_comment{
@@ -121,6 +121,39 @@
     line-height : 50px;
 }
 
+.section .icon_wheel{
+    width : 30px;
+    height : 42px;
+    border : 1px solid #fff;
+    border-radius: 20px;
+    position : relative;
+    margin : 0 auto;
+    top : 115px;
+}
+
+.section .arrow {
+    width : 10px;
+    height : 6px;
+    position : relative;
+    left : 10px;
+    top : 0px;
+    
+}
+
+.section .icon_wheel .arrow.top {
+    background: url(../images/arrow_wheel.gif) no-repeat 0;
+    position : absolute;
+    top : 16px;
+    opacity:0.5;
+}
+
+.section .icon_wheel .arrow.bt {
+    background: url(../images/arrow_wheel.gif) no-repeat 0;
+    position : absolute;
+    top : 22px;
+}
+
+
 /* 사이드바 */
 
 .side_bar{
@@ -132,7 +165,7 @@
   border-radius : 30px;
   right : 50px;
   top : 50%;
-  margin-top: -58px;;
+  margin-top: -58px;
 }
 
 .side_bar span{
@@ -144,7 +177,6 @@
   border-radius : 50px;
   cursor: pointer;
 }
-
 
 .side_bar span + span {
   margin-top: 20px;
@@ -161,5 +193,4 @@
   height : 100px;
   background: #fff;
   bottom : 0px;
-
 }
