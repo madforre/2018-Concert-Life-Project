@@ -1,0 +1,78 @@
+﻿정찬
+
+	PLEASURE , ABOUT63 페이지 구조짜기 + CSS 기본 틀 다음주 월요일까지
+	오토갤러리 구조짜기(선택)
+
+희준
+
+	INNOVATION 오토갤러리 신경써서 자바스크립트로 구현되게끔 생각해서 짜기
+	페이지 구조짜기 + CSS 기본 틀 다음주 월요일까지
+
+건희
+
+	FESTIVAL 오토갤러리, 불꽃놀이 BG 제이쿼리 효과 들어가는거 생각해서 짜기
+	페이지 구조짜기 + CSS 기본 틀 다음주 월요일까지
+
+--------------------------△2018년 4월 16일 마감-----------------------------
+
+
+이번주 예정
+
+	월
+
+		팀 회의 + 본인 페이지 사진 조사 및 삽입 + CSS 디테일 마무리(+include)
+
+	화
+
+		본인페이지 Javascript + JQuery 액션 기획 및 구현
+
+	수~금요일까지
+
+		본인페이지 Javascript + JQuery 액션 최종 완성단계까지 구현
+
+		액션 완성된 것 깃허브에 업로드(새벽 12시 전까지) - 팀원 전체 해당 사항
+	
+	토~일
+
+		header.php와 footer.php 가 include된 login 창 만들기(오설록 참조)  - 정찬
+
+		index nav에 해당하는 sitemap Modal창
+			+ 모든 페이지 스크롤 이벤트 적용	- 건희
+
+		1. footer.php , footer.css 이용 -> position : absolute 를 사용하여 FAMILY SITE 모달창을 하나 숨겨둔다.
+		2. footer의 FAMILY SITE를 클릭 했을 때 클릭 이벤트로 display : none -> display : block
+	           다시 클릭하면 display : block - > display : none	
+		3. 공연과 관련된 사이트들의 링크들을 모달창안에 이쁘게 넣기						- 희준
+
+		  *코딩이 의외로 어렵지 않음
+
+
+다음주 예정
+
+	월
+
+		login창에서 form 전송 -> loginOk.php(검사 후 index.php이동) - 정찬
+
+		footer FAMILY SITE 완성한 로직이 각 페이지마다 돌아가는지 확인 + 아이콘 구하기 - 희준
+
+		index left nav 및 게시판 구현 - 건희
+
+	화
+
+		각 페이지마다 session 심기+로그아웃 기능		        - 정찬
+		
+		게시판 구현 및 완성(고객문의페이지 or QnA + 갤러라 or 공연후기) - 건희
+
+		footer 의 하단 TOP 키 눌렀을 때 최상단으로 가게 하기 		- 희준
+
+	수
+
+		PHP DB쿼리문연결 및 이해 + 마무리작업
+					
+	목
+
+		마무리 작업(사이트 + DB연결)
+
+	금
+
+		D-day

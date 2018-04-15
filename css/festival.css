@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+.header .nav {
+    background: #00000000;
+}
+
+.header_festival{
+  width : 100%;
+  min-width : 1080px;
+  height : 400px;
+  background: url('../images/festival/festival_header.png') 50% no-repeat;
+  background-size: cover;
+  text-align: center;
+  color : #fff;
+  box-sizing: border-box;
+}
+
+.header_festival h1{
+  padding-top : 170px;
+  color : #fff;
+  font-size: 25px;
+}
+
+.header_festival .title_copy {
+  padding-top: 55px;
+  font-size: 40px;
+}
+
+.gnb_plus{
+  width : 100%;
+  height : auto;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.gnb_plus ul{
+  overflow: hidden;
+  width : 1180px;
+  margin : 0 auto;
+  box-sizing: border-box;
+}
+
+.gnb_plus ul li{
+  float : left;
+  width : 295px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 13px;
+  color : #555;
+  font-weight: 550;
+  padding-bottom: 5px;
+
+}
+
+.section_festival {
+  width : 100%;
+}
+
+.section_festival img{
+  display: block;
+  width : 100%;
+  /* width : 85%;
+  margin-left: 7.5%;
+  margin-right: 7.5%; */
+}
+
+.section_festival h1.sub_title{
+  text-align: center;
+  padding-top: 90px;
+  font-weight: 500;
+}
+
+.section_festival p.sub_copy{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  width : 400px;
+  margin : 0 auto;
+}
+
+.section_festival .sec{
+  width : 100%;
+}
+
+.section_festival .sec.one{
+  width : 100%;
+}
+
+
+.section_festival .sec.two{
+  width : 100%;
+  height : 930px;
+  background: #fff;
+}
+
+.section_festival .sec.three{
+  width : 100%;
+  height : 1645px;
+  background: #000;
+  color : #fff;
+}
+
+.section_festival .sec.four{
+    width : 100%;
+    height : auto;
+    background: #fff;
+}
+
+ /* sec one */
+
+.section_festival .sec.one .box_contents{
+  width : 100%;
+  margin-top : 70px;
+  background: #f9f1ff;
+  box-sizing: border-box;
+  padding-top: 80px;
+}
+
+.section_festival .sec.one .box_contents .center{
+  width : 1180px;
+  margin : 0 auto;
+  border :1px solid;
+  height : 1422px;
+  box-sizing: border-box;
+  position : relative;
+  left : 0px;
+  top : 0px;
+}
+
+.section_festival .sec.one .box_contents .center .box {
+  border : 3px solid #000;
+  box-sizing: border-box;
+}
+
+.section_festival .sec.one .center .box.one {
+  width : 590px;
+  height : 570px;
+  position : absolute;
+  left : 0px;
+  top : 0px;
+}
+
+.section_festival .sec.one .center .box.two {
+  width : 480px;
+  height : 700px;
+  position : absolute;
+  right : 0px;
+  top : 100px;
+}
+
+.section_festival .sec.one .center .box.three {
+  width : 480px;
+  height : 620px;
+  position : absolute;
+  left : 0px;
+  bottom : 150px;
+}
+
+.section_festival .sec.one .center .box.four {
+  width : 590px;
+  height : 520px;
+  position : absolute;
+  right : 0px;
+  bottom : 50px;
+}
+
+/* section two */
+
+.sec.two .carousel {
+  margin-top: 30px;
+  width : 100%;
+  height : 500px;
+  border : 1px solid #00f;
+  position : relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+ul.carousel{
+  width : 500%;
+  position : absolute;
+  left : 0%;
+  box-sizing: border-box;
+}
+
+ul.carousel li{
+  float : left;
+  width : 20%;
+  height : 500px;
+  border : 5px solid #00a;
+  box-sizing: border-box;
+}
+
+/* section three */
+
+.sec.three .box_contents .center{
+  width : 1180px;
+  height : 1350px;
+  position : relative;
+  left : 0px;
+  top : 0px;
+  margin : 0 auto;
+  box-sizing: border-box;
+
+}
+
+.sec.three .box_contents .center .box{
+  border : 3px solid;
+  box-sizing: border-box;
+}
+
+.section_festival .sec.three .center .box.one {
+  width : 900px;
+  height : 480px;
+  position : absolute;
+  left : 12%;
+  top : 0px;
+}
+
+.section_festival .sec.three .center .box.two {
+  width : 480px;
+  height : 550px;
+  position : absolute;
+  left : 30px;
+  top : 580px;
+}
+
+.section_festival .sec.three .center .box.three {
+  width : 480px;
+  height : 625px;
+  position : absolute;
+  right : 30px;
+  top : 650px;
+}
+
+ /* section four */
+
+.sec.four .box_contents .center{
+  width : 1180px;
+  height : 1350px;
+  position : relative;
+  left : 0px;
+  top : 0px;
+  margin : 0 auto;
+  box-sizing: border-box;
+
+}
+
+.sec.four .box_contents .center .box{
+  border : 3px solid;
+  box-sizing: border-box;
+}
+
+.section_festival .sec.four .center .box.one {
+  width : 480px;
+  height : 690px;
+  position : absolute;
+  left : 0px;
+  top : 0px;
+}
+
+.section_festival .sec.four .center .box.two {
+  width : 590px;
+  height : 520px;
+  position : absolute;
+  right : 0px;
+  top : 0px;
+}
+
+.section_festival .sec.four .center .box.three {
+  width : 590px;
+  height : 520px;
+  position : absolute;
+  right : 0px;
+  top : 690px;
+}
