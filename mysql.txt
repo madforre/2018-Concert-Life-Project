@@ -1,0 +1,207 @@
+SQL 형태
+ 
+
+SQL 문법의 종류 3가지
+
+데이터 정의 언어 - ( DDL : Data Definition Language )
+
+ └ 테이블이나 관계의 구조를 생성하는데 사용하며 CREATE, ALTER, DROP,TRUNCATE 문 등이 있다.
+
+ 
+
+CREATE - 새로운 데이터베이스 관계 (테이블) View, 인덱스 , 저장 프로시저 만들기.
+
+DROP - 이미 존재하는 데이터베이스 관계 ( 테이블 ) , 뷰 , 인덱스 , 저장 프로시저를 삭제한다.
+
+ALTER - 이미 존재하는 데이터베이스 개체에 대한 변경 , RENAME의 역할을 한다.
+
+TRUNCATE - 관계 ( 테이블 )에서 데이터를 제거한다. ( 한번 삭제시 돌이킬 수 없음.)
+
+데이터 조작 언어 - ( DML : Data Manipulation Language ) 
+
+ └ 테이블에 데이터 검색, 삽입, 수정, 삭제하는 데 사용하며 SELECT, UPDATE, DELETE, INSERT문 등이 있다.
+
+SELECT - 검색(질의)
+INSERT - 삽입(등록)
+UPDATE - 업데이트(수정)
+DELETE - 삭제
+ 
+데이터 제어 언어 - ( DCL : Data Control Language)
+
+ └ 데이터의 사용 권한을 관리하는 데 사용하며 GRANT, REVOKE 문 등이 있다.
+
+GRANT - 특정 데이터베이스 사용자에게 특정 작업에 대한 수행 권한을 부여한다.
+REVOKE - 특정 데이터베이스 사용자에게 특정 작업에 대한 수행 권한을 박탈 or 회수 한다.
+
+데이터베이스 사용자에게 GRANT 및 REVOKE로 설정 할 수 있는 권한.
+
+CONNECT - 데이터베이스 or 스키마에 연결하는 권한.
+SELECT - 데이터베이스에서 데이터를 검색할 수 있는 권한
+INSERT - 데이터베이스에서 데이터를 등록(삽입)할 수 있는 권한
+UPDATE - 데이터베이스의 데이터를 업데이트 할 수 있는 권한
+DELETE - 데이터베이스의 데이터를 삭제할 수 있는 권한.
+USAGE - 스키마 또는 함수와 같은 데이터베이스 개체를 사용할 수 있는 권한
+
+mysql -uroot -p
+기본 비밀번호 X
+관리자 계정 root >> DB생성 , 삭제 , 사용자 추가 , 삭제
+
+비밀번호 변경 root 계정으로 접속
+set password for  계정명@호스트=password('변경비밀번호')
+
+create databases 생성할 이름; 데이터베이스 생성
+show databases; 데이터베이스 보기
+drop databases 삭제할데이터베이스이름 ; 데이터베이스 삭제
+use 데이터베이스 이름 : DB선택
+show tables; 선택한 DB의 테이블 조회
+
+수업에서 사용할 sql문
+create table MemberJoin(
+userId varchar(100) not null,
+userPw varchar(100) not null,
+userName varchar(200) not null,
+userGender varchar(10) not null,
+userAge varchar(10) not null,
+userAddr varchar(300) not null,
+userHobbys varchar(200) not null,
+userPhone varchar(200) not null,
+primary key(userId)
+);
+
+-----------------------------------------------
+
+1.DML(Data Manupulation Langguage)
+	(select,update ,insert,delete)
+
+데이터베이스의 테이블에 들어있는 데이터에 변형을 가하는 종류 (데이터 삽입,수정,삭제)의 명령어나 데이터를 조회하거나 
+검색하기 위한 명령어를 말한다.
+
+2.DDL(Data Definition Language)
+   	(alter,drop.create)
+
+데이터베이스의 테이블에 들어 있는 데이터에 변형을 가하는 종류 (데이터 삽입 ,수정.삭제)의 명령어들을 말함
+
+3.DCL(Data Control Language)
+	(grant)
+
+데이터베이스에 접근하고 객체들을 사용하도록 권한을 주고 회수하는 명령어들을 말함 
+
+===
+
+데이터베이스 (DB: DBMS..RDBMS==관계형데이터베이스시스템)
+
+P234
+1.스키마 :데이터베이스구조 (RDBMS 테이블 ,관계)
+2.CRUD(Create Read Update Delete):데이터베이스의 기능 
+  만들고 ,조회하고 ,수정하고 ,제거하고 
+3.ORACLE ,Mysql,Mssql,MongoDM
+
+==
+
+먼저  
+
+1.xampp 폴더 →mysql →bin 폴더 들어간다 
+
+2.컴퓨터폴더  오른쪽 버튼 눌러서 → 속성 검색  거기서 고급시스템 설정→환경변수 →path 뒤에 개인c드라이브  ;C:\xampp\mysql
+
+\bin  붙임
+
+
+3.윈도우 +r    → cmd실행
+
+
+C:\xampp\mysql\bin
+
+	mysql -uroot -p; 
+    
+==
+
+관리자 계정 root>>DB생성 ,삭제,사용자 추가 ,삭제 
+
+p240
+비빌번호 변경  root 계정으로 접속
+
+set password for 계정  @호스트 =password('변경비빌번호');
+set password for root@localhost=password('1111');
+
+exit;
+
+1.DB생성 2.테이블 생성 
+
+1.show databases;/*데이터 베이스 보기*/
+2.create database member;/*데이터베이스 생성*/
+3.use member;/*데이터베이스 사용 (테이블을 생성할 DB선택)*/
+4.show tables; 데이터베이스의 테이블 조회
+5.desc joinmember; /*테이블의 구조*/
+6.drop table /*테이블 삭제*/
+
+root
+
+create table MemberJoin(
+	userId varchar(100) not null,
+	userPw varchar(100) not null,
+	userName varchar(200) not null,
+	userGender varchar(10) not null,
+	userAge varchar(10) not null,
+	userAddr varchar(300) not null,
+	userHobbys varchar(300) not null,
+	userPhonevarchar(200) not null,
+	primary key(userId);
+);
+
+------------------------------
+
+데이터 추가 >> 레코드 단위(row)
+
+삽입
+
+insert into 테이블명(필드1,필드..) value('값1'.'값2');
+
+/*더미데이터*/
+
+insert into memberJoin(userId,userPw,userGender,userHobbys,userPhone) value('jgh1','1111','M','등산,여행','010-000-0000');
+insert into memberJoin(userId,userPw,userGender,userHobbys,userPhone) value('jgh2','2222','M','등산,여행','010-111-0000');
+insert into memberJoin(userId,userPw,userGender,userHobbys,userPhone) value('jgh3','3333','W','영화감상','010-222-0000');
+insert into memberJoin(userId,userPw,userGender,userHobbys,userPhone) value('jgh4','4444','M','등산,여행','010-333-0000');
+insert into memberJoin(userId,userPw,userGender,userHobbys,userPhone) value('jgh5','5555','W','축구','010-444-0000');
+
+조회
+
+SELECT userId FROM memberJoin;
+
+삭제
+
+DELETE FROM 테이블 WHERE 조건 ; // 조건에 맞는 레코드 삭제
+
+primary key(userId); // 유일성, 중복불가능
+// userId는 null값을 허용하지 않는다.(공란허용X), 중복값을 설정 X *//
+
+수정
+
+UPDATE 테이블명 SET 필드명='변경할 값' WHERE 필드명=해당값;
+
+---------------------------
+
+FROM table_references
+
+WHERE where_condition
+
+ORDER BY id DESC LIMIT 2
+id column 정렬순서가 역전된 상태에서
+2개만 출력됨
+
+UPDATE table_references SET
+description='바꿀내용',
+title='바꿀내용', WHERE id=2;
+
+WHERE문을 빠뜨리면 정말 큰
+재앙이 올 수 있다.
+
+DELETE FROM table_name WHERE
+
+제일 중요한 것은 WHERE 문이다!!!
+빠뜨리면 모든 행이 삭제되므로 큰일난다!!
+
+ex) DELETE FROM topic WHERE id = 5;
+
+record, row 행 삭제 
