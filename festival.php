@@ -24,7 +24,7 @@
     <ul>
       <li>Lifeplus Soul 페스티벌</li>
       <li>우리, 공연장으로 놀러 가요</li>
-      <li>린그와 함께하는 서울 내한공연</li>
+      <li>다채로운 테마 축제</li>
       <li>새로운 시작을 함께</li>
     </ul>
   </div>
@@ -37,19 +37,19 @@
       <div class="box_contents">
         <div class="center">
           <div class="box one">
-            <p>이미지1</p>
+            <img src="images/festival/sec1_1.jpg" alt="festival">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
           </div>
           <div class="box two">
-            <p>이미지2</p>
+            <img src="images/festival/sec1_2.jpg" alt="festival">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
           </div>
           <div class="box three">
-            <p>이미지3</p>
+            <img src="images/festival/sec1_3.jpg" alt="festival">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
           </div>
           <div class="box four">
-            <p>이미지4</p>
+            <img src="images/festival/sec1_4.jpg" alt="festival">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
           </div>
         </div>
