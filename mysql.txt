@@ -205,3 +205,5 @@ DELETE FROM table_name WHERE
 ex) DELETE FROM topic WHERE id = 5;
 
 record, row 행 삭제 
+
+------------------------

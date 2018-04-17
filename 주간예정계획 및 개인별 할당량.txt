@@ -53,7 +53,7 @@
 
 		login창에서 form 전송 -> loginOk.php(검사 후 index.php이동) - 정찬
 
-		footer FAMILY SITE 완성한 로직이 각 페이지마다 돌아가는지 확인 + 아이콘 구하기 - 희준
+		footer FAMILY SITE 완성한 로직이 각 페이지마다 돌아가는지 확인 + 페이지 별로 쓸 아이콘 구하기 - 희준
 
 		index left nav 및 게시판 구현 - 건희
 
