@@ -207,3 +207,32 @@ ex) DELETE FROM topic WHERE id = 5;
 record, row 행 삭제 
 
 ------------------------
+
+한글깨짐해결
+
+기존의 만들어져있던 Database나 Table들의 Character-Set이 변경되는 것은 아니므로 직접 변경을 해줘야 한다.
+
+현재 Character-Set 확인하기
+
+show variables like 'c%'
+status
+
+1. 만들때 utf8 형식으로 만들기
+
+create schema member4 default charset utf8;
+
+create table member4(
+userId varchar(100) not null,
+userPw varchar(100) not null,
+primary key(userId)
+)ENGINE = InnoDB default charset=utf8;
+
+2. 기존의 Database의 Character-Set 속성 변경하기
+
+    ALTER DATABASE [DB명] DEFAULT CHARACTER SET utf8;
+    
+
+MySQL 재시작하기
+
+service mysql restart
+
