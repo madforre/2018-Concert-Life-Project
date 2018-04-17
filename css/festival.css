@@ -87,14 +87,15 @@
 
 .section_festival .sec.one{
   width : 100%;
-  background: #190f40;
+/*  background: #190f40;*/
+    background: #112;
 }
 
 
 .section_festival .sec.two{
   width : 100%;
   height : 930px;
-  background: #c9c5ff;
+  background: #fff;
 
 }
 
@@ -109,7 +110,7 @@
 .section_festival .sec.four{
     width : 100%;
     height : auto;
-    background: #c9c5ff36;
+/*    background: #c9c5ff36;*/
 }
 
  /* sec one */
@@ -133,7 +134,8 @@
   margin-top : 70px;
   box-sizing: border-box;
   padding-top: 80px;
-  background: #d9dcff;
+/*  background: #d9dcff;*/
+    background: #fff;
 }
 
 .section_festival .sec.one .box_contents .center{
@@ -194,7 +196,7 @@
 /* section two */
 
 .sec.two h1,.sec.two p {
-  color : #ffe;
+  color : #000;
 }
 
 .sec.two .carousel {
