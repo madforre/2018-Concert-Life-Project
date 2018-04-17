@@ -234,5 +234,11 @@ primary key(userId)
 
 MySQL 재시작하기
 
-service mysql restart
+    mySQLi 모니터창에서
 
+    service mysql restart 입력
+
+-----------------------------
+
+
+회원 project web0416에 저장되어있음.

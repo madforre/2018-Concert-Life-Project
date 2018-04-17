@@ -87,8 +87,7 @@
 
 .section_festival .sec.one{
   width : 100%;
-/*  background: #190f40;*/
-    background: #112;
+  background: #fee;
 }
 
 
@@ -118,10 +117,10 @@
   padding-bottom: 100px;
  }
 .sec.one > h1.sub_title {
-   color :#fff;
+   color :#000;
  }
 .sec.one > p.sub_copy {
-   color :#fff;
+   color :#000;
  }
 
 .section_festival .sec.one .box_contents img{
@@ -282,7 +281,7 @@ ul.carousel li{
 .sec.four .box_contents .center .box{
 /*  border : 2px solid;*/
   box-sizing: border-box;
-  border-bottom : 10px solid #fee;
+  border-bottom : 10px solid #fff;
 }
 
 .section_festival .sec.four .center .box.one {
