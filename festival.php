@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/festival.css">
   <link rel="stylesheet" href="css/footer.css">
-  <title>모두가 즐기는 축제 - Festival</title>
+  <title>Festival</title>
 </head>
 <body>
 <div id="wrap">
@@ -24,7 +24,7 @@
     <ul>
       <li>Lifeplus Soul 페스티벌</li>
       <li>우리, 공연장으로 놀러 가요</li>
-      <li>린그와 함께하는 서울 내한공연</li>
+      <li>모두가 즐기는 테마 축제</li>
       <li>새로운 시작을 함께</li>
     </ul>
   </div>
@@ -33,23 +33,23 @@
     <div class="sec one">
       <h1 class="sub_title">Lifeplus Soul 페스티벌</h1>
       <p class="sub_copy">  Lorem ipsum dolor sit amet, Excepteur sint occaecat cupidatat non proident</p>
-      <img src="images/festival/festival_sub.jpg" alt="festival">
+      <img src="images/festival/festival_sub.jpg" alt="festival_sub">
       <div class="box_contents">
         <div class="center">
           <div class="box one">
-            <p>이미지1</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <img src="images/festival/sec1_1.jpg" alt="festival">
+            <p>Lifeplus Soul - 페스티벌 거리의 피아노와 악기들 -  John widma Piano Concert</p>
           </div>
           <div class="box two">
-            <p>이미지2</p>
+            <img src="images/festival/sec1_2.jpg" alt="festival">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
           </div>
           <div class="box three">
-            <p>이미지3</p>
+            <img src="images/festival/sec1_3.jpg" alt="festival">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
           </div>
           <div class="box four">
-            <p>이미지4</p>
+            <img src="images/festival/sec1_4.jpg" alt="festival">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
           </div>
         </div>
@@ -81,20 +81,20 @@
       </div>
     </div>
     <div class="sec three">
-      <h1 class="sub_title">린그와 함께하는 서울 내한공연</h1>
+      <h1 class="sub_title">모두가 즐기는 테마 축제</h1>
       <p class="sub_copy">sunt in culpa qui qizqakws officia deserunt mollit anim id est laborum.</p>
       <div class="box_contents">
         <div class="center">
           <div class="box one">
-            <p>이미지1</p>
+            <img src="images/festival/sec3_1.jpg" alt="concert">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
           </div>
           <div class="box two">
-            <p>이미지2</p>
+            <img src="images/festival/sec3_2.jpg" alt="concert">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
           </div>
           <div class="box three">
-            <p>이미지3</p>
+            <img src="images/festival/sec3_3.jpg" alt="concert">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
           </div>
         </div>
@@ -106,15 +106,15 @@
       <div class="box_contents">
         <div class="center">
           <div class="box one">
-            <p>이미지1</p>
+            <img src="images/festival/sec4_1.jpg" alt="newstart">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
           </div>
           <div class="box two">
-            <p>이미지2</p>
+            <img src="images/festival/sec4_2.jpg" alt="newstart">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
           </div>
           <div class="box three">
-            <p>이미지3</p>
+            <img src="images/festival/sec4_3.jpg" alt="newstart">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
           </div>
         </div>

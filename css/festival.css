@@ -16,13 +16,13 @@
 }
 
 .header_festival h1{
-  padding-top : 170px;
+  padding-top : 155px;
   color : #fff;
   font-size: 25px;
 }
 
 .header_festival .title_copy {
-  padding-top: 55px;
+  padding-top: 57px;
   font-size: 40px;
 }
 
@@ -38,6 +38,7 @@
   width : 1180px;
   margin : 0 auto;
   box-sizing: border-box;
+  /* background: #f9fdff; */
 }
 
 .gnb_plus ul li{
@@ -46,7 +47,7 @@
   line-height: 44px;
   text-align: center;
   font-size: 13px;
-  color : #555;
+  color : #1f1f1f;
   font-weight: 550;
   padding-bottom: 5px;
 
@@ -68,14 +69,16 @@
   text-align: center;
   padding-top: 90px;
   font-weight: 500;
+
 }
 
 .section_festival p.sub_copy{
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 50px;
   text-align: center;
   width : 400px;
   margin : 0 auto;
+
 }
 
 .section_festival .sec{
@@ -84,42 +87,58 @@
 
 .section_festival .sec.one{
   width : 100%;
+  background: #190f40;
 }
 
 
 .section_festival .sec.two{
   width : 100%;
   height : 930px;
-  background: #fff;
+  background: #c9c5ff;
+
 }
 
 .section_festival .sec.three{
   width : 100%;
   height : 1645px;
-  background: #000;
+  background: url('../images/festival/sec3_bg.jpg') 50% no-repeat;
+  background-size: cover;
   color : #fff;
 }
 
 .section_festival .sec.four{
     width : 100%;
     height : auto;
-    background: #fff;
+    background: #c9c5ff36;
 }
 
  /* sec one */
+.sec.one > img {
+  padding-bottom: 100px;
+ }
+.sec.one > h1.sub_title {
+   color :#fff;
+ }
+.sec.one > p.sub_copy {
+   color :#fff;
+ }
+
+.section_festival .sec.one .box_contents img{
+   border : 2px solid #00d;
+   box-sizing: border-box;
+ }
 
 .section_festival .sec.one .box_contents{
   width : 100%;
   margin-top : 70px;
-  background: #f9f1ff;
   box-sizing: border-box;
   padding-top: 80px;
+  background: #d9dcff;
 }
 
 .section_festival .sec.one .box_contents .center{
   width : 1180px;
   margin : 0 auto;
-  border :1px solid;
   height : 1422px;
   box-sizing: border-box;
   position : relative;
@@ -128,8 +147,16 @@
 }
 
 .section_festival .sec.one .box_contents .center .box {
-  border : 3px solid #000;
+  border : 19px solid #fff;
   box-sizing: border-box;
+  background: #fff;
+  border-right : 21px solid #eef;
+  border-bottom : 21px solid #eef;
+
+}
+
+.section_festival .sec.one .box_contents .center .box p {
+  padding-top : 10px;
 }
 
 .section_festival .sec.one .center .box.one {
@@ -165,6 +192,10 @@
 }
 
 /* section two */
+
+.sec.two h1,.sec.two p {
+  color : #ffe;
+}
 
 .sec.two .carousel {
   margin-top: 30px;
@@ -205,16 +236,16 @@ ul.carousel li{
 }
 
 .sec.three .box_contents .center .box{
-  border : 3px solid;
+  border : 1px solid;
   box-sizing: border-box;
 }
 
 .section_festival .sec.three .center .box.one {
   width : 900px;
-  height : 480px;
+  height : 570px;
   position : absolute;
   left : 12%;
-  top : 0px;
+  top : 10px;
 }
 
 .section_festival .sec.three .center .box.two {
@@ -222,15 +253,15 @@ ul.carousel li{
   height : 550px;
   position : absolute;
   left : 30px;
-  top : 580px;
+  top : 700px;
 }
 
 .section_festival .sec.three .center .box.three {
-  width : 480px;
+  width : 500px;
   height : 625px;
   position : absolute;
   right : 30px;
-  top : 650px;
+  top : 630px;
 }
 
  /* section four */
@@ -247,13 +278,13 @@ ul.carousel li{
 }
 
 .sec.four .box_contents .center .box{
-  border : 3px solid;
+  border : 2px solid;
   box-sizing: border-box;
 }
 
 .section_festival .sec.four .center .box.one {
   width : 480px;
-  height : 690px;
+  height : 850px;
   position : absolute;
   left : 0px;
   top : 0px;
