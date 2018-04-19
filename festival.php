@@ -33,6 +33,7 @@
     <div class="sec one">
       <h1 class="sub_title">Lifeplus Soul 페스티벌</h1>
       <p class="sub_copy">  Lorem ipsum dolor sit amet, Excepteur sint occaecat cupidatat non proident</p>
+      
       <img src="images/festival/festival_sub.jpg" alt="festival_sub">
       <div class="box_contents">
         <div class="center">
@@ -54,6 +55,7 @@
           </div>
         </div>
       </div>
+
     </div>
     <div class="sec two">
       <h1 class="sub_title">우리, 공연장으로 놀러 가요</h1>
@@ -80,6 +82,7 @@
         </ul>
       </div>
     </div>
+    
     <div class="sec three">
       <h1 class="sub_title">모두가 즐기는 테마 축제</h1>
       <p class="sub_copy">sunt in culpa qui qizqakws officia deserunt mollit anim id est laborum.</p>
@@ -100,6 +103,7 @@
         </div>
       </div>
     </div>
+    
     <div class="sec four">
       <h1 class="sub_title">새로운 시작을 함께</h1>
       <p class="sub_copy">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alhenda pariatur. </p>

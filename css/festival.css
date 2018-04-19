@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 .header .nav {
     background: #00000000;
 }
@@ -87,7 +88,7 @@
 
 .section_festival .sec.one{
   width : 100%;
-  background: #fee;
+  background: #f6f5ff;
 }
 
 
@@ -109,6 +110,8 @@
 .section_festival .sec.four{
     width : 100%;
     height : auto;
+    background: #f6f5ff;
+    border : 20px;
 /*    background: #c9c5ff36;*/
 }
 
@@ -130,11 +133,11 @@
 
 .section_festival .sec.one .box_contents{
   width : 100%;
-  margin-top : 70px;
+  margin-top : 0px;
   box-sizing: border-box;
-  padding-top: 80px;
-/*  background: #d9dcff;*/
-    background: #fff;
+  padding-top: 30px;
+  padding-bottom : 70px;
+  background: #f6f5ff;
 }
 
 .section_festival .sec.one .box_contents .center{
@@ -152,7 +155,7 @@
   box-sizing: border-box;
   background: #fff;
 /*  border-right : 21px solid #eef;*/
-  border-bottom : 10px solid #eef;
+  border : 20px solid #fff;
 
 }
 
@@ -192,6 +195,14 @@
   bottom : 50px;
 }
 
+.bottom_bg {
+  width : 100%;
+  height : 1280px;
+  opacity: 0.8;
+  background: url('../images/festival/sec1to2.jpg') 50% no-repeat;
+  background-attachment: fixed;
+  background-size : cover;
+}
 /* section two */
 
 .sec.two h1,.sec.two p {
@@ -237,7 +248,7 @@ ul.carousel li{
 }
 
 .sec.three .box_contents .center .box{
-  border : 1px solid;
+/*  border : 1px solid #f6f5ff;*/
   box-sizing: border-box;
 }
 
@@ -254,7 +265,7 @@ ul.carousel li{
   height : 550px;
   position : absolute;
   left : 30px;
-  top : 700px;
+  top : 710px;
 }
 
 .section_festival .sec.three .center .box.three {
@@ -262,7 +273,7 @@ ul.carousel li{
   height : 625px;
   position : absolute;
   right : 30px;
-  top : 630px;
+  top : 650px;
 }
 
  /* section four */
@@ -281,7 +292,8 @@ ul.carousel li{
 .sec.four .box_contents .center .box{
 /*  border : 2px solid;*/
   box-sizing: border-box;
-  border-bottom : 10px solid #fff;
+  border : 20px solid #fff;
+  background: #fff;
 }
 
 .section_festival .sec.four .center .box.one {

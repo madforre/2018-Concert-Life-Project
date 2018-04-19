@@ -1,0 +1,88 @@
+@charset "UTF-8";
+.gallery{
+  max-width: 1060px;
+  min-width : 1060px;
+  height:500px;
+  border:1px solid;
+  margin:0 auto;
+  position : relative;
+  text-align: center;
+  background: url(../images/festival/auto0.jpg) no-repeat 50%;
+  background-size: cover;
+  line-height: 600px;
+  font-size: 70px;
+  color : #fff;
+
+}
+
+.gallery span.arrow{
+  display : block;
+  width : 40px;
+  height : 70px;
+  background: #75757578;
+  position:absolute;
+  top:215px;
+  
+}
+
+.gallery .left_bg{
+  background: #75757578;  
+  width : 40px;
+  height : 70px;
+  position: absolute;
+  top: 215px;
+  left : -70px;
+  cursor:pointer;
+    
+}
+.gallery .right_bg{
+  background: #75757578;  
+  width : 40px;
+  height : 70px;
+  position: absolute;
+  top : 215px;
+  right : -70px;
+  cursor:pointer;
+}
+
+.left_bg:hover span.arrow.arrow_left{
+  background-position : 0 -28px;
+}
+
+.right_bg:hover span.arrow.arrow_right{
+  background-position : 0 -28px;
+}
+
+.gallery span.arrow.arrow_left{
+  margin : 22px auto;
+  width : 14px;
+  height : 27px;
+  background: url(../images/btn_slide_prev.gif) no-repeat;
+  background-position : 0 0px;
+  position : relative;
+  left : 0px;
+  top : 0px;
+}
+
+.gallery span.arrow.arrow_right{
+  margin : 22px auto;
+  width : 14px;
+  height : 27px;
+  background: url(../images/btn_slide_next.gif) no-repeat;
+  background-position : 0 0px;
+  position :relative;
+  left : 0px;
+  top : 0px;
+}
+
+
+
+.gallery span.box{
+  position: absolute;
+  right : 3%;
+  top : 240px;
+  width : 320px;
+  height : 280px;
+  background: #f37321;
+  color : #fff;
+}
