@@ -7,18 +7,20 @@
     
 </head>
 <body>
-  <ul class="gallery">
-  <?php 
-      $arrImg = [];      
-      ?>
-      
-       
-  
-
-  <div class="left_bg"><span class="arrow arrow_left"></span></div>
-  <div class="right_bg"><span class="arrow arrow_right"></span></div>
-  <span class="box"></span>
-  </ul>
+ <div class="gallery_wrap">
+      <ul class="gallery">
+       <?php 
+        $arrImg = array();
+        for($i=0;$i<5;$i++){
+          array_push($arrImg,"images/festival/auto$i.jpg");
+          echo "<li><img src='$arrImg[$i]' alt='auto$i' width='100%' height='500px';></li>";
+        }
+        ?>
+      <div class="left_bg"><span class="arrow arrow_left"></span></div>
+      <div class="right_bg"><span class="arrow arrow_right"></span></div>
+      <span class="box"></span>
+      </ul>
+  </div>
 </body>
 
  <script>

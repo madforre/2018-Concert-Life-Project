@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .gallery{
+  
   max-width: 1060px;
   min-width : 1060px;
   height:500px;
@@ -14,6 +15,13 @@
   color : #fff;
 
 }
+
+/*
+.gallery ul li {
+    width : 300px;
+    float : left;
+}
+*/
 
 .gallery span.arrow{
   display : block;
