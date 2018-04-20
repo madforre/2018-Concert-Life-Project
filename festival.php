@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/auto.css">
   <link rel="stylesheet" href="css/festival.css">
   <link rel="stylesheet" href="css/footer.css">
+  
   <title>Festival</title>
 </head>
 <body>
@@ -60,27 +62,7 @@
     <div class="sec two">
       <h1 class="sub_title">우리, 공연장으로 놀러 가요</h1>
       <p class="sub_copy">cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <div class="carousel_wrap">
-        <ul class="carousel">
-          <li>auto_gallery img0
-            <div class="two_box">
-
-            </div>
-          </li>
-          <li>auto_gallery img1
-
-          </li>
-          <li>auto_gallery img2
-
-          </li>
-          <li>auto_gallery img3
-
-          </li>
-          <li>auto_gallery img0
-
-          </li>
-        </ul>
-      </div>
+      <?php include('./autogallery.php');?>
     </div>
     
     <div class="sec three">
