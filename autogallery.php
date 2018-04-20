@@ -58,9 +58,14 @@ $arrBox[4]=array(
          <ul>
        <?php
         $arrImg = array();
-        for($i=0;$i<5;$i++){          array_push($arrImg,"images/festival/auto$i.jpg");
+             $i = 0;
+        foreach($arrBox as $key){
+            
+            array_push($arrImg,"images/festival/auto$i.jpg");
           echo "<li><img src='$arrImg[$i]' alt='auto$i'><div class='box li_$i'>"
         ."</div></li>";
+            
+            $i++;
         }
                  
         ?>

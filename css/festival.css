@@ -39,6 +39,7 @@
   width : 1180px;
   margin : 0 auto;
   box-sizing: border-box;
+    height : 44px;
   /* background: #f9fdff; */
 }
 
@@ -50,8 +51,14 @@
   font-size: 13px;
   color : #1f1f1f;  
   padding-bottom: 5px;
-
 }
+
+.gnb_plus ul li p{
+    height : 20px;
+    cursor : pointer;
+    
+}
+
 
 .section_festival {
   width : 100%;

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/auto.css">
   <link rel="stylesheet" href="css/festival.css">
   <link rel="stylesheet" href="css/footer.css">
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
   <title>Festival</title>
 </head>
 <body>
@@ -24,10 +24,10 @@
 
   <div class="gnb_plus">
     <ul>
-      <li>Lifeplus Soul 페스티벌</li>
-      <li>우리, 공연장으로 놀러 가요</li>
-      <li>모두가 즐기는 테마 축제</li>
-      <li>새로운 시작을 함께</li>
+      <li><p>Lifeplus Soul 페스티벌</p></li>
+      <li><p>우리, 공연장으로 놀러 가요</p></li>
+      <li><p>모두가 즐기는 테마 축제</p></li>
+      <li><p>새로운 시작을 함께</p></li>
     </ul>
   </div>
 
@@ -109,6 +109,29 @@
   </div>
 
   <?php include 'footer.php';?>
+  
+  <script type="text/javascript"> 
+      
+       $(document).ready(function($) {
+           
+            $(".gnb_plus>ul>li:nth-child(1)").click(function(event){    
+                    $( 'html, body' ).stop().animate( { scrollTop : 500 } );
+            });
+           
+           $(".gnb_plus>ul>li:nth-child(2)").click(function(event){    
+                    $( 'html, body' ).stop().animate( { scrollTop : 2989 } );
+            });
+           
+           $(".gnb_plus>ul>li:nth-child(3)").click(function(event){    
+                    $( 'html, body' ).stop().animate( { scrollTop : 3930 } );
+            });
+           
+           $(".gnb_plus>ul>li:nth-child(4)").click(function(event){    
+                    $( 'html, body' ).stop().animate( { scrollTop : 5550 } );
+            });
+       });      
+      
+  </script>
 
 </div>
 </body>
