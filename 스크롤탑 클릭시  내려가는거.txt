@@ -1,0 +1,19 @@
+  <script type="text/javascript"> 
+       $(document).ready(function($) {
+           
+            $(".aTop").click(function(event){    
+                    $( 'html, body' ).stop().animate( { scrollTop : 500 } );
+            });
+           
+           $(".bTop").click(function(event){    
+                    $( 'html, body' ).stop().animate( { scrollTop : 3300 } );
+            });
+       });
+      
+
+
+
+
+
+
+ 	
