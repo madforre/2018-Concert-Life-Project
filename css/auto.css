@@ -1,10 +1,15 @@
 @charset "UTF-8";
+
+.slide{
+    min-width : 1180px;
+    overflow: hidden;
+}
+
 .gallery_wrap{
   
   width : 1080px;
   min-width : 100px;
-  height:500px;
-  
+  height:500px;  
   margin : 0 auto;
   position : relative;
 /*  background: url(../images/festival/auto0.jpg) no-repeat 50%;*/

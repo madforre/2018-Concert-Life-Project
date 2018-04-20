@@ -52,7 +52,7 @@ $arrBox[4]=array(
 </head>
 <body>
 -->
-
+<div class="silde">
  <div class="gallery_wrap">
      <div class="gallery">
          <ul>
@@ -91,6 +91,7 @@ $arrBox[4]=array(
 -->
       </div>
   </div>
+</div>
 <!--</body>-->
 
  <script>
@@ -119,15 +120,15 @@ $arrBox[4]=array(
         
         var li_first = document.querySelectorAll('.gallery>ul>li')[0];
         
-        ul.appendChild(li_first);
+        
+        $('.gallery>ul').append($('.gallery>ul>li:first-child'));
+        
+        //ul.appendChild(li_first);
 //        setTimeout(ul.style.left="0%",100);
 //        setTimeout(ul.style.left="-100%",0);
         
 //        클릭하면 li의 첫번째 인덱스를 ul의 마지막에 appendchild 
     }
      
-
-
-    
   </script>
 <!--</html>-->

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/festival.css">
   <link rel="stylesheet" href="css/footer.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <script src="js/scroll.js"></script>
   <title>Festival</title>
 </head>
 <body>
@@ -36,7 +37,9 @@
       <h1 class="sub_title">Lifeplus Soul 페스티벌</h1>
       <p class="sub_copy">  Lorem ipsum dolor sit amet, Excepteur sint occaecat cupidatat non proident</p>
       
+      <div class="img_box">
       <img src="images/festival/festival_sub.jpg" alt="festival_sub">
+      </div>
       <div class="box_contents">
         <div class="center">
           <div class="box one">
@@ -119,20 +122,32 @@
             });
            
            $(".gnb_plus>ul>li:nth-child(2)").click(function(event){    
-                    $( 'html, body' ).stop().animate( { scrollTop : 2989 } );
+                    $( 'html, body' ).stop().animate( { scrollTop : 2718 } );
             });
            
            $(".gnb_plus>ul>li:nth-child(3)").click(function(event){    
-                    $( 'html, body' ).stop().animate( { scrollTop : 3930 } );
+                    $( 'html, body' ).stop().animate( { scrollTop : 3650 } );
             });
            
            $(".gnb_plus>ul>li:nth-child(4)").click(function(event){    
-                    $( 'html, body' ).stop().animate( { scrollTop : 5550 } );
+                    $( 'html, body' ).stop().animate( { scrollTop : 5300 } );
             });
-       });      
+       });
+      
+      $(window).scroll(function() {
+
+    if ($(this).scrollTop()>800)
+     {
+        $('.box.one').fadeIn(200,function(){
+            $(this).animate({'top':'-50px'},800);
+        });
+     }
+    });
+      
+      
+      
       
   </script>
-
 </div>
 </body>
 </html>

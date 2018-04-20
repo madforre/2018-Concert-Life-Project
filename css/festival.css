@@ -39,14 +39,14 @@
   width : 1180px;
   margin : 0 auto;
   box-sizing: border-box;
-    height : 44px;
+  height : 46px;
   /* background: #f9fdff; */
 }
 
 .gnb_plus ul li{
   float : left;
   width : 295px;
-  line-height: 44px;
+  line-height: 46px;
   text-align: center;
   font-size: 13px;
   color : #1f1f1f;  
@@ -66,16 +66,33 @@
 
 .section_festival img{
   display: block;
+  min-width : 100px;
   width : 100%;
+  background-size:contain;
   /* width : 85%;
   margin-left: 7.5%;
   margin-right: 7.5%; */
 }
 
+.img_box {
+  width : 100%;
+  background: #fff;
+  
+  margin-bottom : 80px;
+    
+    
+}
+
+.img_box img{
+    width : 1180px;
+  min-width : 1180px;    
+  margin : 0 auto;
+}
+
 .section_festival h1.sub_title{
   text-align: center;
   padding-top: 90px;
-  font-weight: 370;
+  font-weight: 500;
 }
 
 .section_festival p.sub_copy{
@@ -94,8 +111,8 @@
   width : 100%;
 /*  background: #f6f5ff;*/
   background: #e0f5ff;
-}
 
+}
 
 .section_festival .sec.two{
   width : 100%;
