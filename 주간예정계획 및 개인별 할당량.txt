@@ -16,28 +16,11 @@
 --------------------------△2018년 4월 16일 마감-----------------------------
 
 
-이번주 계획
-
-	월
-
-		팀 회의 + 본인 페이지 사진 조사 및 삽입 + CSS 디테일 마무리(+include)
-
-	화
-
-		본인페이지 Javascript + JQuery 액션 기획 및 구현
-
-	수~금요일까지
-
-		본인페이지 Javascript + JQuery 액션 최종 완성단계까지 구현
-
-		액션 완성된 것 깃허브에 업로드(새벽 12시 전까지) - 팀원 전체 해당 사항
-	
 	토~일
 
 		header.php와 footer.php 가 include된 login 창 만들기(오설록 참조)  - 정찬
 
-		index nav에 해당하는 sitemap Modal창
-			+ 모든 페이지 스크롤 이벤트 적용	- 건희
+		index nav에 해당하는 sitemap Modal창 + 오토갤러리 - 건희
 
 		1. footer.php , footer.css 이용 -> position : absolute 를 사용하여 FAMILY SITE 모달창을 하나 숨겨둔다.
 		2. footer의 FAMILY SITE를 클릭 했을 때 클릭 이벤트로 display : none -> display : block
