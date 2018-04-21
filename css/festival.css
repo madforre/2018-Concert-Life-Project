@@ -1,4 +1,16 @@
 @charset "utf-8";
+#wrap{
+  background: #f4f5ff;
+}
+
+.line {
+  background-color: #d17eec;
+  margin : 0 auto;
+  height: 2px;
+  width: 47px;
+  margin-top : 40px;
+  margin-bottom : 10px;
+}
 
 
 .header .nav {
@@ -14,24 +26,42 @@
   text-align: center;
   color : #fff;
   box-sizing: border-box;
+  display: none;
+}
+
+.header_festival .line{
+  background-color: #fff;
+  width : 0px;
+  margin : 0 auto;
+  margin-top : 10px;
+  height : 2px;
+
 }
 
 .header_festival h1{
-  padding-top : 155px;
+  padding-top : 175px;
   color : #fff;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing : 2px;
+
 }
 
 .header_festival .title_copy {
-  padding-top: 57px;
+  padding-top: 37px;
   font-size: 40px;
+  font-weight: 300;
+  /* display: none; */
 }
 
 .gnb_plus{
   width : 100%;
   height : auto;
-  border-bottom: 1px solid #ccc;
   box-sizing: border-box;
+  z-index: 5;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .gnb_plus ul{
@@ -39,29 +69,41 @@
   width : 1180px;
   margin : 0 auto;
   box-sizing: border-box;
-  height : 46px;
   /* background: #f9fdff; */
 }
 
 .gnb_plus ul li{
   float : left;
   width : 295px;
-  line-height: 46px;
+  height : 46px;
   text-align: center;
   font-size: 13px;
-  color : #1f1f1f;  
+  /* color : #333; */
+  color : #777;
   padding-bottom: 5px;
+  z-index: 3;
+  cursor : pointer;
 }
 
 .gnb_plus ul li p{
+    line-height: 50px;
     height : 20px;
-    cursor : pointer;
-    
+
+    z-index: 5;
+    box-sizing: border-box;
+
+}
+
+.gnb_plus ul li:nth-child(1) {
+  border-bottom: 1px solid #d17eec;
+  color : #d17eec;
 }
 
 
 .section_festival {
   width : 100%;
+
+
 }
 
 .section_festival img{
@@ -77,21 +119,19 @@
 .img_box {
   width : 100%;
   background: #fff;
-  
   margin-bottom : 80px;
-    
-    
+  display: none;
 }
 
 .img_box img{
-    width : 1180px;
-  min-width : 1180px;    
+  width : 1180px;
+  min-width : 1180px;
   margin : 0 auto;
 }
 
 .section_festival h1.sub_title{
   text-align: center;
-  padding-top: 90px;
+  padding-top: 50px;
   font-weight: 500;
 }
 
@@ -109,15 +149,24 @@
 
 .section_festival .sec.one{
   width : 100%;
-/*  background: #f6f5ff;*/
-  background: #e0f5ff;
+  /* background: #e0f5ff; */
+  background: #f4f5ff;
+  /* display: none; */
+  color : #555;
 
 }
 
 .section_festival .sec.two{
   width : 100%;
   height : 930px;
-  background: #ffe;
+  /* background: #ffe; */
+  background: #ffffee80;
+  color : #333;
+  overflow: hidden;
+
+  display: none;
+  position : relatve;
+
 }
 
 .section_festival .sec.three{
@@ -126,26 +175,50 @@
   background: url('../images/festival/sec3_bg.jpg') 50% no-repeat;
   background-size: cover;
   color : #fff;
+
+  display: none;
+  position : relatve;
+
 }
 
 .section_festival .sec.four{
-    width : 100%;
-    height : auto;
-/*    background: #eff;*/
-    background: #e0f5ff;
-    border : 20px;
+  width : 100%;
+  height : auto;
+  /* background: #eff; */
+  background: #f2f9ff;
+  border : 20px;
+  color : #777;
+
+  display: none;
+  position : relatve;
+  top : 30px;
 
 }
 
  /* sec one */
+
+.sec.one .line{
+  position : relative;
+  top : 20px;
+  display: none;
+}
+
 .sec.one > img {
   padding-bottom: 100px;
  }
 .sec.one > h1.sub_title {
-   color :#000;
+
+   position : relative;
+   top : 20px;
+   display: none;
  }
+
+
 .sec.one > p.sub_copy {
-   color :#000;
+
+   position : relative;
+   top : 20px;
+   display: none;
  }
 
 .section_festival .sec.one .box_contents img{
@@ -159,8 +232,8 @@
   box-sizing: border-box;
   padding-top: 30px;
   padding-bottom : 70px;
-/*  background: #f6f5ff;*/
-    background: #e0f5ff;
+  /* background: #e0f5ff; */
+  background: #f4f5ff;
 }
 
 .section_festival .sec.one .box_contents .center{
@@ -178,6 +251,7 @@
   box-sizing: border-box;
   background: #fff;
   border : 20px solid #fff;
+  border-bottom : 2px solid #ccc;
 /*
     border-right : 21px solid #fef;
     border-bottom : 22px solid #fef;
@@ -185,9 +259,14 @@
 
 }
 
+ /* 박스 display none 설정 */
+
+ .box { display: none;}
+
+
 .section_festival .sec.one .box_contents .center .box p {
-  
-  padding : 20px;
+
+  padding : 10px;
   padding-top : 25px;
 }
 
@@ -196,7 +275,8 @@
   height : 570px;
   position : absolute;
   left : 0px;
-  top : 0px;
+  top : 80px;
+
 }
 
 .section_festival .sec.one .center .box.two {
@@ -204,7 +284,8 @@
   height : 750px;
   position : absolute;
   right : 0px;
-  top : 50px;
+  top : 120px;
+
 }
 
 .section_festival .sec.one .center .box.three {
@@ -212,7 +293,7 @@
   height : 620px;
   position : absolute;
   left : 0px;
-  bottom : 150px;
+  bottom : 70px;
 }
 
 .section_festival .sec.one .center .box.four {
@@ -220,7 +301,7 @@
   height : 520px;
   position : absolute;
   right : 0px;
-  bottom : 50px;
+  bottom : -60px;
 }
 
 .bottom_bg {
@@ -233,13 +314,35 @@
 }
 /* section two */
 
-.sec.two h1,.sec.two p {
-  color : #000;
+.sec.two h1,.sec.two p, .sec.two .line {
+  color : #777;
+  position : relative;
+  top : 20px;
 }
+/*
+.sec.two h1, .sec.two p {
+  position : relative;
+  top : 20px;
+}
+
+.sec.two h1,.sec.two p {
+  position : relative;
+  top : 20px;
+} */
 
 
 
 /* section three */
+
+.sec.three h1,.sec.three p, .sec.three .line {
+  position : relative;
+  top : 20px;
+}
+
+.sec.three .box_contents .box p {
+  padding : 10px;
+  padding-top : 25px;
+}
 
 .sec.three .box_contents .center{
   width : 1180px;
@@ -262,7 +365,7 @@
   height : 570px;
   position : absolute;
   left : 12%;
-  top : 10px;
+  top : 50px;
 }
 
 .section_festival .sec.three .center .box.two {
@@ -270,7 +373,7 @@
   height : 550px;
   position : absolute;
   left : 30px;
-  top : 710px;
+  top : 750px;
 }
 
 .section_festival .sec.three .center .box.three {
@@ -278,10 +381,16 @@
   height : 625px;
   position : absolute;
   right : 30px;
-  top : 650px;
+  top : 700px;
 }
 
  /* section four */
+
+ .sec.four h1,.sec.four p, .sec.four .line {
+   color : #777;
+   position : relative;
+   top : 20px;
+ }
 
 .sec.four .box_contents .center{
   width : 1180px;
@@ -299,11 +408,12 @@
   box-sizing: border-box;
   border : 20px solid #fff;
   background: #fff;
-  
+  border-bottom : 2px solid #ccc;
+
 }
 
 .sec.four .box_contents .center .box p{
-    padding : 20px;
+    padding : 10px;
   padding-top : 25px;
 }
 
@@ -312,7 +422,7 @@
   height : 850px;
   position : absolute;
   left : 0px;
-  top : 0px;
+  top : 180px;
 }
 
 .section_festival .sec.four .center .box.two {
@@ -320,7 +430,7 @@
   height : 520px;
   position : absolute;
   right : 0px;
-  top : 0px;
+  top : 100px;
 }
 
 .section_festival .sec.four .center .box.three {
@@ -328,5 +438,5 @@
   height : 520px;
   position : absolute;
   right : 0px;
-  top : 690px;
+  top : 740px;
 }
