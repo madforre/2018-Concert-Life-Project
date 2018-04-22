@@ -6,10 +6,10 @@
 }
 
 .gallery_wrap{
-  
+
   width : 1080px;
   min-width : 100px;
-  height:500px;  
+  height:500px;
   margin : 0 auto;
   position : relative;
 /*  background: url(../images/festival/auto0.jpg) no-repeat 50%;*/
@@ -19,11 +19,12 @@
 }
 
 .gallery ul {
-    width : 500%;
+    width : 600%;
     position: relative;
     left : -100%;
     right : 0px;
     box-sizing: border-box;
+    transition: all 1s;
 }
 
 .gallery ul li img{
@@ -36,7 +37,6 @@
 .gallery ul li {
     font-size : 100px;
     color : #000;
-    line-height: 500px;
     min-width : 1060px;
     height : 500px;
     margin-right: 20px;
@@ -46,36 +46,41 @@
     position : relative;
 }
 
-.gallery ul li .box {
-    
-      
+.gallery ul li .s_box {
+
+
   position : absolute;
   right : 4.5%;
   top : 240px;
   width : 320px;
   height : 280px;
-  background: #f37321;  
-  box-sizing: border-box; 
-  padding : 25px;   
+  background: #f37321;
+  box-sizing: border-box;
+  padding : 25px;
 }
 
-.gallery ul li:nth-child(1) .box{
+.gallery ul li:nth-child(1) .s_box{
     display: none;
 }
 
-.gallery ul li .box p.box_p1{
+.gallery ul li .s_box p.box_p1{
     color : #333;
-    font-size : 18px;
+    font-size : 17px;
+    font-weight: 300;
 }
 
-.gallery ul li .box p.box_p2{
-    text-indent : 10px;
-    font-size : 23px;
-    font-weight: 350;
+.gallery ul li .s_box p.box_p2{
+    color :#fff;
+    text-indent : 5px;
+    font-size : 21px;
+    font-weight: 300;
 }
 
-.gallery ul li .box p.box_p3{
-    padding-top : 15px;
+.gallery ul li .s_box p.box_p3{
+    margin-top : 15px;
+    color :#fff;
+    font-size : 14px;
+    font-weight: 300;
 }
 
 .gallery ul li:nth-child(2) img{
@@ -95,7 +100,7 @@
   background: #75757578;
   position:absolute;
   top:215px;
-  
+
 }
 
 .slide_wrap  .left_bg{
@@ -110,7 +115,7 @@
 }
 
 .slide_wrap .right_bg{
-  background: #75757578;  
+  background: #75757578;
   width : 40px;
   height : 70px;
   position: absolute;
@@ -158,32 +163,32 @@
   background-position : 0 0px;
   position : relative;
   left : 0px;
-  top : 0px;  
+  top : 0px;
 }
 /*
 
 .gallery_wrap span.box{
-  
+
   position : absolute;
   right : 4.5%;
   top : 240px;
   width : 320px;
   height : 280px;
-  background: #f37321;  
-  box-sizing: border-box; 
-  padding : 25px;     
+  background: #f37321;
+  box-sizing: border-box;
+  padding : 25px;
 }
 
 .gallery_wrap span.box{
-  
+
   position : absolute;
   right : 4.5%;
   top : 240px;
   width : 320px;
   height : 280px;
-  background: #f37321;  
-  box-sizing: border-box; 
-  padding : 25px;     
+  background: #f37321;
+  box-sizing: border-box;
+  padding : 25px;
 }
 
 

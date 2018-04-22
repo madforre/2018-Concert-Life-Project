@@ -2,6 +2,12 @@
 #wrap{
   background: #f4f5ff;
 }
+.gallery_wrap {
+  display : none;
+  position: relative;
+  top : 30px;
+}
+
 
 .line {
   background-color: #d17eec;
@@ -10,6 +16,7 @@
   width: 47px;
   margin-top : 40px;
   margin-bottom : 10px;
+  display: none;
 }
 
 
@@ -35,6 +42,7 @@
   margin : 0 auto;
   margin-top : 10px;
   height : 2px;
+  display: block;
 
 }
 
@@ -133,6 +141,7 @@
   text-align: center;
   padding-top: 50px;
   font-weight: 500;
+  display: none;
 }
 
 .section_festival p.sub_copy{
@@ -141,6 +150,7 @@
   text-align: center;
   width : 400px;
   margin : 0 auto;
+  display: none;
 }
 
 .section_festival .sec{
@@ -164,7 +174,7 @@
   color : #333;
   overflow: hidden;
 
-  display: none;
+  /* display: none; */
   position : relatve;
 
 }
@@ -176,7 +186,7 @@
   background-size: cover;
   color : #fff;
 
-  display: none;
+  /* display: none; */
   position : relatve;
 
 }
@@ -189,7 +199,7 @@
   border : 20px;
   color : #777;
 
-  display: none;
+  /* display: none; */
   position : relatve;
   top : 30px;
 

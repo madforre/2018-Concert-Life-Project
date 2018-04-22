@@ -35,12 +35,13 @@
 
   <div class="section_festival">
     <div class="sec one">
+
       <h1 class="sub_title">Lifeplus Soul 페스티벌</h1>
       <div class="line"></div>
       <p class="sub_copy">  Lorem ipsum dolor sit amet, Excepteur sint occaecat cupidatat non proident</p>
 
       <div class="img_box">
-      <img src="images/festival/festival_sub.jpg" alt="festival_sub">
+        <img src="images/festival/festival_sub.jpg" alt="festival_sub">
       </div>
       <div class="box_contents">
         <div class="center">
@@ -207,24 +208,31 @@
                   });
               }
 
-              // section two fadeIn, slide up
+              // section fadeIn, slide up
 
-              if ($(this).scrollTop()>1709){
-              $('.sec.two').fadeIn(400,function(){
+              if ($(this).scrollTop()>2129){
+              $('.sec.two').fadeIn(450,function(){
                   $(this).animate({'top':'0px'},450);
                   $('.sec.two h1, .sec.two p, .sec.two .line').fadeIn(0,function(){
                   $(this).animate({'top': '0px'},450);    });
                   });
               }
 
-              if ($(this).scrollTop()>2609){
+              if ($(this).scrollTop()>2359){
+              $('.gallery_wrap').fadeIn(400,function(){
+                $(this).animate({'top': '0px'},400);
+
+              });
+              }
+
+              if ($(this).scrollTop()>2799){
               $('.sec.three').fadeIn(200,function(){
                   $(this).animate({'top':'0px'},450);
                   $('.sec.three h1, .sec.three p, .sec.three .line').fadeIn(0,function(){
                   $(this).animate({'top': '0px'},450);    });
                   });
               }
-              if ($(this).scrollTop()>4232){
+              if ($(this).scrollTop()>4752){
               $('.sec.four').fadeIn(200,function(){
                   $(this).animate({'top':'0px'},450);
                   $('.sec.four h1, .sec.four p, .sec.four .line').fadeIn(0,function(){
