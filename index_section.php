@@ -36,7 +36,7 @@ $arrSec[3]=array(
 
  ?>
     <div class="section">
-           
+
         <?php
           $i=1;
         foreach($arrSec as $key){
@@ -59,7 +59,7 @@ $arrSec[3]=array(
                     <div class='icon_wheel'>
                         <div class='arrow top'></div>
                         <div class='arrow bt'></div>
-                    </div>                    
+                    </div>
                 </div>
             </div>"
             ;

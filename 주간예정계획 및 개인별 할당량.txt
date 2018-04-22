@@ -20,7 +20,7 @@
 
 		header.php와 footer.php 가 include된 login 창 만들기(오설록 참조)  - 정찬
 
-		index nav에 해당하는 sitemap Modal창 + 오토갤러리 + li, header 스크롤탑 제이쿼리 - 건희
+		index nav에 해당하는 sitemap Modal창 + 오토갤러리 + li, header 스크롤탑 이벤트 - 건희
 
 		1. footer.php , footer.css 이용 -> position : absolute 를 사용하여 FAMILY SITE 모달창을 하나 숨겨둔다.
 		2. footer의 FAMILY SITE를 클릭 했을 때 클릭 이벤트로 display : none -> display : block

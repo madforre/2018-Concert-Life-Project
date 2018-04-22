@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,17 +7,19 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/auto.css">
-  <link rel="stylesheet" href="css/festival.css">
+  <link rel="stylesheet" href="css/festival/auto_festival.css">
+  <link rel="stylesheet" href="css/festival/festival.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/right_modal.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/scroll.js"></script>
   <title>Festival</title>
 </head>
 <body>
 <div id="wrap">
 
   <?php include 'header.php'; ?>
+
+  <?php include 'right_modal.php'; ?>
 
   <div class="header_festival">
     <h1 class="title">FESTIVAL</h1>
@@ -168,8 +171,12 @@
 
               // header
 
-              if ($(this).scrollTop()<50){
+              if ($(this).scrollTop()>0){
+              $('.nav').removeClass('nav').addClass('nav_after');
+              }
 
+              if ($(this).scrollTop()<1){
+              $('.nav_after').removeClass('nav_after').addClass('nav');
               }
 
               if ($(this).scrollTop()<315){
