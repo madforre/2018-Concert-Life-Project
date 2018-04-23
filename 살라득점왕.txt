@@ -1,5 +1,27 @@
+라인 늘어나는 효과
+
           $('.header_festival .line').fadeIn(550,function(){
 
             $(this).animate({'width': '108px'},550);
               });
           });
+
+
+
+
+header 스크롤 움직일때 효과 적용
+
+
+	1.자바 스크립트 부분에 이 코드 추가
+
+              // header
+
+              if ($(this).scrollTop()>0){
+              $('.nav').removeClass('nav').addClass('nav_after');
+              }
+
+              if ($(this).scrollTop()<1){
+              $('.nav_after').removeClass('nav_after').addClass('nav');
+              }
+
+	2. 효과 먹는지 확인
