@@ -37,78 +37,87 @@
 
       <script type="text/javascript">
 
-          
-     $(window).scroll(function() {
+      var sample = [];
 
-      $('html').on('mousewheel DOMMouseScroll', function(e) {
-            var E = e.originalEvent;
-            delta = 0;
-            // console.log(E);
-            if (E.detail) {
-                delta = E.detail * -40;
+		  $('html').on('mousewheel DOMMouseScroll resize', function(e) {
 
-                // $('body').text(delta);
-            }else{
-                delta = E.wheelDelta;
+      var html_top = $('html').scrollTop()
 
-                // $('body').text(delta);
-            };
-            
-            if(delta >0){
-//                $('html').scrollTop()
-                alert('올라간다')
-                
-            }
-            
-            if(delta < 0){
-//                $('html').scrollTop()
-                alert('내려간다')
-                
-            }
-            
-            return false;
+      for (var i = 3; i > -1; i--) {
+        var test1 = $('.section .section').eq(i).offset().top;
+        var test2 = $('.section .section').eq(i).height()*2/3;
 
-            });
+          sample.push(test1 + test2); //샘플이라는 배열에다가
+          // console.log(sample.splice(i,1,test1 + test2)); // i부터 시작해서 1개만큼을 삭제하고 test1 + test2 로 대체
+          //				var sec_height = $('section').height();
+
+          if (html_top < sample[i]) {
+
+            $('.side_bar ul li').eq(i).find('span').addClass('active');
+            $('.side_bar ul li').eq(i).siblings().find('span').removeClass('active');
+
+          }
 
 
-          
+
+
+          }
+
+      });
+
+
+
+
+
+
         // 스크롤 휠 이벤트
-//          
-//          
-        $('html').on('mousewheel DOMMouseScroll', function(e) {
-            var E = e.originalEvent;
-            delta = 0;
+//
+//
+$(window).on('mousewheel DOMMouseScroll', function(event) {
+          var E = event.originalEvent;
+          delta = 0;
             // console.log(E);
-            if (E.detail) {
-                delta = E.detail * -40;
+          if (E.detail) {
+          delta = E.detail * -40;
 
-                // $('body').text(delta);
-            }else{
-                delta = E.wheelDelta;
+            // $('body').text(delta);
+          }else{
+            delta = E.wheelDelta;
 
-                // $('body').text(delta);
-            };
-            
-            if(delta >0){
-//                $('html').scrollTop()
-                alert('올라간다')
-                
-            }
-            
-            if(delta < 0){
-//                $('html').scrollTop()
-                alert('내려간다')
-                
-            }
-            
-            return false;
+            // $('body').text(delta);
+          };
 
-            });
 
-//            // 휠했는데 120 이면 위로 현재 화면 높이 - 100%
-//            // -120 이면 아래로 가는 것. 아래로 현재 화면 높이 + 100%
 
-     }
+
+    var num1=$('.section .section').eq(0).offset().top;
+    var num2=$('.section .section').eq(1).offset().top;
+    var num=num2-num1; //상대적으로 다음섹션에서 이전섹션의 탑값을 빼준 값이다.
+    var top = $('html').scrollTop(); //처음에는 0 //이동하면 값이 달라짐
+    if (delta >= 0) { //올라갈땐 120 반환하므로 양수
+                //이면 올라가는 것.
+                // 수업에서 delta는 원래 event.originalEvent.wheelDelta(파폭지원x)였음
+
+                // 이코드는 파이어폭스(크로스 브라우징)도 지원하는 코드이다.
+
+                console.log(delta)
+
+           top=top-num;
+
+      $('html, body').stop().animate({scrollTop:top});
+
+      }else{ // 내려갈땐 -120 반환하므로 음수이면 내려가는 것.
+        console.log(delta)
+
+           top=top+num;
+
+        $('html, body').stop().animate({scrollTop:top});
+
+      }
+        return false; //이벤트를 한번만 사용하고 중지 중복되지 않도록 처리하는 방법
+      });
+
+
         // 사이드바 클릭 이벤트
 
         var side_li=$('.side_bar>ul>li');
