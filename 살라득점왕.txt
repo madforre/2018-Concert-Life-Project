@@ -1,0 +1,5 @@
+          $('.header_festival .line').fadeIn(550,function(){
+
+            $(this).animate({'width': '108px'},550);
+              });
+          });
