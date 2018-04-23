@@ -36,50 +36,78 @@
 
 
       <script type="text/javascript">
-
-      var w_key = 1;
-        // 스크롤 휠 이벤트
-
-        $("html, body").on('mousewheel DOMMouseScroll', function(e) {
-            var E = e.originalEvent;
-            delta = 0;
-            // console.log(E);
-            if (E.detail) {
-                delta = E.detail * -40;
+                          
+//          var test = -$('.footer').height(); 
+//          var test2 = $('.footer').offset().top;
+          //  footer 높이만큼 위로 포인트잡은듯 지금 
+		$(window).on('mousewheel DOMMouseScroll', function(event) {
+            
+//            var footer = $('.footer').height();
+//            var docu = $(document).height();
+//            var no_footer = docu-footer
+//            console.log(footer);
+//            console.log(all);
+            
+              var E = event.originalEvent;
+              delta = 0;
+                // console.log(E);
+              if (E.detail) {
+              delta = E.detail * -40;
 
                 // $('body').text(delta);
-            }else{
+              }else{
                 delta = E.wheelDelta;
 
                 // $('body').text(delta);
-            };
+              };
+		
+			  var top = $('html').scrollTop(); //처음에는 0 //이동하면 값이 달라짐
+			  var num1=$('.section .section').eq(0).offset().top;
+			  var num2=$('.section .section').eq(1).offset().top;
+			  var num=num2-num1; //상대적으로 다음섹션에서 이전섹션의 탑값을 빼준 값이다.
+              var bottom = $('.footer').offset().top
 
-            // if(delta == '120'){
-            //
-            //   alert('올라간다')
-            //
-            //
-            //
-            // }
-            //
-            //
-            //
-            // if(delta == '-120'){
-            //
-            //   alert('내려간드아');
-            //   var w_top = $('.section .section').eq(w_key).offset().top;
-            //   $('html,body').animate({scrollTop : w_top},1000);
-            //
-            //   w_key++;
-            //
-            // }
+				if (delta >= 0) { //올라갈땐 120 반환하므로 양수
+                    //이면 올라가는 것. 
+                    // 수업에서 delta는 원래 event.originalEvent.wheelDelta(파폭지원x)였음
+                    
+                    // 이코드는 파이어폭스(크로스 브라우징)도 지원하는 코드이다.
+                    
+                        if($('html').scrollTop() == $('.section .section').eq(3).offset().top){
+                                
+                                
+                            $('.footer').fadeOut
+                        
+                        }else{
+									
+                                
+							     top=top-num;
+												
+					           $('html, body').stop().animate({scrollTop:top}); 
+                            
+                        }                 
+                    
+
+				}else{ // 내려갈땐 -120 반환하므로 음수이면 내려가는 것.
+                            
+                        
+                            if($('html').scrollTop() == $('.section .section').eq(3).offset().top){
+                                $('.footer').fadeIn();
+                                var f_in = $('.footer').offset().top;
+                                $('html, body').stop().animate({scrollTop: f_in});
+                                                  
+                        
+                            }else{
+                                    top=top+num;
+				                    $('html, body').stop().animate({scrollTop:top});
+                            }
+
+					}			   
+				return false; //이벤트를 한번만 사용하고 중지 중복되지 않도록 처리하는 방법
+		});
 
 
-            });
-
-            // 휠했는데 120 이면 위로 현재 화면 높이 - 100%
-            // -120 이면 아래로 가는 것. 아래로 현재 화면 높이 + 100%
-
+          
 
         // 사이드바 클릭 이벤트
 
@@ -99,9 +127,20 @@
         // console.log(top);
 
         $('html,body').animate({scrollTop : top });
+            
+            
 
 
       });
+        
+//        스크롤 이벤트시
+//        만약 현재 스크롤 값이 $('.section .section').eq(3).offset().top보다 크면
+//        $('.section .section').eq(3).offset().top; 으로 간다.
+//        
+          
+                      
+
+
 
       </script>
 </body>
