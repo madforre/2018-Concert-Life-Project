@@ -37,10 +37,10 @@
 
       <script type="text/javascript">
 
-      var w_key = 1;
-        // 스크롤 휠 이벤트
+          
+     $(window).scroll(function() {
 
-        $("html, body").on('mousewheel DOMMouseScroll', function(e) {
+      $('html').on('mousewheel DOMMouseScroll', function(e) {
             var E = e.originalEvent;
             delta = 0;
             // console.log(E);
@@ -53,34 +53,62 @@
 
                 // $('body').text(delta);
             };
-
-            // if(delta == '120'){
-            //
-            //   alert('올라간다')
-            //
-            //
-            //
-            // }
-            //
-            //
-            //
-            // if(delta == '-120'){
-            //
-            //   alert('내려간드아');
-            //   var w_top = $('.section .section').eq(w_key).offset().top;
-            //   $('html,body').animate({scrollTop : w_top},1000);
-            //
-            //   w_key++;
-            //
-            // }
-
+            
+            if(delta >0){
+//                $('html').scrollTop()
+                alert('올라간다')
+                
+            }
+            
+            if(delta < 0){
+//                $('html').scrollTop()
+                alert('내려간다')
+                
+            }
+            
+            return false;
 
             });
 
-            // 휠했는데 120 이면 위로 현재 화면 높이 - 100%
-            // -120 이면 아래로 가는 것. 아래로 현재 화면 높이 + 100%
 
+          
+        // 스크롤 휠 이벤트
+//          
+//          
+        $('html').on('mousewheel DOMMouseScroll', function(e) {
+            var E = e.originalEvent;
+            delta = 0;
+            // console.log(E);
+            if (E.detail) {
+                delta = E.detail * -40;
 
+                // $('body').text(delta);
+            }else{
+                delta = E.wheelDelta;
+
+                // $('body').text(delta);
+            };
+            
+            if(delta >0){
+//                $('html').scrollTop()
+                alert('올라간다')
+                
+            }
+            
+            if(delta < 0){
+//                $('html').scrollTop()
+                alert('내려간다')
+                
+            }
+            
+            return false;
+
+            });
+
+//            // 휠했는데 120 이면 위로 현재 화면 높이 - 100%
+//            // -120 이면 아래로 가는 것. 아래로 현재 화면 높이 + 100%
+
+     }
         // 사이드바 클릭 이벤트
 
         var side_li=$('.side_bar>ul>li');
