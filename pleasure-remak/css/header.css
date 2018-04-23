@@ -20,6 +20,7 @@
     box-sizing: border-box;
     transition: all 1s;
 }
+
 .header .nav .menu{
     width : 70px;
     height : 70px;

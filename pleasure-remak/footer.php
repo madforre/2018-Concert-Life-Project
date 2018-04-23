@@ -2,7 +2,7 @@
  <div class='footer'>
   <div class="company_info">
     <div class="info">
-      <p>서울시 강남구 역삼동 콘서트라이프 주식회사</address>
+      <p>서울시 강남구 역삼동 콘서트라이프 주식회사</p>
       <p>대표이사 김건찬</p>
       <p>대표전화 1588-6363, 해외 82.2.2169.0899</p>
       <p class="copy">COPYRIGHT 2018 ALL RIGHTS RESERVED.</p>
@@ -21,3 +21,4 @@
   <div class="go_top">
     ▲
   </div>
+   </div>

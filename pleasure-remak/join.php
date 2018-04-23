@@ -13,10 +13,13 @@ header("Content-Type:text/html;charset=UTF-8");
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/join.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/right_modal.css">
 </head>
 <body>
  <div id="wrap"> 	
  	<?php include "header.php";?>
+ 	<?php include "right_modal.php";?>
 	<div class="join">
 		<h1 class="title">Join Us</h1>
 		<p class="ptxt">회원가입 후 다양한 혜택과 정보를 얻으실 수 있습니다.</p>
@@ -36,7 +39,7 @@ header("Content-Type:text/html;charset=UTF-8");
 						<option value=""selected>통신사선택</option>
 						<option value="010" >010</option>
 						<option value="011">011</option>
-						<option value="012">012</option>
+						<option value="070">070</option>
 					</select>
 					<input type="text" name="userPhone[]" class='phone' placeholder="휴대폰번호" >
 					
@@ -46,11 +49,23 @@ header("Content-Type:text/html;charset=UTF-8");
 					
 				</li>
 			</ul>
+			<div class="joinFooter">
+			    <ul>
+			        <li><a href="login.php">로그인</a></li>
+			        <li><a href="pleasure.php">HOME</a></li>
+			    </ul>
+			</div>
 		</div>
 		</form>
 	</div>
-	
  </div>
   <script src="js/gnb.js"></script>
+  
+<script>
+      
+  $('.nav').removeClass('nav').addClass('nav_after');
+
+</script>
+            
 </body>
 </html>
