@@ -5,11 +5,15 @@
     <title>63빌딩</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/index_section.css">
     <link rel="stylesheet" href="css/right_modal.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index_section.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <style>
+        body {
+            overflow: hidden;
+        }    
+    </style>
 </head>
 
 <body>

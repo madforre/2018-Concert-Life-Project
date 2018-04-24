@@ -2,6 +2,10 @@
 
 /* section 시작 */
 
+#wrap{
+/*    overflow: hidden;*/
+}
+
 .footer {
     min-width: 1080px;
     display: none;
