@@ -1,4 +1,7 @@
 @charset "utf-8";
+
+/*부품들 수정*/
+
 #wrap{
   background: #f4f5ff;
 }
@@ -8,7 +11,7 @@
   top : 30px;
 }
 
-.logo {
+.header .nav_after .logo a {
   color : #d17eec;
 }
 
@@ -26,6 +29,8 @@
 .header .nav {
     background: #00000000;
 }
+
+/*페스티발 시작*/
 
 .header_festival{
   width : 100%;

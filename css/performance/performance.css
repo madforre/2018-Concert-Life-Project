@@ -2,11 +2,36 @@
 
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
+
+
 #wrap{
     width: 100%;
     height: auto;
     min-width: 1180px;
 }
+
+
+/* 퍼포먼스 페이지 헤더 부품 추가 css*/
+
+.header .nav .menu.left{
+    border : 1px solid #000;
+}
+.header .nav .menu.right{
+    border : 1px solid #000;
+}
+
+.header .nav .logo a{
+    color : #000;
+}
+
+.nav .box_line {
+    background : #000;
+}
+
+.nav .dot {
+    background: #000;
+}
+
 
 /*header 시작*/
 
@@ -122,7 +147,7 @@
     position: absolute;
     top:820px;
     right: 0;
-    background: url(../img/div_03_img_01.jpg) no-repeat;
+    background: url(../../images/performance/div_03_img_01.jpg) no-repeat;
     background-attachment: fixed;
     background-size: cover;
     display: none;
@@ -260,7 +285,7 @@
     height: 850px;
 /*    border: 1px solid;*/
     float: left;
-    background-image: url(../img/backbg01.jpg);
+    background-image: url(../../images/performance/backbg01.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -325,7 +350,7 @@
 .section4{
     width: 100%;
     height: 740px;
-    background:url(../img/backbg02.jpg) no-repeat 50%;
+    background:url(../../images/performance/backbg02.jpg) no-repeat 50%;
 }
 
 .section4 .content{

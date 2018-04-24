@@ -148,7 +148,7 @@
   margin : 22px auto;
   width : 14px;
   height : 27px;
-  background: url(../images/btn_slide_prev.gif) no-repeat;
+  background: url(../../images/btn_slide_prev.gif) no-repeat;
   background-position : 0 0px;
   position : relative;
   left : 0px;
@@ -159,7 +159,7 @@
   margin : 22px auto;
   width : 14px;
   height : 27px;
-  background: url(../images/btn_slide_next.gif) no-repeat;
+  background: url(../../images/btn_slide_next.gif) no-repeat;
   background-position : 0 0px;
   position : relative;
   left : 0px;

@@ -1,26 +1,32 @@
 
-  <div class="right_bg">
+  <div class="right_wrap">
 
   
   </div> 
   <div class="right_modal">
     <div class="right_top">
       <div class="right_head">
-        <h1>Logo</h1>
+        <h1><a href="/index.php">Logo</a></h1>
       </div>
       <div class="right_menu">
         <ul>
-          <li>MAIN</li>
-          <li>INNOVATION</li>
-          <li>FESTIVAL</li>
-          <li>TICKET SHOP</li>
+          <li><a href="/performance.php">PERFORMANCE</a></li>
+          <li><a href="/innovation.php">INNOVATION</a></li>
+          <li><a href="/festival.php">FESTIVAL</a></li>
+          <li><a href="">TICKET SHOP</a></li>
         </ul>
       </div>
     </div>
     <div class="right_bottom">
       <ul>
         <li><p>FAMILY SITE</p></li>
-        <li><p>LOGIN</p></li>
+                    <?php
+               if(isset($_SESSION['sessionId'])){
+                    echo "<li><a href=\"logoutOk.php\">LogOut</a></li>";
+               }else{
+                    echo "<li><a href='login.php'>LogIn</a></li>";
+               }
+            ?>
       </ul>
 
     </div>

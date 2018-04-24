@@ -9,12 +9,15 @@ header("Content-Type:text/html;charset=UTF-8");
 <head>
     <meta charset="UTF-8">
     <title>해외 뮤지션 내한공연</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/pleasure.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/performance/performance.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/right_modal.css">
+    <script src="js/performance/scroll.js"></script>
+<!--    css 순서 변경하지말것 ! (header 덮어씌우기 되어있음)-->
 </head>
 <body>
     
@@ -26,13 +29,13 @@ header("Content-Type:text/html;charset=UTF-8");
            <br>
            <div class="line"></div>
            <br>
-           <img class="h1_txt" src="./img/h1_txt_01.png" alt="소제목">
+           <img class="h1_txt" src="./images/performance/h1_txt_01.png" alt="소제목">
        </div>
         <div class="section1">
             <div class="content">
                 <div class="list1">
                     <div class="box">
-                    <img src="./img/div_01_img.jpg" alt="Bruno Mars_img">
+                    <img src="./images/performance/div_01_img.jpg" alt="Bruno Mars_img">
                     </div>
                     <h1>Bruno Mars</h1>
                     <p>2017년 그래미어워드의 주인공!<br>
@@ -40,7 +43,7 @@ header("Content-Type:text/html;charset=UTF-8");
                 </div>
                 <div class="list2">
                    <div class="box2">
-                    <img src="./img/div_02_img.jpg" alt="Katy Perry_img">
+                    <img src="./images/performance/div_02_img.jpg" alt="Katy Perry_img">
                     </div>
                     <h1>Katy Perry</h1>
                     <p>새 앨범 [Prism]과 첫 싱글 [Roar]가 빌보드 차트 정상에 오르며<br>대중음악 시장에서 필적할 자가 없는 '대세녀'로 떠오른 케이티 페리는<br>2018년 하반기 서울로 찾아옵니다!</p>
@@ -58,7 +61,7 @@ header("Content-Type:text/html;charset=UTF-8");
             <div class="content">
                 <div class="list1">
                    <div class="box2">
-                       <img src="./img/div_04_img.jpg" alt="Norah Jones_img">
+                       <img src="./images/performance/div_04_img.jpg" alt="Norah Jones_img">
                    </div>
                     <h1>Norah Jones</h1>
                     <p>늦가을과 가장 잘 어울리는 편안하고 따뜻한 목소리.<br>
@@ -67,7 +70,7 @@ header("Content-Type:text/html;charset=UTF-8");
                 </div>
                 <div class="list2">
                    <div class="box">
-                    <img src="./img/div_05_img.jpg" alt="DISCLOSURE_img">
+                    <img src="./images/performance/div_05_img.jpg" alt="DISCLOSURE_img">
                     </div>
                     <h1>DISCLOSURE</h1>
                     <p>드디어 그.들.이 온다!!<br>
@@ -76,7 +79,7 @@ header("Content-Type:text/html;charset=UTF-8");
                 </div>
                 <div class="list3">
                    <div class="box">
-                    <img src="./img/div_06_img.jpg" alt="Alan Walker_img">
+                    <img src="./images/performance/div_06_img.jpg" alt="Alan Walker_img">
                     </div>
                     <h1>Alan Walker</h1>
                     <p>검은 마스크, 검은 후드.. Faded! 이 모든것의 주인공이<br>
@@ -85,7 +88,7 @@ header("Content-Type:text/html;charset=UTF-8");
                 </div>
                 <div class="list4">
                    <div class="box2">
-                    <img src="./img/div_07_img.jpg" alt="Birdy_img">
+                    <img src="./images/performance/div_07_img.jpg" alt="Birdy_img">
                     </div>
                     <h1>Birdy</h1>
                     <p>기대되는 신인에서, 지금의 월드클래스 뮤지션까지!<br>
@@ -94,7 +97,7 @@ header("Content-Type:text/html;charset=UTF-8");
                 </div>
                 <div class="list5">
                    <div class="box2">
-                    <img src="./img/div_08_img.jpg" alt="Imagine Dragons_img">
+                    <img src="./images/performance/div_08_img.jpg" alt="Imagine Dragons_img">
                     </div>
                     <h1>Imagine Dragons</h1>
                     <p>일렉트로닉과 힙합, 포크 등 다양한 장르를 넘나드는 감각적인 록 사운드와<br>에너지 넘치는 라이브 공연으로 세계적인 성공을 거두고 있는 얼터너티브<br>
@@ -102,7 +105,7 @@ header("Content-Type:text/html;charset=UTF-8");
                 </div>
                 <div class="list6">
                    <div class="box">
-                    <img src="./img/div_09_img.jpg" alt="Eminem_img">
+                    <img src="./images/performance/div_09_img.jpg" alt="Eminem_img">
                     </div>
                     <h1>Eminem</h1>
                     <p>천재적인 랩 실력과 직설적인 가사로 흑인 뮤지션 중심의 힙합계를 뒤흔들며 최고의 반열에 오른 아티스트, Rap God 에미넴! 8천만장 이상의 누적 음반 판매고를<br>
@@ -110,7 +113,7 @@ header("Content-Type:text/html;charset=UTF-8");
                 </div>
                 <div class="list7">
                    <iframe width="1180" height="400" src="https://www.youtube.com/embed/P8jOQUsTU9o?&vq=hd720&autoplay=0" frameborder="0" allowfullscreen></iframe>
-<!--                    <img src="./img/div_10_img.jpg" alt="">-->
+<!--                    <img src="./images/performance/div_10_img.jpg" alt="">-->
                     <h1>기다렸던 그들, 콜드플레이(Coldplay)의 컴백</h1>
                     <p>콜드플레이의 새 앨범 [A Head Full Of Dreams]이 발매되었습니다. 6집 [Ghost Stories]이 어두운 '밤'의 기운을 담아 멜랑콜리한 선율을 노래했다면,<br> 이번 앨범은 보다 활기차고 다채로운 색을 지닌 '낮'으로의 변화를 담았다고 하여, 더욱 기대감을 높였다고 합니다. 보다 활기찬 선율과 영롱한 사운드,<br>그리고 다양한 참여진까지.. 그 어느때보다 탄탄하게 돌아온 콜드플레이와 함께하세요!</p>
                 </div>
@@ -137,7 +140,7 @@ header("Content-Type:text/html;charset=UTF-8");
             <div class="content">
                 <div class="list1">
                    <div class="box3">
-                    <img src="./img/div_12_img.jpg" alt="DJ Snake_img">
+                    <img src="./images/performance/div_12_img.jpg" alt="DJ Snake_img">
                     </div>
                     <h1>DJ Snake</h1>
                     <p>
@@ -146,7 +149,7 @@ header("Content-Type:text/html;charset=UTF-8");
                 </div>
                 <div class="list2">
                    <div class="box4">
-                    <img src="./img/div_13_img.jpg" alt="Cash Cash_img">
+                    <img src="./images/performance/div_13_img.jpg" alt="Cash Cash_img">
                     </div>
                     <h1>Cash Cash</h1>
                     <p>EDM장르의 최고 명반 'Blood, Sweat & 3 Year' <br>
@@ -155,7 +158,7 @@ header("Content-Type:text/html;charset=UTF-8");
                 </div>
                 <div class="list3">
                    <div class="box3">
-                    <img src="./img/div_14_img.jpg" alt="Ed Sheeran_img">
+                    <img src="./images/performance/div_14_img.jpg" alt="Ed Sheeran_img">
                     </div>
                     <h1>Ed Sheeran</h1>
                     <p>전 세계를 사로잡은 마성의 싱어송라이터 에드 시런,<br>서울에 오다. 2012 런던 올림픽 폐막식 무대에까지<br> 오르며 말 그대로 영국을 대표하는 새로운 이름이 된 에드 시런을 8월 23일 올림픽 체조경기장에서 만나세요!<br></p>
@@ -166,7 +169,7 @@ header("Content-Type:text/html;charset=UTF-8");
         <?php include "footer.php";?>
     </div>
     
-    <script src="js/scroll.js"></script>
+    
     <script>
         $(window).scroll(function(){
             if ($(this).scrollTop()>0){

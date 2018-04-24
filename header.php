@@ -14,7 +14,7 @@
                   <div class="dot r9"></div>
                </div>
              </div>
-             <div class="logo">92</div>
+             <div class="logo"><a href="/">92</a></div>
              <div class="menu right">
                <div class="box_line r1">
 
