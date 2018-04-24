@@ -161,6 +161,19 @@
     </div>
     
     <script src="js/scroll.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if ($(this).scrollTop()>0){
+              $('.nav').removeClass('nav').addClass('nav_after');
+              }
+
+              if ($(this).scrollTop()<1){
+              $('.nav_after').removeClass('nav_after').addClass('nav');
+              }
+        })
+        
+    
+    </script>
 
 </body>
 </html>

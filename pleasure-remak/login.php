@@ -11,12 +11,15 @@ header("Content-Type:text/html;charset=UTF-8");
     <title>로그인</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/delete.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/right_modal.css">
 </head>
 <body>
+  <div id="wrap">
    <?php include "header.php";?>
+   <?php include "right_modal.php";?>
     <div class="login">
         <h1>Log In</h1>
         <div class="loginForm">
@@ -43,7 +46,8 @@ header("Content-Type:text/html;charset=UTF-8");
             </div>
         </div>
     </div>
-    
+    <?php include "footer.php";?>
+</div>
     <script>
         
         var topBtn=$('.loginHeader >ul>li');
@@ -66,6 +70,11 @@ header("Content-Type:text/html;charset=UTF-8");
         });
     
     </script>
+    <script>
+      
+  $('.nav').removeClass('nav').addClass('nav_after');
+
+</script>
     <script src="js/gnb.js"></script>
     
 </body>

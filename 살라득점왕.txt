@@ -16,6 +16,10 @@ header 스크롤 움직일때 효과 적용
 
               // header
 
+    $(window).scroll(function() {
+
+              // header
+
               if ($(this).scrollTop()>0){
               $('.nav').removeClass('nav').addClass('nav_after');
               }
@@ -24,4 +28,5 @@ header 스크롤 움직일때 효과 적용
               $('.nav_after').removeClass('nav_after').addClass('nav');
               }
 
+	});
 	2. 효과 먹는지 확인

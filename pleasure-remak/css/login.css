@@ -1,19 +1,29 @@
 @charset "utf-8";
 
+.footer {
+    position : fixed;
+    bottom : 0px;
+}
+#wrap{
+    width: 100%;
+    height: 100%;;
+}
+
+
 .login{
     width: 500px;
-    height: 500px;
+    height: 762px;
+    position: relative;
     margin: 0 auto;
-    margin-top: 200px;
+    left: 0;
+    top: 150px;
 }
 
 .login h1{
     text-align: center;
-    margin-top: 40px;
     line-height: 100px;
     font-family: serif;
 }
-
 
 
 .login .loginForm .loginHeader>ul>li{
@@ -21,7 +31,6 @@
     height: 50px;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
-    float: left;
     text-align: center;
     line-height: 50px;
     margin-bottom: 10px;
@@ -49,14 +58,15 @@
 .loginFooter>ul>li a{
     display: block;
     width: 33.333%;
-    height: 30px;
-    float: left;
+    height: 60px;
     text-align: center;
     color: #707070;
     margin-top: 20px;
     border-top: 1px solid #ccc;
     line-height: 60px;
     font-size: 10px;
+    float: left;
+    
 }
 
 /*hover*/
@@ -65,27 +75,4 @@
     background: #555555;
     transition: all 0.5s;
 }
-
-/*
-.login .loginForm .loginHeader>ul>li:hover{
-    background: #fff;
-    border-bottom: 0px;
-    cursor: pointer;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

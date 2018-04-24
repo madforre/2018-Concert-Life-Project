@@ -4,7 +4,7 @@
 	max-width: 400px;
 	margin:0 auto ;
 	position: relative;
-	top:180px;
+	top:100px;
 	padding: 10px;
 	}
 .join h1.title{
@@ -20,12 +20,9 @@
     color: #707070;
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
-    line-height: 50px;
+    line-height: 40px;
 }
 
-.join .contents{
-	
-}
 .join .contents ul>li{
 	border: 0px solid #ccc;
 	line-height: 60px;
@@ -84,10 +81,24 @@
     color: #555555;
 		
 }
-.radio{
-    line-height: 30px;
-    border: 1px solid;
+
+.join .contents .joinFooter{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    overflow: hidden;
 }
 
+.join .contents .joinFooter>ul>li{
+    width: 50%;
+    height: 50px;
+    border-top: 1px solid #ccc;
+    float: left;
+    line-height: 50px;
+}
 
-
+.join .contents .joinFooter>ul>li{
+    color: #707070;
+    font-size: 10px;
+    text-align: center;
+}

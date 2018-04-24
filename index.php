@@ -36,6 +36,7 @@
 
 
       <script type="text/javascript">
+<<<<<<< HEAD
                           
 //          var test = -$('.footer').height(); 
 //          var test2 = $('.footer').offset().top;
@@ -108,6 +109,89 @@
 
 
           
+=======
+
+      var sample = [];
+
+		  $('html').on('mousewheel DOMMouseScroll resize', function(e) {
+
+      var html_top = $('html').scrollTop()
+
+      for (var i = 3; i > -1; i--) {
+        var test1 = $('.section .section').eq(i).offset().top;
+        var test2 = $('.section .section').eq(i).height()*2/3;
+
+          sample.push(test1 + test2); //샘플이라는 배열에다가
+          // console.log(sample.splice(i,1,test1 + test2)); // i부터 시작해서 1개만큼을 삭제하고 test1 + test2 로 대체
+          //				var sec_height = $('section').height();
+
+          if (html_top < sample[i]) {
+
+            $('.side_bar ul li').eq(i).find('span').addClass('active');
+            $('.side_bar ul li').eq(i).siblings().find('span').removeClass('active');
+
+          }
+
+
+
+
+          }
+
+      });
+
+
+
+
+
+
+        // 스크롤 휠 이벤트
+//
+//
+$(window).on('mousewheel DOMMouseScroll', function(event) {
+          var E = event.originalEvent;
+          delta = 0;
+            // console.log(E);
+          if (E.detail) {
+          delta = E.detail * -40;
+
+            // $('body').text(delta);
+          }else{
+            delta = E.wheelDelta;
+
+            // $('body').text(delta);
+          };
+
+
+
+
+    var num1=$('.section .section').eq(0).offset().top;
+    var num2=$('.section .section').eq(1).offset().top;
+    var num=num2-num1; //상대적으로 다음섹션에서 이전섹션의 탑값을 빼준 값이다.
+    var top = $('html').scrollTop(); //처음에는 0 //이동하면 값이 달라짐
+    if (delta >= 0) { //올라갈땐 120 반환하므로 양수
+                //이면 올라가는 것.
+                // 수업에서 delta는 원래 event.originalEvent.wheelDelta(파폭지원x)였음
+
+                // 이코드는 파이어폭스(크로스 브라우징)도 지원하는 코드이다.
+
+                console.log(delta)
+
+           top=top-num;
+
+      $('html, body').stop().animate({scrollTop:top});
+
+      }else{ // 내려갈땐 -120 반환하므로 음수이면 내려가는 것.
+        console.log(delta)
+
+           top=top+num;
+
+        $('html, body').stop().animate({scrollTop:top});
+
+      }
+        return false; //이벤트를 한번만 사용하고 중지 중복되지 않도록 처리하는 방법
+      });
+
+>>>>>>> 7366a3065e2bda7c62d7aeaa7cd9cc0a73dd578e
 
         // 사이드바 클릭 이벤트
 
