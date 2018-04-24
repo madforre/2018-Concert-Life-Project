@@ -2,6 +2,11 @@
 
 /* section 시작 */
 
+.footer {
+    min-width: 1080px;
+    display: none;
+}
+
 .section{
     width : 100%;
     height : 400%;
