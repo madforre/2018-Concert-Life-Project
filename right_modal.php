@@ -1,4 +1,8 @@
-<div class="right_modal_wrap">
+
+  <div class="right_bg">
+
+  
+  </div> 
   <div class="right_modal">
     <div class="right_top">
       <div class="right_head">
@@ -20,30 +24,35 @@
       </ul>
 
     </div>
-  </div>
-  <div class="right_close">
+    <div class="right_close">
     <img src="images/btn_close.png" alt="right_close">
+    </div>
   </div>
-</div>
+
+
 
 <script type="text/javascript">
-  var rmw = document.getElementsByClassName('right_modal_wrap')[0];
+  var r_bg= $('.right_bg')
   var r_m = document.getElementsByClassName('right_modal')[0];
   var r_close = document.getElementsByClassName('right_close')[0];
   var r_open = document.getElementsByClassName('menu right')[0];
-
+    
   r_close.addEventListener('click',function(){
-    r_m.style.right ='-100%';
+  
+    r_m.style.right ='-300%';
+     r_bg.fadeOut();
+    
 
-    rmw.style.display ='none';
+    
 
   });
 
   r_open.addEventListener('click',function(){
-
+  
     r_m.style.right ='0';
+      r_bg.fadeIn();
 
-    rmw.style.display ='block';
+    
 
   });
 

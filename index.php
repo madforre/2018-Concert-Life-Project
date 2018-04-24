@@ -45,7 +45,7 @@
           
           // mousewheel 과 scroll은 다른 거구나!!!
       $( document ).ready(function() {
-              
+                              
       
 		  $(window).on('scroll resize', function(e) {
 
@@ -64,9 +64,10 @@
               
             $('.side_bar ul li').eq(i).find('span').addClass('active');
             $('.side_bar ul li').eq(i).siblings().find('span').removeClass('active');                  
-
             }
           }
+          return false; //이벤트를 한번만 사용하고 중지 중복되지 않도록 처리하는 방법    
+              
          });      
 
           $(window).on('mousewheel DOMMouseScroll', function(event) {
@@ -131,29 +132,33 @@
 				return false; //이벤트를 한번만 사용하고 중지 중복되지 않도록 처리하는 방법
 		});
           
-
-        // 사이드바 클릭 이벤트
+         
+      });
+                  // 사이드바 클릭 이벤트
 
         var side_li=$('.side_bar>ul>li');
 
         side_li.on('click',function(e){
 
         var index = $(this).index();
-
-        // console.log(index);
-
-        $(this).find('span').addClass('active');
-        $(this).siblings().find('span').removeClass('active');
-
+            
         var top = $('.section .section').eq(index).offset().top;
 
         // console.log(top);
 
         $('html,body').animate({scrollTop : top });
             
-         
-      });
- });
+
+        // console.log(index);
+
+//        $(this).find('span').addClass('active');
+//        $(this).siblings().find('span').removeClass('active');
+        
+
+
+            return false; //이벤트를 한번만 사용하고 중지 중복되지 않도록 처리하는 방법
+            
+        });
 
 
 
