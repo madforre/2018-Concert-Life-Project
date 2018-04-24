@@ -29,7 +29,7 @@ header("Content-Type:text/html;charset=UTF-8");
            </ul>
            </div>
            <div class="loginContent">
-            <form action="loginOk2.php" method="post">
+            <form action="loginOk.php" method="post">
             <ul>
                 <li><input type="text" name="userId" id="userId" placeholder="아이디"></li>
                 <li><input type="password" name="userPw" id="userPw" placeholder="비밀번호"></li>

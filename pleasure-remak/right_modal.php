@@ -16,7 +16,13 @@
     <div class="right_bottom">
       <ul>
         <li><p>FAMILY SITE</p></li>
-        <li><a href="login.php">login</a></li>
+            <?php
+               if(isset($_SESSION['sessionId'])){
+                    echo "<li><a href=\"logoutOk.php\">LogOut</a></li>";
+               }else{
+                    echo "<li><a href='login.php'>LogIn</a></li>";
+               }
+            ?>
       </ul>
 
     </div>

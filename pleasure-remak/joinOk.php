@@ -9,7 +9,7 @@ if(!isset($_POST['userId'])||!isset($_POST['userPw'])||!isset($_POST['userName']
     echo"
     <script>
         alert('접속 경로 오류');
-        location.href='index.php'
+        location.href='pleasure.php'
     </script>
     ";
     exit;
@@ -64,7 +64,7 @@ if($result==1){
     echo"
     <script>
         alert('회원 가입 성공');
-        location.href='login2.php'
+        location.href='login.php'
     </script>
     ";
 }else{
