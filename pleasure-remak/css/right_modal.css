@@ -1,16 +1,15 @@
 @charset "UTF-8";
 
-.right_modal_wrap{
-  width : 100%;
-  height : 100%;
-  min-height: 100%;
-  background: #000000a5;
-  position: fixed;
-  top : 0px;
-  z-index: 97;
-  display: none;
+.right_bg{
+    z-index: 95;
+    width : 100%;
+    height : 100%;
+    position : absolute;
+    left : 0px;
+    top : 0px;
+    background: #000000a5;
+    display: none;
 }
-
 
 .right_modal{
 
@@ -18,11 +17,13 @@
   min-width : 1130px;
   height : 100%;
   position : fixed;
-  right : -100%;
+  right : -250%;
   top : 0px;
   z-index: 98;
   background: #fff;
   text-align: center;
+  transition: all 1.3s;
+  transition-timing-function: ease;
 }
 
 .right_top {
