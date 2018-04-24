@@ -36,18 +36,36 @@
 
 
       <script type="text/javascript">
+          
+      var sample = [];
+          
+          // mousewheel 과 scroll은 다른 거구나!!!
+      $( document ).ready(function() {
+              
+      
+		  $(window).on('scroll resize', function(e) {
 
-                          
-//          var test = -$('.footer').height(); 
-//          var test2 = $('.footer').offset().top;
-          //  footer 높이만큼 위로 포인트잡은듯 지금 
-		$(window).on('mousewheel DOMMouseScroll', function(event) {
-            
-//            var footer = $('.footer').height();
-//            var docu = $(document).height();
-//            var no_footer = docu-footer
-//            console.log(footer);
-//            console.log(all);
+            var html_top = $('html').scrollTop()
+
+    
+        for (var i = 3; i > -1; i--) {
+            var test1 = $('.section .section').eq(i).offset().top;
+            var test2 = $('.section .section').eq(i).height()*2/3;
+
+           sample.push(test1 + test2); //샘플이라는 배열에다가
+           console.log(sample.splice(i,1,test1 + test2)); // i부터 시작해서 1개만큼을 삭제하고 test1 + test2 로 대체
+          //				var sec_height = $('section').height();
+
+          if (html_top < sample[i]) {
+              
+            $('.side_bar ul li').eq(i).find('span').addClass('active');
+            $('.side_bar ul li').eq(i).siblings().find('span').removeClass('active');                  
+
+            }
+          }
+         });      
+
+          $(window).on('mousewheel DOMMouseScroll', function(event) {
             
               var E = event.originalEvent;
               delta = 0;
@@ -110,35 +128,6 @@
 		});
           
 
-      var sample = [];
-
-		  $('html').on('mousewheel DOMMouseScroll resize', function(e) {
-
-      var html_top = $('html').scrollTop()
-
-      for (var i = 3; i > -1; i--) {
-        var test1 = $('.section .section').eq(i).offset().top;
-        var test2 = $('.section .section').eq(i).height()*2/3;
-
-          sample.push(test1 + test2); //샘플이라는 배열에다가
-          // console.log(sample.splice(i,1,test1 + test2)); // i부터 시작해서 1개만큼을 삭제하고 test1 + test2 로 대체
-          //				var sec_height = $('section').height();
-
-          if (html_top < sample[i]) {
-
-            $('.side_bar ul li').eq(i).find('span').addClass('active');
-            $('.side_bar ul li').eq(i).siblings().find('span').removeClass('active');
-
-          }
-
-
-
-
-          }
-
-      });
-
-
         // 사이드바 클릭 이벤트
 
         var side_li=$('.side_bar>ul>li');
@@ -158,11 +147,9 @@
 
         $('html,body').animate({scrollTop : top });
             
-            
-
-
+         
       });
-        
+ });
 
 
 
