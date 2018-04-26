@@ -171,14 +171,25 @@ header("Content-Type:text/html;charset=UTF-8");
     
     
     <script>
+        $('.header .nav .menu.left>a>img').attr({src: '/images/QnA2.png'});
+        
+        
         $(window).scroll(function(){
-            if ($(this).scrollTop()>0){
+              // header
+            
+              
+
+              if ($(this).scrollTop()>0){
               $('.nav').removeClass('nav').addClass('nav_after');
+              
               }
 
               if ($(this).scrollTop()<1){
               $('.nav_after').removeClass('nav_after').addClass('nav');
+              
               }
+
+            
         })
         
     

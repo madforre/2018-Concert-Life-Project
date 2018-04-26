@@ -27,8 +27,8 @@ header("Content-Type:text/html;charset=UTF-8");
 		<div class="contents">
 			<ul>
 				<li><input type="text" name="userId" maxlength="12" size="12" placeholder="아이디(4~12자 영문 대.소문자)" ></li>
-				<li><input type="password" name="userPw"  maxlength="16" size="16" placeholder="비빌번호는 6~16자 영문 대소문자,숫자"></li>
-				<li><input type="password" id="pwChecked" maxlength="16" size="16" placeholder="비빌번호 확인"></li>
+				<li><input type="password" name="userPw"  maxlength="16" size="16" placeholder="비밀번호는 6~16자 영문 대소문자,숫자"></li>
+				<li><input type="password" id="pwChecked" maxlength="16" size="16" placeholder="비밀번호 확인"></li>
 				<li><input type="text" name="userName" placeholder="이름(실명으로입력해주세요)"></li>
 				<li><input type="text" name="userYear" class='year' placeholder="생년월일" > 
 					<input type="radio" name="userGender" value='남자' checked>남자
@@ -52,7 +52,7 @@ header("Content-Type:text/html;charset=UTF-8");
 			<div class="joinFooter">
 			    <ul>
 			        <li><a href="login.php">로그인</a></li>
-			        <li><a href="pleasure.php">HOME</a></li>
+			        <li><a href="index.php">HOME</a></li>
 			    </ul>
 			</div>
 		</div>

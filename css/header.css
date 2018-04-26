@@ -30,6 +30,7 @@
 }
 .header .nav .menu.left{
     left : 50px;
+    
 }
 .header .nav .menu.right{
     right : 50px;
@@ -68,15 +69,29 @@
   top : 37px;
 }
 
-/* 메뉴 왼쪽 점 */
+/* 메뉴 왼쪽 이미지 */
 
+.header .nav .menu.left img{
+    position : absolute;
+    top : 0px;
+    left : -2px;
+    background: url('/images/QnA.png') no-repeat 50%;
+}
+
+
+
+
+
+/*메뉴 왼쪽 점*/
+
+/*
 .nav .dots{
-  width : 5px;
+  width : 50px;
+  height : 50px;
   position : relative;
-  left : -17px;
-  top : 12px;
+  left : 0px;
+  top : 0px;
   margin : 0 auto;
-
 }
 
 .nav .dot{
@@ -147,6 +162,7 @@
   left : 28px;
   top : 30px;
 }
+*/
 
 
 
@@ -194,7 +210,7 @@
 .nav_after .box_line {
   margin : 0 auto;
   width : 27px;
-  height : 3px;
+  height : 2.5px;
   /* background: #000; */
   background: #333;
   position : relative;
@@ -211,7 +227,21 @@
   top : 22px;
 }
 
+
+/* 메뉴 왼쪽 이미지 */
+.nav_after .menu.left a{
+  margin: 0 auto;
+  width : 0px;
+  height : 0px;
+  
+  position : absolute;
+  left : 0px;
+  top : -15px;
+}
+
 /* 메뉴 왼쪽 점 */
+
+/*
 
 .nav_after .dot{
   margin: 0 auto;
@@ -221,7 +251,9 @@
   position : absolute;
   left : 8px;
   top : 10px;
+
 }
+
 
 .nav_after .dot.r1{
   position : absolute;
@@ -281,3 +313,4 @@
   left : 28px;
   top : 30px;
 }
+*/

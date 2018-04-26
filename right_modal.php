@@ -1,3 +1,8 @@
+<?php
+@session_start();
+?>
+
+
 
   <div class="right_wrap">
 
@@ -6,14 +11,21 @@
   <div class="right_modal">
     <div class="right_top">
       <div class="right_head">
-        <h1><a href="/index.php">Logo</a></h1>
+        <?php
+            if(isset($_SESSION["sessionId"])){
+                echo "<h1>".$_SESSION["sessionId"]." 님 안녕하세요!"."</h1>";
+            }else{
+                echo "<h1><a href='join.php'>JOIN US</a></h1>";
+            }
+        ?>
+        </h1>
       </div>
       <div class="right_menu">
         <ul>
           <li><a href="/performance.php">PERFORMANCE</a></li>
           <li><a href="/innovation.php">INNOVATION</a></li>
           <li><a href="/festival.php">FESTIVAL</a></li>
-          <li><a href="">TICKET SHOP</a></li>
+          <li><a href="/">TICKET TRADE</a></li>
         </ul>
       </div>
     </div>
@@ -28,7 +40,6 @@
                }
             ?>
       </ul>
-
     </div>
     <div class="right_close">
     <img src="images/btn_close.png" alt="right_close">
@@ -47,9 +58,6 @@
   
     r_m.style.right ='-300%';
      r_bg.fadeOut();
-    
-
-    
 
   });
 
@@ -57,8 +65,6 @@
   
     r_m.style.right ='0';
       r_bg.fadeIn();
-
-    
 
   });
 

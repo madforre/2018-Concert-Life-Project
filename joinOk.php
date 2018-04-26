@@ -2,7 +2,9 @@
 header("Content-Type:text/html;charset=UTF-8");
 ?>
 <?php
-include "dbConnect.php";
+require_once "settingDB.php";
+require_once "dbConnect.php";
+
 //접속 경로가 확인
 
 if(!isset($_POST['userId'])||!isset($_POST['userPw'])||!isset($_POST['userName'])||!isset($_POST['userYear'])||!isset($_POST['userGender'])||!isset($_POST['userPhone'])){
@@ -44,7 +46,7 @@ if($userPw==""||$userPw==null){
     exit;
 }
 
-if(userName==""||userName==null){
+if($userName==""||$userName==null){
     echo"
     <script>
         alert('이름을 확인해주세요.');
@@ -55,8 +57,9 @@ if(userName==""||userName==null){
 }
 
 
-$query="insert into joinmember2(userId,userPw,userName,userYear,userGender,userPhone)
+$query="insert into $tableName(userId,userPw,userName,userYear,userGender,userPhone)
 values('$userId','$userPw','$userName','$userYear','$userGender','$userPhone')";
+
 
 $result=$conn->query($query);//쿼리문을 실행 성공하면 1반환
 
@@ -77,7 +80,5 @@ if($result==1){
 }
 
 $conn->close();//DB연결 해제
-
-
 
 ?>

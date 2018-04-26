@@ -2,8 +2,8 @@
 header("Content-Type:text/html;charset=UTF-8");
 ?>
 <?php
-
-include "dbConnect.php";//userid, userpw db에 존재하면 로그인 성공
+require_once "settingDB.php";
+require_once "dbConnect.php";//userid, userpw db에 존재하면 로그인 성공
 
 if(!isset($_POST['userId'])||!isset($_POST['userPw'])){
     echo "<script>
@@ -38,7 +38,7 @@ $userPw = $_POST['userPw'];
         exit;
     }
     
-    $query="select * from joinmember2 where userId='$userId' and userPw='$userPw'";
+    $query="select * from $tableName where userId='$userId' and userPw='$userPw'";
 
     $result=$conn->query($query);
     
@@ -51,19 +51,16 @@ $userPw = $_POST['userPw'];
         ";
         exit;
     }
-        
     
-    @session_start();//로그인 성공시 세션을 설정
-    $_SESSION["sessionId"] = $userId;
+    @session_start();   
+    $_SESSION["sessionId"] = $userId; //로그인 성공시 세션을 설정
     
     echo "<script>
             alert('로그인에 성공하였습니다. index.php 페이지로 이동합니다.');
-            location.href='indes.php';
+            location.href='index.php';
             </script>";
     
     $conn->close(); //db 연결 해제
-    
-
 
 
 ?>

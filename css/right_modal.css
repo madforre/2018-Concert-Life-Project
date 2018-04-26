@@ -39,6 +39,8 @@
   margin : 0 auto;
   padding : 40px;
   text-align: center;
+  font-weight: 400;
+  color : #000;
 }
 
 .right_menu ul li {

@@ -172,12 +172,17 @@
               // header
 
               if ($(this).scrollTop()>0){
+              $('.header .nav .menu.left>a>img').attr({ src: '/images/QnA2.png'});
               $('.nav').removeClass('nav').addClass('nav_after');
+              
               }
 
               if ($(this).scrollTop()<1){
+              $('.header .nav_after .menu.left>a>img').attr({src: '/images/QnA.png'});
               $('.nav_after').removeClass('nav_after').addClass('nav');
+              
               }
+
 
               if ($(this).scrollTop()<315){
               $('.gnb_plus').css({ position : 'static'});
