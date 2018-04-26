@@ -22,15 +22,14 @@ $arrSec[1]=array( 'title'=>'INNOVATION',
 $arrSec[2]=array(
                  'title'=>'FESTIVAL',
                  'h1_copy'=>"우리가 함께 할 감동의 순간들",
-                 'h1_comment' =>'봄 내음 가득한 벚꽃축제, 가을하늘을 수놓은 불꽃축제가<br>
-                 빛나는 추억의 순간으로 함께합니다',
+                 'h1_comment' =>'LifeSoul Festival Project이 여러분과 함께<br>
+                 빛나는 추억의 순간으로 함께합니다.',
                  'btnLink' => '/festival.php'
                   );
 // sec4
-$arrSec[3]=array('title'=>'ABOUT 63',
-                  'h1_copy'=>"아름다운 한강변에 반사되는 금빛 파사드",
-                  'h1_comment' =>'1985년 완공 이후 서울을 대표하는 상징적인 건축물로<br>
-                  햇빛에 따라 반사되는 금빛 외관이 인상적입니다',
+$arrSec[3]=array('title'=>'TICKET TRADE',
+                  'h1_copy'=>"간편한 티켓 회원 거래",
+                  'h1_comment' =>'회원간의 간편한 1:1 티켓거래를 통해 유명가수들의 빠른 콘서트 티켓 확보를 누리세요! ',
                   'btnLink' => '/'
                  );
 
