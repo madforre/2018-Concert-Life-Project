@@ -12,10 +12,22 @@
 	position: relative;
 	top:50px;
 	overflow: hidden;
+    text-align: center;
 }
+
+.list a{
+	color : blue;
+    text-align: center;
+}
+
+.list a:hover{
+	color : #d00;
+    text-align: center;
+}
+
 .list .title{
 	width: 100%;
-	background: #333;
+	background: #555;
 	overflow: hidden;
 }
 .list .title>ul>li{
@@ -50,8 +62,3 @@
 	
 }
 
-.list>ul>li a:hover{
-	text-decoration: underline;
-	color: #f00;
-	
-}
