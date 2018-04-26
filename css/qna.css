@@ -1,4 +1,8 @@
 @charset "utf-8";
+.qna_header h1{
+    margin-top : 150px;
+    text-align: center;
+}
 .list{
 	width: 90%;
 	max-width: 800px;
@@ -6,7 +10,7 @@
 	border: 1px solid;
 	margin: 0 auto;
 	position: relative;
-	top:100px;
+	top:50px;
 	overflow: hidden;
 }
 .list .title{
