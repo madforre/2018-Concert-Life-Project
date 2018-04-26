@@ -2,17 +2,17 @@
 <?php
 
 	header("Content-Type:text/html;charset=UTF-8");
-    @session_start();   
-    
+    @session_start();
+
     //데이터 베이스 연결하기
     include "dbConnect.php";
 
 # LIST 설정
 # 1. 한 페이지에 보여질 게시물의 수
-$page_size=5;
+$page_size=4;
 
-# 2. 페이지 나누기에 표시될 페이지의 수
-$page_list_size = 10;
+# 2. 페이지 나누기에 표시될 페이지의 수(블록당 페이지 수)
+$page_list_size = 3;
 
 if(!isset($_GET['no'])){
 	$no =0;
@@ -21,7 +21,7 @@ if(!isset($_GET['no'])){
 }
 if (!$no || $no < 0)  $no=0;
 
-// 데이터베이스에서 페이지의 첫번째 글($no)부터 
+// 데이터베이스에서 페이지의 첫번째 글($no)부터
 
 // $page_size 만큼의 글을 가져온다.
 $query = "SELECT * FROM $tableName3 ORDER BY id DESC LIMIT $no, $page_size ";
@@ -45,8 +45,6 @@ $total_page = ceil($total_row / $page_size);
 //# 현재 페이지 계산
 $current_page = ceil(($no+1)/$page_size);
 
-
-    
 ?>
 
 <!DOCTYPE html>
@@ -64,31 +62,31 @@ $current_page = ceil(($no+1)/$page_size);
 <?php include "header.php" ?>
         <div class="qna_header"><h1>QnA</h1></div>
 			<div class="list">
-                
+
 			    <div class="title">
-			          
+
 			    	<ul>
 			    		<li>글번호</li>
 			    		<li>글제목</li>
-			    		<li>이름</li>			    		
+			    		<li>회원이름</li>
 			    		<li class="times">글쓴시간</li>
 			    		<li>조회수</li>
-			    	</ul>			    	
+			    	</ul>
 			    </div>
 				<ul>
-					<?php 
-					
+					<?php
+
 
 					$result=$conn->query($query);
 
 					if($result->num_rows!=0){ //DBFp
-							while($row=$result->fetch_assoc()){	//DB에 레코드가 있을 때					
+							while($row=$result->fetch_assoc()){	//DB에 레코드가 있을 때
 								?>
-										<li><a href="read.php?id=<?=$row['id']?>&no=<?$no?>"><?=$row['id']?></a></li>
+										<li><a href="read.php?id=<?=$row['id']?>&no=<?=$no?>"><?=$row['id']?></a></li>
 										<li><a href="read.php?id=<?=$row['id']?>&no=<?=$no?>"><?=strip_tags($row['title'], '<b><i>');?></a></li>
-										<li><?=$row['name']?></li>						
+										<li><?=$row['name']?></li>
 										<li class="times"><?=$row['wdate']?></li>
-										<li><?=$row['view']?></li>			
+										<li><?=$row['view']?></li>
 					<?php
 							}
                         $result->free();
@@ -103,11 +101,11 @@ $current_page = ceil(($no+1)/$page_size);
 				        <a href='write.php''>글수정</a>
 				        <a href='write.php'>글삭제</a>
 				    </div>";
-			
+
             }else{
                 echo "QnA를 작성하시려면 로그인이 필요합니다.<br> <a href='login.php'>로그인</a> <a href='join.php'>회원가입</a></h1>";
             }
-            
+								//스타트 페이지를 구한다. 한페이지에 들어갈 개수에서 현재페이지-1 을 나누어준다. 그리고 곱한뒤 1을 더한다.
                 $start_page = floor(($current_page - 1) / $page_list_size) * $page_list_size + 1;
 
                 # 페이지 리스트의 마지막 페이지가 몇 번째 페이지인지 구하는 부분이다.
@@ -143,8 +141,8 @@ $current_page = ceil(($no+1)/$page_size);
                 $next_list = $end_page * $page_size;
                 echo "<a href=$_SERVER[PHP_SELF]?no=$next_list>▶</a><p>";
             }
-                
+
                 ?>
-                </div>				
+                </div>
 </body>
 </html>
