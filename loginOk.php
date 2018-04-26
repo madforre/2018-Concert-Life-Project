@@ -57,8 +57,8 @@ $userPw = $_POST['userPw'];
     $_SESSION["sessionId"] = $userId;
     
     echo "<script>
-            alert('로그인에 성공하였습니다. pleasure.php 페이지로 이동합니다.');
-            location.href='pleasure.php';
+            alert('로그인에 성공하였습니다. index.php 페이지로 이동합니다.');
+            location.href='indes.php';
             </script>";
     
     $conn->close(); //db 연결 해제

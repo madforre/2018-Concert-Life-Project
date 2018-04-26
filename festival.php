@@ -41,7 +41,7 @@
 
       <h1 class="sub_title">Lifeplus Soul 페스티벌</h1>
       <div class="line"></div>
-      <p class="sub_copy">  Lorem ipsum dolor sit amet, Excepteur sint occaecat cupidatat non proident</p>
+      <p class="sub_copy">Lifeplus Soul 페스티벌을 통해<br> 일상을 플러스 하세요!</p>
 
       <div class="img_box">
         <img src="images/festival/festival_sub.jpg" alt="festival_sub">
@@ -50,19 +50,19 @@
         <div class="center">
           <div class="box one">
             <img src="images/festival/sec1_1.jpg" alt="festival">
-            <p>Lifeplus Soul - 페스티벌 거리의 피아노와 악기들 -  John widma Piano Concert</p>
+            <p>지친 여러분들을 위한 음악 활력소! 광장 곳곳에 배치된 공용 피아노와 악기들을 만지고 느끼세요! 각 장소별로 깜짝공연이 예정되어 있습니다.</p>
           </div>
           <div class="box two">
             <img src="images/festival/sec1_2.jpg" alt="festival">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <p>밥 브렌 공연이 페스티벌 당일 오후 3시에 예정되어 있습니다. 페스티벌에 참여하신 누구나 그의 소울을 느끼실 수 있습니다!</p>
           </div>
           <div class="box three">
             <img src="images/festival/sec1_3.jpg" alt="festival">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <p>벚꽃이 만개한 아름다운 공연장소를 제공합니다. 각종 음식을 제공하는 푸드존이 마련되어 있습니다. 시간별로 색다른 공연도 함께 제공합니다.</p>
           </div>
           <div class="box four">
             <img src="images/festival/sec1_4.jpg" alt="festival">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <p> <br> John widma Piano Concert, SuaTem violin Concert를 비롯해 다양한 Soul Artist 연주가들의 사인회 및 이벤트가 마련되어 있습니다.</p>
           </div>
         </div>
       </div>
@@ -71,27 +71,27 @@
     <div class="sec two">
       <h1 class="sub_title">우리, 공연장으로 놀러 가요</h1>
       <div class="line"></div>
-      <p class="sub_copy">cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="sub_copy">공연이 없는 날에도 페스티벌을 즐겨 찾으시는 <br>여러분들을 위해 다양한 프로그램이 준비되어 있습니다.</p>
       <?php include('./autogallery.php');?>
     </div>
 
     <div class="sec three">
       <h1 class="sub_title">모두가 즐기는 테마 축제</h1>
       <div class="line"></div>
-      <p class="sub_copy">sunt in culpa qui qizqakws officia deserunt mollit anim id est laborum.</p>
+      <p class="sub_copy">일반인들도 즐길 수 있는 다양한 시설과 환경을 제공합니다. 또한 각종 이벤트 및 대회를 통하여 <br> 재능있는 여러분들이 빛날 장소를 제공합니다.</p>
       <div class="box_contents">
         <div class="center">
           <div class="box one">
             <img src="images/festival/sec3_1.jpg" alt="concert">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <p>Young Talent 들을 위한 장소를 저렴한 가격에 제공합니다. 어린 아티스트들의 빛나는 재능을 뽐낼 수 있도록 도와드립니다.<br><br> 후원 : 주식회사 BQuery, KHJ K리그 티켓팅 서비스, JGH ENTERTAINMENT </p>
           </div>
           <div class="box two">
             <img src="images/festival/sec3_2.jpg" alt="concert">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <p>페스티벌 예약 서비스를 통해 사진 서비스를 제공합니다. 전문 포토그래퍼들이 당신의 추억을 한 장의 사진으로 새길 수 있습니다!</p>
           </div>
           <div class="box three">
             <img src="images/festival/sec3_3.jpg" alt="concert">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <p>공연이 없는 날에 인디밴드와 일반인들의 공연장소를 제공합니다. 당신도 유명인이 될 수 있습니다!</p>
           </div>
         </div>
       </div>
@@ -100,20 +100,20 @@
     <div class="sec four">
       <h1 class="sub_title">새로운 시작을 함께</h1>
       <div class="line"></div>
-      <p class="sub_copy">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alhenda pariatur. </p>
+      <p class="sub_copy">다양한 엔터테이먼트 서비스를 통하여 여러분들에게 다가가는 Lifeplus Soul Project입니다. 페스티벌을 즐기는 우리 회원 누구나 지친 일상에서 fresh한 재충전을 통해 새로운 마음으로 일상을 다시 시작 할 수 있습니다.</p>
       <div class="box_contents">
         <div class="center">
           <div class="box one">
             <img src="images/festival/sec4_1.jpg" alt="newstart">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <p>매달 정기적인 아트갤러리 및 다양한 전시회를 통하여 일상에 지친 당신에게 예술과 감성적인 활력소를 제공합니다. 또한 갤러리를 원하는 개인 및 단체는 예약을 통해 자신만의 갤러리 및 전시회를 오픈할 수 있습니다.</p>
           </div>
           <div class="box two">
             <img src="images/festival/sec4_2.jpg" alt="newstart">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <p>패밀리 사이트들을 통해 티케팅 서비스를 연계하여 매우 쉽고 빠른 공연 예약을 할 수 있도록 도와드립니다. 예약계의 새로운 서비스를 지향합니다.</p>
           </div>
           <div class="box three">
             <img src="images/festival/sec4_3.jpg" alt="newstart">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+            <p>계절별로 다양한 이벤트와 축제를 통해 항상 새로운 느낌의 공연 및 볼거리를 제공합니다.</p>
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ if($conn->connect_error){
     echo"
     <script>
     alert('접속 오류');
-    location.href='pleasure.php';
+    location.href='index.php';
     </script>
     ";
     exit;

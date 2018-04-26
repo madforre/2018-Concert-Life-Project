@@ -40,8 +40,8 @@ header("Content-Type:text/html;charset=UTF-8");
             <div class="loginFooter">
                 <ul>
                     <li><a href="join.php">회원가입</a></li>
-                    <li><a href="idSerch.php">아이디/비밀번호 찾기</a></li>
-                    <li><a href="pleasure.php">HOME</a></li>
+                    <li><a href="idSearch.php">아이디/비밀번호 찾기</a></li>
+                    <li><a href="index.php">HOME</a></li>
                 </ul>
             </div>
         </div>

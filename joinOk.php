@@ -9,7 +9,7 @@ if(!isset($_POST['userId'])||!isset($_POST['userPw'])||!isset($_POST['userName']
     echo"
     <script>
         alert('접속 경로 오류');
-        location.href='pleasure.php'
+        location.href='index.php'
     </script>
     ";
     exit;
