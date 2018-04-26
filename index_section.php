@@ -29,7 +29,7 @@ $arrSec[2]=array(
 // sec4
 $arrSec[3]=array('title'=>'TICKET TRADE',
                   'h1_copy'=>"간편한 티켓 회원 거래",
-                  'h1_comment' =>'회원간의 간편한 1:1 티켓거래를 통해 유명가수들의 빠른 콘서트 티켓 확보를 누리세요! ',
+                  'h1_comment' =>'회원간의 간편한 1:1 티켓거래를 통해<br> 유명가수들의 빠른 콘서트 티켓 확보를 누리세요! ',
                   'btnLink' => '/'
                  );
 
