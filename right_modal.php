@@ -4,7 +4,7 @@
 
 
 
-  <div class="right_wrap">
+  <div class="right_bg">
 
   
   </div> 
