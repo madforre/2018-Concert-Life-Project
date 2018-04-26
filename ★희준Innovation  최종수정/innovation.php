@@ -14,21 +14,26 @@
     
     
 
+<!--
     
     
     <script type="text/javascript"> 
        $(document).ready(function($) {
            
             $(".aTop").click(function(event){    
-                    $( 'html, body' ).stop().animate( { scrollTop : 500 } );
+                    $( 'html, body' ).stop().animate( { scrollTop : 600 } );
             });
            
            $(".bTop").click(function(event){    
-                    $( 'html, body' ).stop().animate( { scrollTop : 3200 } );
+                    $( 'html, body' ).stop().animate( { scrollTop : 3400 } );
             });
        });
+        
+        
+    
       
         </script>
+-->
 
 
 
@@ -37,10 +42,11 @@
 <body>
     <div id="wrap">
         <?php include "header.php";?>
+        <div class="sec_header">
          <div class="concertEx">
                <div class="concert_title">
-            <h3>Everything of Concert</h3>
-            <p>콘서트  정보</p> 
+            <h3>Everything about music</h3>
+            <p>콘서트  관련 정보</p> 
             </div> 
             <div class="header_img">
 <!--             <img src="img/main56.jpg" alt="">-->
@@ -50,14 +56,14 @@
           <div class="tab_nav">
              
               <ul>
-                  <li><a class="aTop">CONCERT INFORMATION</a></li>
+                  <li><a class="aTop">music video (All I Wanna Do (Feat.Hoody, Loco))</a></li>
                   <li><a class="bTop">CONCERT GUIDE</a></li>
               </ul>
               
               
           </div>
            
-           
+        </div> 
            
            
            
@@ -65,21 +71,22 @@
                    <div class="contents">
                     <div class="video_box">
                         <div class="list1">
+                        <div class="line">
                     <div class="one_title">
                         <h1>Concert Information</h1>
                     </div>
                    
                     <p class="copy">
-                 공연 섭외 1위, 각종 음원 차트 1위 현재 가장 핫한 아티스트 부터  나만 아는 인디공연 까지<br> 알기 쉽게 정보 교류를 통해  각종 콘서트 정보 마우스 한번으로 알 수 있는 사이트 입니다
+                 공연 섭외 1위, 각종 음원 차트 1위 현재 가장 핫한 방탄소년단, 윤종신, 아이유등 트렌디한  아티스트 부터<br>   나만 아는 인디공연 까지  알기 쉽게 정보 교류를 통해  각종 콘서트 정보 마우스 한번으로 알 수 있는 사이트 입니다
                     </p>
-                    </div>
+                   </div>
                     <div class="one_video">
                  
 <iframe width="1180px" height="550px" src="https://www.youtube.com/embed/kqckfuUnC1U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
                     </div>
-
+ </div>
                 </div>
              </div>
             </div>
@@ -90,19 +97,21 @@
         <div class="article_two">
             <div class="contents"> 
         <div class="list2">
+        <div class="line">
          <div class="box_fade">
            <div class="one_title">
                <h1>콘서트 관련정보</h1>
            </div>
-           
+          
             <p class="copy">
                 콘서트 관련 모든 정보로 알고 싶게 이용 할 수 있는 사이트로 누구나 쉽게 이용가능 하며 내가 좋아하는 <br> 인디가수 정보도 편리 하게 이용 가능합니다.
             </p>
-        
+          
+        </div>
         </div>
              <div class="table_style1">
                 <table>
-                    <caption>자주하는 질문</caption>
+                    <caption>자주 하는 질문</caption>
                     <colgroup>
                         <col style="width:34%;" >
                         <col style="width:66%;" >
@@ -119,17 +128,7 @@
                                 </ul>
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row">
-                                <p>예매하면 수수료가 얼마인가요?</p>
-                            </th>
-                            <td>
-                                <ul class="grey_li">
-                                    <li>답변</li>
-                                   
-                                </ul>
-                            </td>
-                        </tr>
+                     
                         <tr>
                             <th scope="row">
                                 <p>결제시 배송비 추가되나요?</p>
@@ -141,6 +140,19 @@
                                 </ul>
                             </td>
                         </tr>
+                         <tr>
+                            <th scope="row">
+                                <p>가상 계좌 사용시 예매자와 입금자가 달라도 되나요? </p>
+                            </th>
+                            <td>
+                                <ul class="grey_li">
+                                    <li>네. 부여 받은 입금계와 입금액 일치하면 정상적으로 입금 처리 됩니다.</li>
+
+                                </ul>
+                            </td>
+                        </tr>
+                        
+                        
                         <tr>
                             <th scope="row">
                                 <p>공연 후 좌석을 변경가능 한가요? </p>
@@ -163,6 +175,18 @@
                                 </ul>
                             </td>
                         </tr>
+                        
+                        <tr>    
+                            <th scope="row">
+                                <p>좌석선택 후 결제까지 좌석선점 시간에 제한이 있나요?</p>
+                            </th>
+                            <td>
+                                <ul class="grey_li">
+                                    <li>좌석선택후 20분간 좌석이  선점되며 20분안에 결제를 완료해야 예매를 완료 할 수 있습니다.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                      
                        
                     </tbody>
                 </table>
@@ -179,6 +203,7 @@
         <div class="article_three">
           <div class="contents">
            <div class="list3">
+           <div class="line">
             <div class="one_title">
                 <h1>Concert Photo Zone</h1>
             </div>
@@ -188,19 +213,28 @@
                우리나라 방문한 월드 스타부터  가장 핫 한 아트스트 까지 Photo Zone 담아 남깁니다.
                
             </P>
-            <div class="gallery">
-                <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-            </ul>
-            <span class="arrow left_arrow"></span>
-            <span class="arrow right_arrow"></span>
-                
-                
-            </div>
+            
+
+</div>
+            
+            
+  <div class="section">
+         
+           <div class="gallery">
+               <ul>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+               </ul>
+           </div>
+
+        </div>
+
+
+             
+                                  
        
            </div>
            </div>
@@ -212,32 +246,33 @@
         <div class="article_four">
         <div class="contents">
         <div class="list4">
+        <div class="line">
         <div class="one_title">
             <h1>공연 이용방법</h1>
         </div>
        
-           
+           </div>
         <div class="scene_content">
           <div class="scene_box">
            <div class="img box">
-            <figure class="img"> <img src="img/id02_section1_img1.png" alt="">  </figure>
+            <figure class="img"> <img src="img/block.png" alt="">  </figure>
             <h1>로그인</h1>
            
             </div>
             
             <div class="img box">
-            <figure class="img"> <img src="img/id02_section1_img2.png" alt="">  </figure>
-            <h1>공연 페이지</h1>
+            <figure class="img"> <img src="img/computer.png" alt="">  </figure>
+            <h1>공연 페이지 선택</h1>
           
             </div>
              <div class="img box">
-            <figure class="img"> <img src="img/id02_section1_img3.png" alt="">  </figure>
+            <figure class="img"> <img src="img/seat.png" alt="">  </figure>
             <h1>좌석 선택</h1>
           
             </div>
              <div class="img box">
-            <figure class="img"> <img src="img/id02_section1_img4.png" alt="">  </figure>
-            <h1>예매 내역</h1>
+            <figure class="img"> <img src="img/ticket.png" alt="">  </figure>
+            <h1>티켓 확인</h1>
             
             </div>
             </div>
@@ -265,7 +300,7 @@
                             </th>
                             <td>
                                 <ul class="grey_li">
-                                    <li>본 자석은 전화 예매만 가능합니다.</li>
+                                    
                                      <li>본 좌석은 예매시 반드시 본인이 관람하여야 하며, 티켓 수령은 당일 현장 수령만 가능합니다.</li>
                                     
                                 </ul>
@@ -310,45 +345,7 @@
                 </table>
        
        
-<!--
-                <table>
-                   
-                    <tbody>
-                        <tr>
-                            <th scope="row">위치</th>
-                            <td>5호선 여의나루, 9호선 샛강역 도보 10분</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">규모</th>
-                            <td>60F/B3 (연면적 50,820평)</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">전용률</th>
-                            <td>50.95%</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">준공일</th>
-                            <td>2014.12 (리모델링 완료)</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">기준층 면적</th>
-                            <td>임대 834.19평 (저층부), 전용 425.02평 (저층부)</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">천정고</th>
-                            <td>2.7m</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">엘리베이터</th>
-                            <td>총 35대</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">주차</th>
-                            <td>총 708대 (무료주차 70평당 1대, 유료주차는 자주식-월정 : 170,000 부가세 별도)</td>
-                        </tr>
-                    </tbody>
-                </table>
--->
+
 
        
        
@@ -363,40 +360,44 @@
         </div>
         
 
-        
+
+    
+    
+      
         <div class="article_five">
-        <div class="contents">
-        <div class="list5">
-        <div class="five_box">
-         
-            <div class="one_title">
-                    <h1>담당자 정보 </h1>
+            <div class="content">
+                <div class="list_pic1">
+                   <div class="box3">
+                    <img src="./img/jongshin.jpg" alt="">
+                    </div>
+                    <h1>윤종신</h1>
+                    <p>
+윤종신은 2017년 하반기 부터 전국 투어 콘서트 '윤종신좋니?'를 진행중 이다.2017년 전국 투어 콘서트는 싱어 윤종신의 저력을 만끽할 수 있는 자리다. 대한민국을 흔들었던 '좋니' 열풍에 여러분을 초대합니다.  </p>
+                </div>
+                <div class="list_pic2">
+                   <div class="box4">
+                    <img src="./img/moonmoon.jpg" alt="">
+                    </div>
+                    <h1>MoonMoon</h1>
+                    <p>이번 콘서트 타이틀인 '사람없인 사람으로 못 살아요'는 지난해 발표한 문문의 정규 앨범 수록곡과 동명의 타이틀이다. 이번 공연에서는 부드러운 멜로디와 시적인 가사로 각종 음원 차트에서 역주행 열풍을 불러일으켰던 '비행운'을 비롯해 최근 발표한 신보 '에덴(EDEN)'까지  문문의 첫  전국 단독 콘서트를 만나 실수 있습니다.
+</p>
+                </div>
+                <div class="list_pic3">
+                   <div class="box3">
+                    <img src="./img/heiz.jpg" alt="">
+                    </div>
+                    <h1>Heize</h1>
+                    <p> 현재 가장 주목 받고 있는 두 대세 아티스트 천재적인 재능으로 가요계를 뜨겁게 달구고 있는 핫한 아티스트 자이언티 그리고 헤이즈가 함꼐 펄치는 특급 라이브 무대</p>
+                </div>
             </div>
-            <p class="copy">공연 관련 문의가 있을때  담담자를 통해 문의해 주시길 바랍니다.
             
-            </p>
-            <div class="scene_phone">
-                <h3>공연 정보 담당자</h3>
-                
-            <ul>
-                <li><img src="img/contact_01.jpg" alt=""></li>
-                
-                <li><img src="img/contact_01.jpg" alt=""></li>
-                <li><img src="img/contact_01.jpg" alt=""></li>
-            </ul>
-                
-                
-            </div>
-            
-
-       
-       
-       
-            </div>
-             </div>
-
         </div>
-     </div>
+    
+    
+    
+    
+     
+     
      <?php include 'footer.php';?>
    
     </div>
