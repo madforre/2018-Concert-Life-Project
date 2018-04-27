@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+.footer{
+  width : 100%;
+  height : 100px;
+  position : relative;
+  font-size: 12px;
+  padding-top : 25px;
+  box-sizing: border-box;
+  color : #333;
+  border-top: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+
+
+.footer .company_info{
+  position : absolute;
+    top:0px;
+  left : 50px;
+  width : 650px;
+  line-height: 25px;
+     padding-top : 25px;
+}
+
+.footer .company_info p {
+  margin-right: 15px;
+  display: inline-block;
+  box-sizing: border-box;
+    
+
+}
+
+.footer .company_info .info address{
+  display: inline-block;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.footer .quick_menu{
+  position : absolute;
+  width : 350px;
+  right : 50px;
+  line-height: 25px;
+   
+
+}
+
+ .footer ul.foot_menu {
+
+  overflow: hidden;
+}
+
+.footer .foot_menu li {
+  float : left;
+  margin-right: 20px;
+    cursor: pointer;
+
+}
+
+.footer .family_site {
+  position : absolute;
+  right : 0px;
+  top : 2px;
+
+  border : 1px solid #ccc;
+  width : 130px;
+  height : 27px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.footer .go_top {
+      display: none;
+    background-color: #fff;
+    overflow: hidden;
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+    position: fixed;
+    right: 50px;
+    bottom: 110px;
+    height: 50px;
+    width: 50px;
+    z-index: 1;
+}
+
+
+.footer .go_top ul>li{
+    width:50px;
+    height: 50px;
+    
+}
+.footer .go_top ul>li.arrow{
+    width:100%;
+    text-align: center;
+    height: 25px;
+    
+}
+
+.footer .go_top ul>li.top{
+    width:100%;
+    text-align: center;
+ height:25px;
+ 
+}
+
+
+
+
+
+
+
+
+.family_site{
+    position: relative;
+}
+
+.family_site:hover{
+   cursor: pointer;
+
+}
+
+.pop_family>ul{
+     background-color: #fff;
+    display: none;
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: -155px;
+    padding: 19px 16px;
+    width: 260px;
+    
+    z-index: 5;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+.family_site .pop_family ul>li a{
+    float:left;
+    Width:50%;
+} 
+.pop_family ul>li a:hover{
+  color: #f37321;
+}
+
+
+
+
+
