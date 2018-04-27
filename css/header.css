@@ -31,6 +31,7 @@
 .header .nav .menu.left{
     left : 50px;
     
+    
 }
 .header .nav .menu.right{
     right : 50px;
@@ -58,7 +59,7 @@
   position : relative;
   left: 0px;
   top : 23px;
-  border-radius: 5px;
+/*  border-radius: 5px;*/
 }
 
 .nav .box_line.r2{

@@ -7,6 +7,7 @@
     //데이터 베이스 연결하기
     include "dbConnect.php";
 
+//$_SESSION['board'] = "qna";
 # LIST 설정
 # 1. 한 페이지에 보여질 게시물의 수
 $page_size=4;
@@ -94,6 +95,7 @@ $current_page = ceil(($no+1)/$page_size);
 										<li><?=$row['view']?></li>
 								</ul>
 					<?php
+                                    
 							}
                         $result->free();
 					}
@@ -102,17 +104,19 @@ $current_page = ceil(($no+1)/$page_size);
 				
 				</div>
 				<div class="index">
+				    <div class='UI'>
 				<?php
                             if(isset($_SESSION["sessionId"])){
-                echo "<div class='UI'>
-				        <a href='write_qna.php'>글작성</a>
-				        <a href='write.php''>글수정</a>
-				        <a href='write.php'>글삭제</a>
-				    </div>";
+                echo "
+				        <a href='write_qna.php'>질문하기</a>
+				    ";
 
             }else{
-                echo "QnA를 작성하시려면 로그인이 필요합니다.<br> <a href='login.php'>로그인</a> <a href='join.php'>회원가입</a></h1>";
+                echo "<a href='login.php'>로그인</a> <a href='join.php'>회원가입</a></h1>";
             }
+                    
+                    echo "</div><div class='num'>";
+                    
 								//스타트 페이지를 구한다. 한페이지에 들어갈 개수에서 현재페이지-1 을 나누어준다. 그리고 곱한뒤 1을 더한다.
                 $start_page = floor(($current_page - 1) / $page_list_size) * $page_list_size + 1;
 
@@ -140,20 +144,23 @@ $current_page = ceil(($no+1)/$page_size);
             if ($no!=$page){
                 echo "</a>";
             }
+              
             }
 
-            # 다음 페이지 리스트가 필요할때는 총 페이지가 마지막 리스트보다 클 때이다.
+            # 다음 페이지 리스트가 필요할때는 총   페이지가 마지막 리스트보다 클 때이다.
             # 리스트를 다 뿌리고도 더 뿌려줄 페이지가 남았을때 다음 버튼이 필요할 것이다.
             if($total_page > $end_page)
             {
                 $next_list = $end_page * $page_size;
                 echo "<a href=$_SERVER[PHP_SELF]?no=$next_list>▶</a><p>";
             }
-
+                          echo "</div>";
                 ?>
                 </div>
                 </div>
-                <script>$('.nav').removeClass('nav').addClass('nav_after');</script>
+        <script>
+              $('.header .nav .menu.left>a>img').attr({ src: '/images/QnA2.png'});      
+  $('.nav').removeClass('nav').addClass('nav_after');  </script>
 <?php include "footer.php" ?>
 </body>
 </html>

@@ -168,7 +168,7 @@
 .section_festival .sec.one{
   width : 100%;
   /* background: #e0f5ff; */
-  background: #f4f5ff;
+  background: #fff;
   /* display: none; */
   color : #555;
 
@@ -202,7 +202,7 @@
   width : 100%;
   height : auto;
   /* background: #eff; */
-  background: #f2f9ff;
+  background: #fff;
   border : 20px;
   color : #777;
 
@@ -250,7 +250,7 @@
   padding-top: 30px;
   padding-bottom : 70px;
   /* background: #e0f5ff; */
-  background: #f4f5ff;
+  background: #fff;
 }
 
 .section_festival .sec.one .box_contents .center{
@@ -268,7 +268,7 @@
   box-sizing: border-box;
   background: #fff;
   border : 20px solid #fff;
-  border-bottom : 2px solid #ccc;
+/*  border-bottom : 2px solid #ccc;*/
 /*
     border-right : 21px solid #fef;
     border-bottom : 22px solid #fef;
@@ -425,7 +425,7 @@
   box-sizing: border-box;
   border : 20px solid #fff;
   background: #fff;
-  border-bottom : 2px solid #ccc;
+/*  border-bottom : 2px solid #ccc;*/
 
 }
 

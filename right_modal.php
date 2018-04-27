@@ -4,7 +4,7 @@
 
 
 
-  <div class="right_bg">
+  <div class="right_wrap">
 
   
   </div> 
@@ -31,7 +31,7 @@
     </div>
     <div class="right_bottom">
       <ul>
-        <li><p>FAMILY SITE</p></li>
+        <li><a href="/QnA.php"><p>QnA</p></a></li>
                     <?php
                if(isset($_SESSION['sessionId'])){
                     echo "<li><a href=\"logoutOk.php\">LogOut</a></li>";
@@ -49,7 +49,7 @@
 
 
 <script type="text/javascript">
-  var r_bg= $('.right_bg')
+  var r_bg= $('.right_wrap')
   var r_m = document.getElementsByClassName('right_modal')[0];
   var r_close = document.getElementsByClassName('right_close')[0];
   var r_open = document.getElementsByClassName('menu right')[0];

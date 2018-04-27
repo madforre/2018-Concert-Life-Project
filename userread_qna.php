@@ -3,10 +3,10 @@
 	include "dbConnect.php";
     @session_start();
 
-
-
+    
 	$id = $_GET['id'];
 	$no = $_GET['no'];
+    
 
 	 //조회수 업데이트
      $query= "UPDATE $tableName3 SET view=view+1 WHERE id=$id";
@@ -17,15 +17,21 @@
 	// 글 정보 가져오기
     $query = "SELECT * FROM $tableName3 where id=$id ";
 
-$result=$conn->query($query);
+    $result=$conn->query($query);
 
-$row=$conn->query("SELECT count(*) FROM $tableName3");
+    $row=$conn->query("SELECT count(*) FROM $tableName3");
+
     
 if ($result = $conn->query($query)) {
     while($row=$result->fetch_assoc()){
-
+        
+        $_SESSION['title']=$row['title'];
+        $_SESSION['name']=$row['name'];
+        $_SESSION['wdate']=$row['wdate'];
+        $_SESSION['view']=$row['view'];
+        $_SESSION['content']=$row['content'];
+                                      
 ?>
-
 
 
 <!DOCTYPE html>
@@ -41,11 +47,10 @@ if ($result = $conn->query($query)) {
    <div class="write_bg">
     <div class="write">
        <form action="writeOk.php">
-        <h3 class="logo"><?=$row['title']?></h3>
+        <h3 class="logo">글제목 : <?=$row['title']?></h3>
         <ul>
-            <li class="s1"><?=$row['name']?></li>
-            <li class="s1"><?=$row['pass']?></li>
-            <li class="s1"><?=$row['wdate']?></li>
+            <li class="s1">글쓴이 : <?=$row['name']?></li>
+            <li class="s1">작성시간 : <?=$row['wdate']?></li>
             <li class="s1">조회수 : <?=$row['view']?></li>
             <li class="s4">
                 <h3>
@@ -56,6 +61,12 @@ if ($result = $conn->query($query)) {
             <li class="s3">
                <input type="hidden" value="글작성">
                 <input type="hidden" class="reset" value="다시작성">
+                <?php 
+                    if(isset($_SESSION['sessionId'])){
+                        echo "<input type='button' class='update' value='글수정'> <input type='button' class='delete' value='글삭제'>";
+                
+                    }
+                ?>
                 <input type="button" class="goback" value="되돌아가기">
             </li>
         </ul>

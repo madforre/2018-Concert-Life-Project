@@ -69,7 +69,7 @@ header("Content-Type:text/html;charset=UTF-8");
     
     </script>
     <script>
-      
+              $('.header .nav .menu.left>a>img').attr({ src: '/images/QnA2.png'});      
   $('.nav').removeClass('nav').addClass('nav_after');
 
 </script>

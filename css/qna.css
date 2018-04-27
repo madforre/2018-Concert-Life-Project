@@ -117,13 +117,26 @@
     line-height: 50px;
 }
 
-.UI a{
-    margin-right: 2%;
-    margin-left: 12%;
+
+.UI {
+    width : 50%;
+    margin: 0 auto;
+    
     text-align: center;
-        
     }
 
+.UI a:hover{
+    color : blue;
+}
+
+.index .num{
+    margin-top :3%;
+    text-align: center;
+}
+
+.index .num a:hover{
+    color : blue;
+}
 
 
 
