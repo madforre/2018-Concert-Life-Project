@@ -56,14 +56,17 @@ $current_page = ceil(($no+1)/$page_size);
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/qna.css">
+
 </head>
 <body>
 
 <?php include "header.php" ?>
-        <div class="qna_header"><h1>QnA</h1></div>
-			<div class="list">
+			<div class="wrap">
+               <div class="imgShot"></div>
+                <div class="title"><h1>QnA</h1>
+                <p>회원이신 고객님만 상담글 작성이 가능합니다.</p></div>
 
-			    <div class="title">
+			    <div class="section">
 
 			    	<ul>
 			    		<li>글번호</li>
@@ -72,8 +75,8 @@ $current_page = ceil(($no+1)/$page_size);
 			    		<li class="times">글쓴시간</li>
 			    		<li>조회수</li>
 			    	</ul>
-			    </div>
-				<ul>
+			    
+				
 					<?php
 
 
@@ -81,19 +84,22 @@ $current_page = ceil(($no+1)/$page_size);
 
 					if($result->num_rows!=0){ //DBFp
 							while($row=$result->fetch_assoc()){	//DB에 레코드가 있을 때
-								?>
-										<li><a href="read.php?id=<?=$row['id']?>&no=<?=$no?>"><?=$row['id']?></a></li>
-										<li><a href="read.php?id=<?=$row['id']?>&no=<?=$no?>"><?=strip_tags($row['title'], '<b><i>');?></a></li>
+								?><ul>
+										<li><a href="userread_qna.php?id=<?=$row['id']?>&no=<?=$no?>"><?=$row['id']?></a></li>
+										<li><a href="userread_qna.php?id=<?=$row['id']?>&no=<?=$no?>"><?=strip_tags($row['title'], '<b><i>');?></a></li>
 										<li><?=$row['name']?></li>
-										<li class="times"><?=$row['wdate']?></li>
+										<li><?=$row['wdate']?></li>
 										<li><?=$row['view']?></li>
+								</ul>
 					<?php
 							}
                         $result->free();
 					}
 					$conn->close();
 					?>
-				</ul>
+				
+				</div>
+				<div class="index">
 				<?php
                             if(isset($_SESSION["sessionId"])){
                 echo "<div class='UI'>
@@ -144,5 +150,7 @@ $current_page = ceil(($no+1)/$page_size);
 
                 ?>
                 </div>
+                </div>
+                <script>$('.nav').removeClass('nav').addClass('nav_after');</script>
 </body>
 </html>

@@ -28,7 +28,7 @@ header("Content-Type:text/html;charset=UTF-8");
             <input type="hidden" name="name" value="<?=$_SESSION['sessionId']?>">
             <li class="s2"><textarea name="content" cols="30" rows="10"></textarea></li>
             <li class="s3"><input type="submit" value="글작성">
-                <input type="reset" value="다시작성">
+                <input type="button" class="reset" value="다시작성">
                 <input type="button" class="goback" value="되돌아가기">
             </li>
         </ul>
@@ -38,16 +38,7 @@ header("Content-Type:text/html;charset=UTF-8");
     <script src="js/usertalk.js"></script>
     <script>
 
-//        var reset = document.getElementsByClassName('reset')[0];
-//        goback.addEventListener('click',function(){
-//            history.go(0);
-//        })
-//
-//
-//        var goback = document.getElementsByClassName('goback')[0];
-//        goback.addEventListener('click',function(){
-//            history.go(-1);
-//        })
+
     </script>
 </body>
 </html>

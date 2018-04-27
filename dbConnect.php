@@ -3,6 +3,7 @@
 require_once 'settingDB.php';
 
 $conn->query("SET NAMES utf8");//한글 깨짐 
+//$conn->query("SET NAMES utf8");//한글 깨짐 
 
 if($conn->connect_error){
 	echo " 
