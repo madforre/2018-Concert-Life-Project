@@ -56,15 +56,17 @@ $current_page = ceil(($no+1)/$page_size);
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/qna.css">
-
+	<link rel="stylesheet" href="css/right_modal.css">
+	<link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
 
 <?php include "header.php" ?>
+<?php include "right_modal.php" ?>
 			<div class="wrap">
                <div class="imgShot"></div>
                 <div class="title"><h1>QnA</h1>
-                <p>회원이신 고객님만 상담글 작성이 가능합니다.</p></div>
+                <p>무엇이든 물어보세요</p></div>
 
 			    <div class="section">
 
@@ -152,5 +154,6 @@ $current_page = ceil(($no+1)/$page_size);
                 </div>
                 </div>
                 <script>$('.nav').removeClass('nav').addClass('nav_after');</script>
+<?php include "footer.php" ?>
 </body>
 </html>
