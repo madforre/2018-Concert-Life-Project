@@ -4,6 +4,8 @@ $arrSec = array();
 
   // 아래는 각 섹션에 해당되는 연관배열 선언이다.
 
+
+
 // sec1
 $arrSec[0]=array( 'title'=>'PLEASURE',
                   'h1_copy'=>"무지갯빛 당신의 하루",
@@ -13,10 +15,9 @@ $arrSec[0]=array( 'title'=>'PLEASURE',
                  );
 // sec2
 $arrSec[1]=array( 'title'=>'INNOVATION',
-                  'h1_copy'=>"새로운 꿈이 현실이 되는 곳",
-                  'h1_comment' =>'다양한 기업이 꿈을 키워 나가는 곳<br>
-                  혁신의 시작을 함께하는 곳, 63입니다.',
-                  'btnLink' => '/'
+                  'h1_copy'=>"콘서트의 모든 것",
+                  'h1_comment' =>'  가장 핫한 아티스트 부터  나만 아는 인디공연 까지   콘서트 정보를<br> 알기 쉽게 이용 가능한 페이지 입니다.',
+                  'btnLink' => '/innovation.php'
                  );
 // sec3
 $arrSec[2]=array(
@@ -36,7 +37,9 @@ $arrSec[3]=array('title'=>'TICKET TRADE',
 
  ?>
     <div class="section">
-
+        
+        
+        
         <?php
           $i=1;
         foreach($arrSec as $key){
@@ -44,6 +47,7 @@ $arrSec[3]=array('title'=>'TICKET TRADE',
             <div class='section sec$i'>
               <div class='contents'>
                   <h1 class='title'>
+                  
                         ".$key['title']."
                         <img src='' alt=''> <!--- nav 에 해당되는 글자. 이미지나 h1으로 처리--->
                     </h1>
@@ -66,5 +70,17 @@ $arrSec[3]=array('title'=>'TICKET TRADE',
             $i++;
           };
         ?>
+        
+        
+             <div class="sec0">
+             
+                <iframe width="100%"  height="710px"
+src="https://www.youtube.com/embed/cL4uhaQ58Rk?
+autoplay=1&amp;controls=0"   frameborder="0" 
+allow="autoplay; encrypted-media" 
+allowfullscreen></iframe>
+                
+        </div>
+
 
     </div>
