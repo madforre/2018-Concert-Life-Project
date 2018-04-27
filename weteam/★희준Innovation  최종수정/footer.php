@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="css/footer.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
- 
- 
- 
+
+
+
 -->
 
 
@@ -22,7 +22,7 @@
 
 
 
- 
+
  <div class='footer'>
  <div class="footer_box">
   <div class="company_info">
@@ -41,15 +41,15 @@
         <li>사이트맵</li>
       </ul>
      <div class="family_site">
-            
+
                 <div class="btn_open">
                     <p>FAMILY SITE</p>
                 </div>
-                
-                
+
+
            <div class="pop_family">
 
-                           
+
                 <ul class="site_list">
                     <li><a href="">스타페이</a></li>
                     <li><a href="">스타페이</a></li>
@@ -60,26 +60,25 @@
                     <li><a href="">스타페이</a></li>
                     <li><a href="">스타페이</a></li>
                 </ul>
-               
+
                 </div>
-                
+
             </div>
-            
+
       </div>
   </div>
   <div class="go_top">
-    ▲
+   <ul>
+       <li class="arrow"><img src="images/arrow_top.gif" alt=""></li>
+       <li class="top">TOP</li>
+   </ul>
   </div>
-  
+
       </div>
 
     </div>
-  
-  
-  
-  
+
+
+
+
   <script src="js/family_site.js"> </script>
-
-
-     
-    

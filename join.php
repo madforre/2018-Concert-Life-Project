@@ -17,7 +17,7 @@ header("Content-Type:text/html;charset=UTF-8");
 	<link rel="stylesheet" href="css/right_modal.css">
 </head>
 <body>
- <div id="wrap"> 	
+ <div id="wrap">
  	<?php include "header.php";?>
  	<?php include "right_modal.php";?>
 	<div class="join">
@@ -30,7 +30,7 @@ header("Content-Type:text/html;charset=UTF-8");
 				<li><input type="password" name="userPw"  maxlength="16" size="16" placeholder="비밀번호는 6~16자 영문 대소문자,숫자"></li>
 				<li><input type="password" id="pwChecked" maxlength="16" size="16" placeholder="비밀번호 확인"></li>
 				<li><input type="text" name="userName" placeholder="이름(실명으로입력해주세요)"></li>
-				<li><input type="text" name="userYear" class='year' placeholder="생년월일" > 
+				<li><input type="text" name="userYear" class='year' placeholder="생년월일" >
 					<input type="radio" name="userGender" value='남자' checked>남자
 					<input type="radio" name="userGender" value='여자'>여자
 				</li>
@@ -42,11 +42,11 @@ header("Content-Type:text/html;charset=UTF-8");
 						<option value="070">070</option>
 					</select>
 					<input type="text" name="userPhone[]" class='phone' placeholder="휴대폰번호" >
-					
+
 				</li>
 				<li>
 					<input type="submit" value="가입완료" name="joinForm">
-					
+
 				</li>
 			</ul>
 			<div class="joinFooter">
@@ -60,12 +60,12 @@ header("Content-Type:text/html;charset=UTF-8");
 	</div>
  </div>
   <script src="js/gnb.js"></script>
-  
-<script>
-      
-  $('.nav').removeClass('nav').addClass('nav_after');
 
+<script>
+
+$('.header .nav .menu.left>a>img').attr({ src: '/images/QnA2.png'});
+$('.nav').removeClass('nav').addClass('nav_after');
 </script>
-            
+
 </body>
 </html>

@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="css/footer.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
- 
- 
- 
+
+
+
 -->
 
 
@@ -22,15 +22,15 @@
 
 
 
- 
+
  <div class='footer'>
  <div class="footer_box">
   <div class="company_info">
     <div class="info">
       <p>서울시 강남구 역삼동 콘서트라이프 주식회사</p>
-      <p>대표이사 김희준</p>
+      <p>TEAM - 김희준 장건희 변정찬</p>
       <p>대표전화 1588-6363, 해외 82.2.2169.0899</p>
-      <p class="copy">COPYRIGHT 2018 ALL RIGHTS RESERVED.</p>
+      <p class="copy">COPYRIGHT 2018 April ALL RIGHTS RESERVED.</p>
     </div>
   </div>
   <div class="quick_menu">
@@ -40,16 +40,18 @@
         <li>입주사안내</li>
         <li>사이트맵</li>
       </ul>
+      <div class="notice">
+        본 웹사이트는 상업적 목적이 아닌 포트폴리오 용도의 비영리 웹사이트입니다.
+      </div>
      <div class="family_site">
-            
+
                 <div class="btn_open">
                     <p>FAMILY SITE</p>
                 </div>
-                
-                
+
+
            <div class="pop_family">
 
-                           
                 <ul class="site_list">
                     <li><a href="">스타페이</a></li>
                     <li><a href="">스타페이</a></li>
@@ -60,26 +62,26 @@
                     <li><a href="">스타페이</a></li>
                     <li><a href="">스타페이</a></li>
                 </ul>
-               
+
                 </div>
-                
+
             </div>
-            
+
       </div>
   </div>
   <div class="go_top">
-    ▲
+   <ul>
+       <li class="arrow"><img src="images/arrow_top.gif" alt=""></li>
+       <li class="top">TOP</li>
+   </ul>
+
   </div>
-  
+
       </div>
 
     </div>
-  
-  
-  
-  
+
+
+
+
   <script src="js/family_site.js"> </script>
-
-
-     
-    

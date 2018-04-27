@@ -17,16 +17,16 @@ setTimeout(function(ti){
 
 /*스큻롤 이벤트*/
    $(document).ready(function($) {
-           
-            $(".aTop").click(function(event){    
+
+            $(".aTop").click(function(event){
                     $( 'html, body' ).stop().animate( { scrollTop : 600 } );
             });
-           
-           $(".bTop").click(function(event){    
+
+           $(".bTop").click(function(event){
                     $( 'html, body' ).stop().animate( { scrollTop : 3400 } );
             });
        });
-        
+
 
 
 
@@ -37,22 +37,17 @@ setTimeout(function(ti){
             $(this).animate({'top':'0px'},800);
         });
 },200);
-   
+
 
 
 
 $(window).scroll(function() {
-    
+
     if ($(this).scrollTop()>1200)
      {
          $('.article_two .list2').fadeIn(300,function(ql){
             $(this).animate({'top':'0px'},800);
         });
-     }
-    else
-     {
-        $('.article_two .list2').fadeOut();
-          
      }
  });
 
@@ -63,10 +58,6 @@ $(window).scroll(function() {
         $('.article_three .list3').fadeIn(200,function(ql){
             $(this).animate({'top':'0px'},800);
         });
-     }
-    else
-     {
-      $('.article_three .list3').fadeOut();
      }
  });
 
@@ -95,10 +86,6 @@ $(window).scroll(function() {
             $(this).animate({'top':'0px'},800);
         });
      }
-    else
-     {
-      $('.article_four .list4').fadeOut();
-     }
  });
 
 
@@ -108,8 +95,8 @@ $(window).scroll(function() {
 
 
 $(window).scroll(function() {
-    
-    
+
+
     if ($(this).scrollTop()>3800)
      {
         $('.article_five .list_pic1').fadeIn(200,function(ql){
@@ -130,4 +117,3 @@ $(window).scroll(function() {
  });
 
 //
-

@@ -5,6 +5,7 @@
   height : 100px;
   position : relative;
   font-size: 12px;
+  padding-top : 25px;
   box-sizing: border-box;
   color : #333;
   border-top: 1px solid #ddd;
@@ -12,18 +13,19 @@
 }
 
 
+
 .footer .company_info{
   position : absolute;
   left : 50px;
   width : 650px;
   line-height: 25px;
-  padding-top : 25px;
 }
 
 .footer .company_info p {
   margin-right: 15px;
   display: inline-block;
   box-sizing: border-box;
+
 
 }
 
@@ -66,11 +68,55 @@
 }
 
 .footer .go_top {
-  position : absolute;
+  position : fixed;
   right: 50px;
-  bottom : 150px;
+  bottom : 120px;
   width : 35px;
   line-height : 35px;
   background: #fff;
   text-align: center;
+}
+
+
+
+.family_site{
+    position: relative;
+}
+
+.family_site:hover{
+   cursor: pointer;
+
+}
+
+.pop_family>ul{
+     background-color: #fff;
+    display: none;
+    border: 1px solid #d6d6d6;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: -155px;
+    padding: 19px 16px;
+    width: 260px;
+
+    z-index: 5;
+    text-align: center;
+
+}
+
+
+.family_site .pop_family ul>li a{
+    float:left;
+    Width:50%;
+}
+.pop_family ul>li a:hover{
+  color: #f37321;
+}
+
+.footer .notice{
+  position : absolute;
+  right : 0px;
+  top : -9px;
+  font-size: 10px;
+
 }

@@ -37,9 +37,9 @@ $arrSec[3]=array('title'=>'TICKET TRADE',
 
  ?>
     <div class="section">
-        
-        
-        
+
+
+
         <?php
           $i=1;
         foreach($arrSec as $key){
@@ -47,7 +47,7 @@ $arrSec[3]=array('title'=>'TICKET TRADE',
             <div class='section sec$i'>
               <div class='contents'>
                   <h1 class='title'>
-                  
+
                         ".$key['title']."
                         <img src='' alt=''> <!--- nav 에 해당되는 글자. 이미지나 h1으로 처리--->
                     </h1>
@@ -70,16 +70,16 @@ $arrSec[3]=array('title'=>'TICKET TRADE',
             $i++;
           };
         ?>
-        
-        
+
+
              <div class="sec0">
-             
+
                 <iframe width="100%"  height="710px"
 src="https://www.youtube.com/embed/cL4uhaQ58Rk?
-autoplay=1&amp;controls=0"   frameborder="0" 
-allow="autoplay; encrypted-media" 
+autoplay=1&amp;controls=0"   frameborder="0"
+allow="autoplay; encrypted-media"
 allowfullscreen></iframe>
-                
+
         </div>
 
 

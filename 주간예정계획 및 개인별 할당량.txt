@@ -1,63 +1,20 @@
-﻿정찬
+﻿4/28	금
 
-	PLEASURE , ABOUT63 페이지 구조짜기 + CSS 기본 틀 다음주 월요일까지
-	오토갤러리 구조짜기(선택)
-
-희준
-
-	INNOVATION 오토갤러리 신경써서 자바스크립트로 구현되게끔 생각해서 짜기
-	페이지 구조짜기 + CSS 기본 틀 다음주 월요일까지
-
-건희
-
-	FESTIVAL 오토갤러리, 불꽃놀이 BG 제이쿼리 효과 들어가는거 생각해서 짜기
-	페이지 구조짜기 + CSS 기본 틀 다음주 월요일까지
-
---------------------------△2018년 4월 16일 마감-----------------------------
-
-
-	일
-
-		header.php와 footer.php 가 include된 login 창 만들기(오설록 참조)  - 정찬
-
-		index nav에 해당하는 sitemap Modal창 + 오토갤러리 + li, header 스크롤탑 이벤트 - 건희
-
-		1. footer.php , footer.css 이용 -> position : absolute 를 사용하여 FAMILY SITE 모달창을 하나 숨겨둔다.
-		2. footer의 FAMILY SITE를 클릭 했을 때 클릭 이벤트로 display : none -> display : block
-	           다시 클릭하면 display : block - > display : none	
-		3. 공연과 관련된 사이트들의 링크들을 모달창안에 이쁘게 넣기						- 희준
-
-		  *코딩이 의외로 어렵지 않음
-
-
-다음주 계획
+		D-day  마무리 Thank you !!
 
 
 
-	월
++@
 
-		login창에서 form 전송 -> loginOk.php(검사 후 index.php이동) - 정찬
+4/30	월 
 
-		footer FAMILY SITE 완성한 로직이 각 페이지마다 돌아가는지 확인 + 페이지 별로 쓸 아이콘 구하기 - 희준
+		희준 라인 늘어나는 효과 + li 붙어서 내려오는 기능 추가
 
-		index left nav위치 (QnA 게시판or 갤러리 예정) 구현 및 index jQuery - 건희
+		정찬 - TICKET TRADE 게시판 글수정, 글삭제 기능 추가(게시판 구현완료)
 
-	화
+		건희 - QnA 게시판 글수정, 글삭제 기능 추가(게시판 구현완료)
+	       
+		---------THE END OF TEAM PROJECT--------
+		 
 
-		각 페이지마다 session 심기+로그아웃 기능		        - 정찬
 		
-		인덱스 홈페이지 완성 + 각 페이지 연결				- 건희
-
-		footer 의 하단 TOP 키 눌렀을 때 최상단으로 가게 하기 		- 희준
-
-	수
-
-		데이터 베이스 연결 -> PHP DB쿼리문연결 및 이해 + 마무리작업
-					
-	목
-
-		마무리 작업(사이트 + DB연결)
-
-	금
-
-		D-day
