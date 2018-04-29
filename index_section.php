@@ -7,9 +7,9 @@ $arrSec = array();
 
 
 // sec1
-$arrSec[0]=array( 'title'=>'PLEASURE',
+$arrSec[0]=array( 'title'=>'PERFORMANCE',
                   'h1_copy'=>"무지갯빛 당신의 하루",
-                  'h1_comment' =>' 쇼핑,관람 문화,레스토랑,연회 웨딩 등<br>
+                  'h1_comment' =>' 내한 공연,관람 문화,공연 정보,티켓 예매 등<br>
                    볼 거리 즐길 거리가 가득합니다.',
                   'btnLink' => '/performance.php'
                  );
@@ -23,8 +23,8 @@ $arrSec[1]=array( 'title'=>'INNOVATION',
 $arrSec[2]=array(
                  'title'=>'FESTIVAL',
                  'h1_copy'=>"우리가 함께 할 감동의 순간들",
-                 'h1_comment' =>'LifeSoul Festival Project이 여러분과 함께<br>
-                 빛나는 추억의 순간으로 함께합니다.',
+                 'h1_comment' =>'LifeSoul Festival Project이 여러분께 <br>
+                 빛나는 추억의 순간을 선물합니다.',
                  'btnLink' => '/festival.php'
                   );
 // sec4

@@ -75,6 +75,8 @@
   line-height : 35px;
   background: #fff;
   text-align: center;
+  display: none;
+  cursor : pointer;
 }
 
 

@@ -28,7 +28,7 @@
   <div class="company_info">
     <div class="info">
       <p>서울시 강남구 역삼동 콘서트라이프 주식회사</p>
-      <p>TEAM - 김희준 장건희 변정찬</p>
+      <p>Project team - 김희준 장건희 변정찬</p>
       <p>대표전화 1588-6363, 해외 82.2.2169.0899</p>
       <p class="copy">COPYRIGHT 2018 April ALL RIGHTS RESERVED.</p>
     </div>

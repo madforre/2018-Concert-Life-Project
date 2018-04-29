@@ -4,10 +4,7 @@
 include "dbConnect.php";
 
 $pass = $_POST["pass"];
-$before_title = $_SESSION['title'];
-$after_title = $_POST["title"];
-$before_content = $_SESSION['content'];
-$after_content = $_POST["content"];
+$title = $_POST["title"];
 $wdate = $_SESSION['wdate'];
 
 // 입력한 글 비밀번호가 없을 경우를 걸러냄
@@ -30,7 +27,7 @@ if(!isset($_SESSION['sessionId'])){
 };
 
 //작성 글 비밀번호 찾기
-$pw_check = " SELECT pass FROM $tableName3 WHERE title='$before_title' AND wdate='$wdate'; ";
+$pw_check = " SELECT pass FROM $tableName3 WHERE title='$title' AND wdate='$wdate'; ";
 
 if($result = $conn->query($pw_check)){
 
@@ -39,6 +36,7 @@ if($result = $conn->query($pw_check)){
     };
 };
 $result->free();
+
 //작성 글 비밀번호 일치 여부 확인
 if($pass!=$pass_db){
        echo "<script>
@@ -49,7 +47,7 @@ if($pass!=$pass_db){
        }else{
 
            //일치하면 게시글 번호 찾기
-           $query = "SELECT id FROM $tableName3 WHERE title='$before_title' and wdate='$wdate';";
+           $query = "SELECT id FROM $tableName3 WHERE title='$title' and wdate='$wdate';";
 
            if ($result = $conn->query($query)) {
               while($row=$result->fetch_assoc()){
@@ -57,11 +55,11 @@ if($pass!=$pass_db){
                   $board_id = $row['id'];
                 };
               };
-            $result->free();
+              $result->free();
 
-              //찾은 게시글 번호에 해당하는 부분을 입력한 새로운 제목과 내용으로 업데이트(수정)한다.
-            $query2 = "UPDATE $tableName3 SET title='$after_title', content='$after_content',
-            wdate = now() WHERE id=$board_id";
+              //찾은 게시글 번호에 해당하는 부분을 삭제한다.
+            $query2 = "DELETE FROM $tableName3 WHERE id=$board_id";
+
 
             if ($result2 = $conn->query($query2)){
 
@@ -74,7 +72,7 @@ if($pass!=$pass_db){
               unset($_SESSION['content']);
 
               echo "<script>
-              alert('게시글 수정 성공');
+              alert('게시글 삭제가 완료되었습니다.');
               location.href = 'qna.php';
               </script>";
 
@@ -83,13 +81,12 @@ if($pass!=$pass_db){
               //실패했으면 DB접속을 종료하고 이전페이지로 이동한다.
 
               echo "<script>
-              alert('게시글 수정 실패');
+              alert('게시글 삭제 실패');
               history.go(-1)
               </script>";
               exit;
               }
-              $result2->free();
-
+							$result2->free();
             }
-          $conn->close();
+			$conn->close();
  ?>

@@ -14,7 +14,7 @@ if(!isset($_POST['title']) || !isset($_POST['pass']) || !isset($_POST['content']
 	";
 	exit;
 }
-    $name = $_POST['name'];
+  $name = $_POST['name'];
 	$pass = $_POST['pass'];
 	$title = $_POST['title'];
 	$content = $_POST['content'];
@@ -35,9 +35,7 @@ if($result==1){
 		alert('게시글 작성 실패 ');
 		history.go(-1);
 	</script>
-	";	
+	";
 }
 $conn->close(); // DB연결 해제
 ?>
-
-

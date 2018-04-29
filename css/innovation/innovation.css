@@ -1,5 +1,4 @@
-@charset"utf-8";
-
+@charset "UTF-8";
 
 .sec_header{
       width: 100%;
@@ -20,13 +19,13 @@ overflow: hidden;
 /*    background-size: cover;*/
     width: 100%;
     min-width: 1180px;
-    height: 600px;  
+    height: 600px;
     position: relative;
     left: 0;
       background: url(../../images/innovation/main59.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
-  
+
 }
 .concertEx .concert_title{
     width: 100%;
@@ -41,7 +40,7 @@ overflow: hidden;
 
 
 .concertEx h3 {
-   
+
     line-height: 300px;
     font-size:20px;
     z-index: 3;
@@ -54,7 +53,7 @@ overflow: hidden;
 
 
 .concertEx .concert_title p {
- 
+
     width: 100%;
     height: 400px;
    position:absolute;
@@ -76,8 +75,8 @@ overflow: hidden;
 }
  .sec_header .tab_nav>ul>li a{
 color: #fff;
-       
-    
+
+
 }
 .sec_header .tab_nav>ul>li {
     width: 45%;
@@ -91,7 +90,7 @@ color: #fff;
 .sec_header .tab_nav ul>li:hover{
 /*    background: #313030;*/
     cursor: pointer;
-    
+
 }
 .sec_header .tab_nav ul>li a:hover {
     color: #f9e9e9;
@@ -104,7 +103,7 @@ color: #fff;
 .article_one{
     width: 100%;
     min-width: 1180px;
-    
+
      background: #232222;
     color: #fff;
     height: 1000px;
@@ -122,7 +121,7 @@ color: #fff;
     margin-left: -20px;
     height: 2px;
     width: 50px;
-  
+
 }
 
 
@@ -138,7 +137,7 @@ color: #fff;
     min-width: 1180px;
       height: 1000px;
 
-  
+
     color: #fff;
 }
 
@@ -146,8 +145,8 @@ color: #fff;
     width: 1180px;
     height: 800px;
 /*    margin-top: 436px;*/
- 
-    
+
+
 }
 
 
@@ -156,7 +155,7 @@ color: #fff;
 
       position: absolute;
     top: 50px;
- 
+
 
     display: none;
 }
@@ -167,27 +166,27 @@ color: #fff;
 
 
 /* article_one, three 공통*/
- .one_title{ 
+ .one_title{
      width: 80%;
      margin: 0 auto;
     text-align: center;
     padding-top:80px;
     padding-bottom: 70px;
-} 
+}
 
 /* article_one, three 공통*/
 .contents .copy{
     text-align: center;
-    
-    padding-bottom: 50px; 
+
+    padding-bottom: 50px;
 }
 
 .one_video{
     text-align: center;
     width:100%;
     height: 100%;
-    
-    
+
+
 }
 
 
@@ -212,16 +211,17 @@ color: #fff;
     margin-left: -20px;
     height: 2px;
     width: 50px;
-  
+
 }
 
 
 .article_two .contents{
-    width: 1180px;
+    width : 800px;
     height: 800px;
+    text-align: center;
 /*    margin-top: 436px;*/
- 
-    
+
+
 }
 
 
@@ -255,12 +255,12 @@ color: #fff;
 .article_two .table_style1 table ul>li{
    background: #151414;
      color:#fff;
-     padding:10px; 
+     padding:10px;
     text-align: left;
     margin: 0 auto;
     font-size:13px;
 
-} 
+}
 
 
 
@@ -271,14 +271,14 @@ color: #fff;
 
 .article_three{
     width: 100%;
-   
+
 /*    padding: 80px;*/
 /*    background: #3e3838;*/
-    
+
     background: #232222;
     color: #fff;
     height: auto;
-  
+
 }
 
 
@@ -291,7 +291,7 @@ color: #fff;
     margin-left: -20px;
     height: 2px;
     width: 50px;
-  
+
 }
 
 
@@ -303,7 +303,7 @@ color: #fff;
     position: relative;
 /*    margin-top: 436px;*/
   margin: 0 auto;
-      
+
 }
 
 
@@ -314,7 +314,7 @@ color: #fff;
    position: absolute;
     top: 70px;
 */
-    
+
     left: 150px;
     display: none;
      margin: 0 auto;
@@ -337,8 +337,8 @@ color: #fff;
     width:100%;
     min-width: 1180px;
     height:600px;
-  
-    
+
+
     background:url(../../images/innovation/dean.jpg_large.jpg) no-repeat;
     background-size:cover;
     animation-name:bgGallery;
@@ -353,19 +353,19 @@ color: #fff;
 @keyframes bgGallery{
     20%{
       background:url(../../images/innovation/2.jpg) no-repeat;
-      background-size:cover;  
+      background-size:cover;
     }
     40%{
       background:url(../../images/innovation/1.jpg) no-repeat;
-      background-size:cover;  
+      background-size:cover;
     }
     60%{
       background:url(../../images/innovation/3.jpg) no-repeat;
-      background-size:cover;  
+      background-size:cover;
     }
     80%{
       background:url(../../images/innovation/dean2.jpg) no-repeat;
-      background-size:cover;  
+      background-size:cover;
     }
 }
 
@@ -389,7 +389,7 @@ color: #fff;
     position: relative;
     margin: 0 auto;
 
-/*    margin-top: 436px;*/ 
+/*    margin-top: 436px;*/
 }
 
 
@@ -406,12 +406,12 @@ width: 100%;
 }
 .scene_content .scene_box{
     width: 1180px;
-   
+
     height:200px;
     margin: 0 auto;
     padding: 50px;
          background:url(../../images/innovation/pic1.jpg) no-repeat;
-      background-size:cover;  
+      background-size:cover;
     padding-top:50px;
 }
 
@@ -420,20 +420,20 @@ width: 100%;
     text-align: center;
     box-sizing: border-box;
     padding: 30px;
-     font-family: "Noto Sans KR", sans-serif; 
+     font-family: "Noto Sans KR", sans-serif;
    font-size: 25px;
-    
+
 }
 
 
 .scene_content .img.box{
-    
+
     width: 25%;
     min-width: 255px;
    float:left;
      margin: 0 auto;
     text-align: center;
-    
+
 }
 
 
@@ -454,7 +454,7 @@ width: 100%;
      margin: 0 auto;
     width: 1180px;
     text-align: center;
-    padding-top: 80px; 
+    padding-top: 80px;
 }
 
 .article_four .table_style1 table th{
@@ -474,7 +474,7 @@ width: 100%;
     margin-left: -20px;
     height: 2px;
     width: 50px;
-  
+
 }
 
 
@@ -505,12 +505,12 @@ width: 100%;
 .article_five .content{
     width: 80%;
     min-width: 1180px;
-   
+
     height: 740px;
     position: relative;
-   
+
     margin: 0 auto;
-    
+
 }
 
 .article_five .content .list_pic1{
@@ -545,16 +545,9 @@ width: 100%;
 
 .article_five .content h1{
     color: #fff;
-   
+
 }
 
 .article_five .content p{
     color: #fff;
 }
-
-
-
-
-
-
-
