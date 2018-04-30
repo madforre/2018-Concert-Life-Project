@@ -31,6 +31,7 @@
 
 
 
+/*
 .section .sec0{
 
    background: #000;
@@ -42,14 +43,14 @@
     height : 25%;
 
 }
+*/
 
 
 .section .sec1{
 
     height : 25%;
-
-     opacity: 0.9;
-     z-index: 3;
+    background : url(../../img/write_bg01_01.jpg);
+    background-size: cover;
     box-sizing: border-box;
 }
 
