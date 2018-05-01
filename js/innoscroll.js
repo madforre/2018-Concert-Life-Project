@@ -1,32 +1,67 @@
+   
+  $(window).scroll(function() {
+
+              // header
+
+              if ($(this).scrollTop()>0){
+              $('.header .nav .menu.left>a>img').attr({ src: '/images/QnA2.png'});
+              $('.nav').removeClass('nav').addClass('nav_after');
+              
+              }
+
+              if ($(this).scrollTop()<1){
+              $('.header .nav_after .menu.left>a>img').attr({src: '/images/QnA.png'});
+              $('.nav_after').removeClass('nav_after').addClass('nav');
+              
+              }
+                
+      
+       if ($(this).scrollTop()<315){
+              $('.tab_nav').css({ position : 'static'});
+              }
+
+              if ($(this).scrollTop()>350){
+              $('.tab_nav').css({ position : 'fixed'});
+              $('.tab_nav').css({ top : '50px'});
+              // $('.header').css({marginBottom : '50px'})
+              };
+  });
 
 
 
-/*innovation header line */
-setTimeout(function(ti){
-    $('.concertEx .line1').fadeIn(450,function(ql){
-            $(this).animate({'width':'105px'},800);
-        });
-},200);
 
 
 
+          /*line 이벤트*/
+
+    $(document).ready(function($) {
 
 
+
+             $('.header_inno').fadeIn(1150,function(){
+
+          $('.header_inno .line1').fadeIn(550,function(){
+
+            $(this).animate({'width': '108px'},550);
+              });
+          });
+       });
+    
 
 
 
 /*스큻롤 이벤트*/
    $(document).ready(function($) {
-
-            $(".aTop").click(function(event){
+           
+            $(".aTop").click(function(event){    
                     $( 'html, body' ).stop().animate( { scrollTop : 600 } );
             });
-
-           $(".bTop").click(function(event){
+           
+           $(".bTop").click(function(event){    
                     $( 'html, body' ).stop().animate( { scrollTop : 3400 } );
             });
        });
-
+        
 
 
 
@@ -37,18 +72,23 @@ setTimeout(function(ti){
             $(this).animate({'top':'0px'},800);
         });
 },200);
-
+   
 
 
 
 $(window).scroll(function() {
-
+    
     if ($(this).scrollTop()>1200)
      {
          $('.article_two .list2').fadeIn(300,function(ql){
             $(this).animate({'top':'0px'},800);
         });
      }
+//    else
+//     {
+//        $('.article_two .list2').fadeOut();
+//          
+//     }
  });
 
 $(window).scroll(function() {
@@ -59,6 +99,10 @@ $(window).scroll(function() {
             $(this).animate({'top':'0px'},800);
         });
      }
+//    else
+//     {
+//      $('.article_three .list3').fadeOut();
+//     }
  });
 
 
@@ -86,6 +130,10 @@ $(window).scroll(function() {
             $(this).animate({'top':'0px'},800);
         });
      }
+//    else
+//     {
+//      $('.article_four .list4').fadeOut();
+//     }
  });
 
 
@@ -95,8 +143,8 @@ $(window).scroll(function() {
 
 
 $(window).scroll(function() {
-
-
+    
+    
     if ($(this).scrollTop()>3800)
      {
         $('.article_five .list_pic1').fadeIn(200,function(ql){
@@ -117,3 +165,4 @@ $(window).scroll(function() {
  });
 
 //
+
