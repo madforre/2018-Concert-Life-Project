@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+.footer {
+    position : fixed;
+    bottom : 0px;
+}
+#wrap{
+    width: 100%;
+    height: 100%;;
+}
+
+
+.login{
+    width: 500px;
+    height: 762px;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    top: 150px;
+}
+
+.login h1{
+    text-align: center;
+    line-height: 100px;
+    font-family: serif;
+}
+
+
+.login .loginForm .loginHeader>ul>li{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 10px;
+    color: #707070;
+    font-size: 14px;
+}
+
+#loginSubmit{
+    background: #333333;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.loginContent input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-indent: 10px;
+}
+
+.loginFooter>ul>li a{
+    display: block;
+    width: 33.333%;
+    height: 60px;
+    text-align: center;
+    color: #707070;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    line-height: 60px;
+    font-size: 10px;
+    float: left;
+    
+}
+
+/*hover*/
+
+#loginSubmit:hover{
+    background: #555555;
+    transition: all 0.5s;
+}
+
