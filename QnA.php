@@ -135,16 +135,17 @@ $current_page = ceil(($no+1)/$page_size);
             # 페이지 리스트를 출력
             for ($i=$start_page;$i <= $end_page;$i++) {
                 $page= ($i-1) * $page_size;// 페이지값을 no 값으로 변환.
-            if ($no!=$page){ //현재 페이지가 아닐 경우만 링크를 표시
-                echo "<a href=\"$_SERVER[PHP_SELF]?no=$page\">";
-            }
 
-            echo " $i "; //페이지를 표시
+                if ($no!=$page){ //현재 페이지가 아닐 경우만 링크를 표시
+                    echo "<a href=\"$_SERVER[PHP_SELF]?no=$page\">";
+                }
 
-            if ($no!=$page){
-                echo "</a>";
-            }
-              
+                echo " $i "; //페이지를 표시
+
+                if ($no!=$page){
+
+                    echo "</a>";
+                }
             }
 
             # 다음 페이지 리스트가 필요할때는 총   페이지가 마지막 리스트보다 클 때이다.

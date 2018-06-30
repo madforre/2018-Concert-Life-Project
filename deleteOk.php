@@ -11,9 +11,7 @@
 
 if ($result){
     
-
-
-echo "
+	echo "
 		<script>
 		alert('삭제완료 되었습니다.');
 		location.href='QnA.php';
@@ -25,7 +23,6 @@ echo "
 $result->free();
 
 $conn->close();//데이터베이스와의 연결을 끊는다.
-
 		
 	
 ?>
