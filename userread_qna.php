@@ -2,16 +2,14 @@
 	//데이터 베이스 연결하기
 	include "dbConnect.php";
     @session_start();
-
     
 	$id = $_GET['id'];
 	$no = $_GET['no'];
-    
-
-	 //조회수 업데이트
-     $query= "UPDATE $tableName3 SET view=view+1 WHERE id=$id";
+ 
+    //조회수 업데이트
+    $query= "UPDATE $tableName3 SET view=view+1 WHERE id=$id";
                   
-     $conn->query($query); 
+    $conn->query($query); 
     
     
 	// 글 정보 가져오기
