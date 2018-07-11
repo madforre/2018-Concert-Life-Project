@@ -1,5 +1,5 @@
 <?php
-
+header("Content-Type:text/html;charset=UTF-8");
 require_once 'settingDB.php';
 
 $conn->query("SET NAMES utf8");//한글 깨짐 

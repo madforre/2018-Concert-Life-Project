@@ -26,22 +26,22 @@ header("Content-Type:text/html;charset=UTF-8");
 		<form action="joinOk.php" method="post">
 		<div class="contents">
 			<ul>
-				<li><input type="text" name="userId" maxlength="12" size="12" placeholder="아이디(4~12자 영문 대.소문자)" ></li>
-				<li><input type="password" name="userPw"  maxlength="16" size="16" placeholder="비밀번호는 6~16자 영문 대소문자,숫자"></li>
-				<li><input type="password" id="pwChecked" maxlength="16" size="16" placeholder="비밀번호 확인"></li>
-				<li><input type="text" name="userName" placeholder="이름(실명으로입력해주세요)"></li>
+				<li><input type="text" name="userId" maxlength="12" size="12" placeholder="아이디" ></li>
+				<li><input type="password" name="userPw"  maxlength="16" size="16" placeholder="비밀번호"></li>
+				<li><input type="password" name="pwCheck" maxlength="16" size="16" placeholder="비밀번호 확인"></li>
+				<li><input type="text" name="userName" placeholder="이름 (실명으로 입력해주세요.)"></li>
 				<li><input type="text" name="userYear" class='year' placeholder="생년월일" >
 					<input type="radio" name="userGender" value='남자' checked>남자
 					<input type="radio" name="userGender" value='여자'>여자
 				</li>
 				<li>
 					<select name="userPhone[]" >
-						<option value=""selected>통신사선택</option>
+						<option value=""selected>핸드폰 앞자리</option>
 						<option value="010" >010</option>
 						<option value="011">011</option>
 						<option value="070">070</option>
 					</select>
-					<input type="text" name="userPhone[]" class='phone' placeholder="휴대폰번호" >
+					<input type="text" name="userPhone[]" class='phone' placeholder="나머지 번호 입력" >
 
 				</li>
 				<li>

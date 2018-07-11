@@ -1,6 +1,7 @@
 <?php
 header("Content-Type:text/html;charset=UTF-8");
 @session_start();
+require_once "route/url_connect_defense.php";
 
 ?>
 
@@ -31,7 +32,7 @@ header("Content-Type:text/html;charset=UTF-8");
             <input type="hidden" name="name" value="<?=$_SESSION['sessionId']?>">
             <li class="s2"><textarea name="content" cols="30" rows="10" readonly><?=$_SESSION['content']?></textarea></li>
             <li class="s3"><input type="submit" value="글삭제">
-                <a href="qna.php"><input type="button" value="QnA로"></a>
+                <a href="QnA.php"><input type="button" value="QnA로"></a>
             </li>
         </ul>
         </form>

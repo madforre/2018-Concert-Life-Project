@@ -28,9 +28,9 @@ $arrSec[2]=array(
                  'btnLink' => '/festival.php'
                   );
 // sec4
-$arrSec[3]=array('title'=>'TICKET TRADE',
-                  'h1_copy'=>"간편한 티켓 회원 거래",
-                  'h1_comment' =>'회원간의 간편한 1:1 티켓거래를 통해<br> 유명가수들의 빠른 콘서트 티켓 확보를 누리세요! ',
+$arrSec[3]=array('title'=>'TICKET EVENT',
+                  'h1_copy'=>"추첨을 통해 티켓을 무료로 제공합니다!",
+                  'h1_comment' =>'감사의 마음을 담은 회원분들을 위한 다양한 <br> 이벤트들이 마련되어 있습니다.',
                   'btnLink' => '/trade_menu.php'
                  );
 

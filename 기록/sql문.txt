@@ -1,0 +1,22 @@
+CREATE TABLE board_qna (
+id INT(100) unsigned NOT NULL auto_increment,
+name VARCHAR(20) NOT NULL,
+pass VARCHAR(12) NOT NULL,
+title VARCHAR(70) NOT NULL,
+content TEXT NOT NULL,
+wdate DATETIME NOT NULL,
+view int(50) NOT NULL DEFAULT 0,
+PRIMARY KEY (id)
+);
+
+CREATE TABLE `test`.`user` (
+  `userId` VARCHAR(30) NOT NULL,
+  `userPw` VARCHAR(45) NOT NULL,
+  `userName` VARCHAR(45) NOT NULL,
+  `userYear` VARCHAR(45) NOT NULL,
+  `userGender` VARCHAR(45) NOT NULL,
+  `userPhone` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`userId`))
+ENGINE = InnoDB
+
+DEFAULT CHARACTER SET = utf8;

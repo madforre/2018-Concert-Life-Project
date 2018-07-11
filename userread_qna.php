@@ -2,14 +2,16 @@
 	//데이터 베이스 연결하기
 	include "dbConnect.php";
     @session_start();
+
     
 	$id = $_GET['id'];
 	$no = $_GET['no'];
- 
-    //조회수 업데이트
-    $query= "UPDATE $tableName3 SET view=view+1 WHERE id=$id";
+    
+
+	 //조회수 업데이트
+     $query= "UPDATE $tableName3 SET view=view+1 WHERE id=$id";
                   
-    $conn->query($query); 
+     $conn->query($query); 
     
     
 	// 글 정보 가져오기
@@ -28,6 +30,7 @@ if ($result = $conn->query($query)) {
         $_SESSION['wdate']=$row['wdate'];
         $_SESSION['view']=$row['view'];
         $_SESSION['content']=$row['content'];
+        $_SESSION['files']=$row['files'];
                                       
 ?>
 
@@ -55,7 +58,40 @@ if ($result = $conn->query($query)) {
                     글 내용
                 </h3>
             </li>
+            
             <li class="s2"><textarea name="content" id="" cols="30" rows="10" readonly><?=$row['content']?></textarea></li>
+            <?php 
+
+            // 첨부파일이 그림파일이면 화면에 렌더링
+
+                // 디렉토리 및 변수 설정
+                $uploads_dir = '/uploads';
+                $view_exts = explode('.', $row['files']);
+                $view_ext = array_pop($view_exts);
+
+                //그림파일인지 검사
+                $allowed_ext = array('jpg','jpeg','png','gif');
+                
+                if( in_array($view_ext, $allowed_ext)) {
+	                
+                   ?><li> 첨부파일 <img width="100%" src="<?=$uploads_dir?>/<?=$row['files']?>" alt=<?=$row['files']?> </li>
+                   <button><a href="<?=$uploads_dir?>/<?=$row['files']?>" download>다운로드</a></button>
+                   <?php
+                }else{
+
+                    if($row['files']!=null){
+
+                    echo $row['files'];
+                    ?>
+                     <button><a href="<?=$uploads_dir?>/<?=$row['files']?>" download>다운로드</a></button>
+                    
+                     <?php
+
+                    };
+                }
+                ?>
+                
+
             <li class="s3">
                <input type="hidden" value="글작성">
                 <input type="hidden" class="reset" value="다시작성">

@@ -24,6 +24,10 @@ var update = document.getElementsByClassName('update')[0];
 var delete_it = document.getElementsByClassName('delete')[0];
         delete_it.addEventListener('click',function(){
             location.href = 'delete_qna.php';
-            }
-        )
+        })
+
+var downloads = document.getElementsByClassName('download')[0];
+        downloads.addEventListener('click',function(){
+            location.href = 'download.php';
+        })
 }

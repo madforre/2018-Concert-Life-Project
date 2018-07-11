@@ -46,32 +46,31 @@ header("Content-Type:text/html;charset=UTF-8");
     </div>
     <?php include "footer.php";?>
 </div>
-<script>
+    <script>
         
-    var topBtn=$('.loginHeader >ul>li');
-    var arr1=['아이디','비밀번호'];
-    var arr2=['주문번호','주문자 연락처'];
-    var userId=$('input#userId');
-    var userPw=$('input#userPw');
+        var topBtn=$('.loginHeader >ul>li');
+        var arr1=['아이디','비밀번호'];
+        var arr2=['주문번호','주문자 연락처'];
+        var userId=$('input#userId');
+        var userPw=$('input#userPw');
         
-    topBtn.on('click',function(e){
-        var idx=($(this).index());
-        $(this).addClass('on').siblings().removeClass('on'); 
+        topBtn.on('click',function(e){
+            var idx=($(this).index());
+           $(this).addClass('on').siblings().removeClass('on'); 
             
-        if(idx==0){
-            userId.attr('placeholder',arr1[0]);
-            userPw.attr('placeholder',arr1[1]);
-        }else if(idx==1){
-            userId.attr('placeholder',arr2[0]);
-            userPw.attr('placeholder',arr2[1]);
+            if(idx==0){
+                userId.attr('placeholder',arr1[0]);
+                userPw.attr('placeholder',arr1[1]);
+            }else if(idx==1){
+                userId.attr('placeholder',arr2[0]);
+                userPw.attr('placeholder',arr2[1]);
             }
-    });
-
-</script>
-<script>
-
-    $('.header .nav .menu.left>a>img').attr({ src: '/images/QnA2.png'});      
-    $('.nav').removeClass('nav').addClass('nav_after');
+        });
+    
+    </script>
+    <script>
+              $('.header .nav .menu.left>a>img').attr({ src: '/images/QnA2.png'});      
+  $('.nav').removeClass('nav').addClass('nav_after');
 
 </script>
     <script src="js/gnb.js"></script>

@@ -1,6 +1,7 @@
 <?php
 header("Content-Type:text/html;charset=UTF-8");
 @session_start();
+require_once "route/url_connect_defense.php";
 ?>
 
 <!DOCTYPE html>

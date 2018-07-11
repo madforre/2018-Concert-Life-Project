@@ -15,8 +15,10 @@ if(!isset($_POST['userId'])||!isset($_POST['userPw'])){
 }
 
 
-$userId = $_POST['userId'];
-$userPw = $_POST['userPw'];
+// 특수문자 필터링
+
+$userId = htmlspecialchars($_POST['userId'],ENT_QUOTES);
+$userPw = htmlspecialchars($_POST['userPw'],ENT_QUOTES);
 
     
     //아이디 비밀번호 공백 처리

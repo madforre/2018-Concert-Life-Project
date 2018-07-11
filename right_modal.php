@@ -25,7 +25,7 @@
           <li><a href="/performance.php">PERFORMANCE</a></li>
           <li><a href="/innovation.php">INNOVATION</a></li>
           <li><a href="/festival.php">FESTIVAL</a></li>
-          <li><a href="/trade_menu.php">TICKET TRADE</a></li>
+          <li><a href="/trade_menu.php">TICKET EVENT</a></li>
         </ul>
       </div>
     </div>

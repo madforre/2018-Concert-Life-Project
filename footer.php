@@ -1,36 +1,9 @@
-<!--
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>63빌딩</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/index_section.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-
-
-
--->
-
-
-
-
-
-
-
-
 
  <div class='footer'>
  <div class="footer_box">
   <div class="company_info">
     <div class="info">
-      <p>서울시 강남구 역삼동 콘서트라이프 주식회사</p>
-      <p>Project team - 김희준 장건희 변정찬</p>
-      <p>대표전화 1588-6363, 해외 82.2.2169.0899</p>
-      <p class="copy">COPYRIGHT 2018 April ALL RIGHTS RESERVED.</p>
+      <p>서울시 강남구 역삼동 콘서트라이프 주식회사 / 프로젝트 총괄 - 장건희 / 기획 - 김희준 <br> PHP Developer - 장건희 / Art Director - 변정찬 / Front-end Developer - 장건희 변정찬 김희준 </p>
     </div>
   </div>
   <div class="quick_menu">
@@ -41,7 +14,7 @@
         <li>사이트맵</li>
       </ul>
       <div class="notice">
-        본 웹사이트는 상업적 목적이 아닌 포트폴리오 용도의 비영리 웹사이트입니다.
+        madforre@gmail.com / 본 웹사이트는 포트폴리오 용도의 비영리 웹사이트입니다.
       </div>
      <div class="family_site">
 

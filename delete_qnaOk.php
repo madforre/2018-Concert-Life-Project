@@ -1,7 +1,8 @@
 <?php
 @session_start();
 
-include "dbConnect.php";
+require_once "dbConnect.php";
+require_once "route/url_connect_defense.php";
 
 $pass = $_POST["pass"];
 $title = $_POST["title"];
@@ -73,7 +74,7 @@ if($pass!=$pass_db){
 
               echo "<script>
               alert('게시글 삭제가 완료되었습니다.');
-              location.href = 'qna.php';
+              location.href = 'QnA.php';
               </script>";
 
               }else{

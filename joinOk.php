@@ -5,7 +5,7 @@ header("Content-Type:text/html;charset=UTF-8");
 require_once "settingDB.php";
 require_once "dbConnect.php";
 
-//접속 경로가 확인
+//접속 경로 확인
 
 if(!isset($_POST['userId'])||!isset($_POST['userPw'])||!isset($_POST['userName'])||!isset($_POST['userYear'])||!isset($_POST['userGender'])||!isset($_POST['userPhone'])){
     echo"
@@ -17,12 +17,25 @@ if(!isset($_POST['userId'])||!isset($_POST['userPw'])||!isset($_POST['userName']
     exit;
 }
 
-$userId=$_POST['userId'];
-$userPw=$_POST['userPw'];
-$userName=$_POST['userName'];
-$userYear=$_POST['userYear'];
-$userGender=$_POST['userGender'];
-$userPhone=implode('-',$_POST['userPhone']);//배열 >> 문자열
+$userId=htmlspecialchars($_POST['userId'],ENT_QUOTES);
+$userPw=htmlspecialchars($_POST['userPw'],ENT_QUOTES);
+$pwCheck=htmlspecialchars($_POST['pwCheck'],ENT_QUOTES);
+$userName=htmlspecialchars($_POST['userName'],ENT_QUOTES);
+$userYear=htmlspecialchars($_POST['userYear'],ENT_QUOTES);
+$userGender=htmlspecialchars($_POST['userGender'],ENT_QUOTES);
+$userPhone=htmlspecialchars(implode('-',$_POST['userPhone']),ENT_QUOTES);//배열 >> 문자열
+
+//패스워드 체크
+
+if($userPw!==$pwCheck){
+    echo"
+    <script>
+        alert('비밀번호가 비밀번호 확인란과 일치해야 합니다.');
+        history.go(-1);
+    </script>
+    ";
+    exit;
+}
 
 //공백처리
 

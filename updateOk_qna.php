@@ -1,7 +1,8 @@
 <?php
 @session_start();
 
-include "dbConnect.php";
+require_once "dbConnect.php";
+require_once "route/url_connect_defense.php";
 
 $pass = $_POST["pass"];
 $before_title = $_SESSION['title'];
@@ -75,7 +76,7 @@ if($pass!=$pass_db){
 
               echo "<script>
               alert('게시글 수정 성공');
-              location.href = 'qna.php';
+              location.href = 'QnA.php';
               </script>";
 
               }else{

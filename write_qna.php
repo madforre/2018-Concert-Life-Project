@@ -1,8 +1,7 @@
 <?php
-header("Content-Type:text/html;charset=UTF-8");
 @session_start();
+require_once "route/url_connect_defense.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +14,7 @@ header("Content-Type:text/html;charset=UTF-8");
 <body>
    <div class="write_bg">
     <div class="write">
-       <form action="write_qnaOk.php" method="post">
+       <form enctype='multipart/form-data' action="write_qnaOk.php" method="post">
         <h1 class="logo">게시글 작성</h1>
         <ul>
             <li class="s1"> <?=$_SESSION['sessionId']?>님 안녕하세요. 게시글을 작성하려면 글제목과 비밀번호가 필요합니다.</li>
@@ -29,6 +28,8 @@ header("Content-Type:text/html;charset=UTF-8");
             </li>
             <input type="hidden" name="name" value="<?=$_SESSION['sessionId']?>">
             <li class="s2"><textarea name="content" cols="30" rows="10"></textarea></li>
+            <li><input type='file' name='myfile'></li><small>jpeg, jpg, gif, png, txt 확장자만 허용됩니다. (파일크기제한 :  최대 20mb)</small>
+            
             <li class="s3"><input type="submit" value="글작성">
                 <input type="button" class="reset" value="다시작성">
                 <input type="button" class="goback" value="되돌아가기">
