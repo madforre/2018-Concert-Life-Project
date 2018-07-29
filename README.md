@@ -11,9 +11,9 @@ Back end(Legacy PHP) + Front end(HTML, CSS, JavaScript, jQuery)
 
 ## Front-end
 
-* HTML과 CSS, JavaScript, jQuery 를 이용하여 디자인하였음.
+* HTML과 CSS, JavaScript, jQuery 를 이용하여 구성하였음.
 * 각 페이지별로 스크립트 및 CSS를 분리하여 모듈화하였음.
-* 필요한 HTML파일 역시 모듈화하여 원하는 페이지에 삽입함.
+* 필요한 HTML파일 역시 모듈화하여 원하는 페이지에 삽입.
 
 ## Back-end
 
