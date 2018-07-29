@@ -24,4 +24,4 @@ Back end(Legacy PHP) + Front end(HTML, CSS, JavaScript, jQuery)
 
 ## P.S
 
-* 현재 회원가입시 유효성검사 미구현상태. Vue.js 를 이용하여 유효성 검사를 추가할 예정이다.
+* 현재 회원가입 및 로그인시 유효성검사 미구현상태. Vue.js 를 이용하여 유효성 검사를 추가할 예정이다.
